@@ -1,6 +1,7 @@
 using Microsoft.VisualBasic;
 using Microsoft.VisualBasic.FileIO;
 using System.Diagnostics;
+using System.Security.Cryptography.X509Certificates;
 using System.Windows.Forms;
 
 namespace NowNotes_Windows
@@ -11,6 +12,7 @@ namespace NowNotes_Windows
         public string fileOpened;
         public bool hasBeenShowed = false;
         public bool sidemenuShowing = false;
+        public string newName;
 
         public FormMain()
         {
@@ -148,6 +150,24 @@ namespace NowNotes_Windows
                 fileOpened = fileToOpen;
                 ShowHideSideMenu(); 
             }
+        }
+
+        private void listBoxMenu_MouseClick(object sender, MouseEventArgs e)
+        {
+            if(e.Button == MouseButtons.Right)
+            {
+                contextMenuStripNotesMenu.Show();
+            }
+        }
+
+        private void renameToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void deleteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }
