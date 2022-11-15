@@ -46,12 +46,8 @@
             this.richTextBox = new System.Windows.Forms.RichTextBox();
             this.panelSideMenu = new System.Windows.Forms.Panel();
             this.listBoxMenu = new System.Windows.Forms.ListBox();
-            this.contextMenuStripNotesMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.renameToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.deleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStrip.SuspendLayout();
             this.panelSideMenu.SuspendLayout();
-            this.contextMenuStripNotesMenu.SuspendLayout();
             this.SuspendLayout();
             // 
             // toolStrip
@@ -90,25 +86,25 @@
             // allNotesToolStripMenuItem
             // 
             this.allNotesToolStripMenuItem.Name = "allNotesToolStripMenuItem";
-            this.allNotesToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.allNotesToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.allNotesToolStripMenuItem.Text = "All Notes";
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(178, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(221, 6);
             // 
             // settingsToolStripMenuItem
             // 
             this.settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
-            this.settingsToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.settingsToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.settingsToolStripMenuItem.Text = "Settings";
             // 
             // closeToolStripMenuItem
             // 
             this.closeToolStripMenuItem.Name = "closeToolStripMenuItem";
             this.closeToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.F4)));
-            this.closeToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.closeToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.closeToolStripMenuItem.Text = "Close";
             this.closeToolStripMenuItem.Click += new System.EventHandler(this.closeToolStripMenuItem_Click);
             // 
@@ -209,31 +205,7 @@
             this.listBoxMenu.Name = "listBoxMenu";
             this.listBoxMenu.Size = new System.Drawing.Size(341, 404);
             this.listBoxMenu.TabIndex = 0;
-            this.listBoxMenu.MouseClick += new System.Windows.Forms.MouseEventHandler(this.listBoxMenu_MouseClick);
             this.listBoxMenu.SelectedValueChanged += new System.EventHandler(this.listBoxMenu_SelectedValueChanged);
-            // 
-            // contextMenuStripNotesMenu
-            // 
-            this.contextMenuStripNotesMenu.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.contextMenuStripNotesMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.renameToolStripMenuItem,
-            this.deleteToolStripMenuItem});
-            this.contextMenuStripNotesMenu.Name = "contextMenuStripNotesMenu";
-            this.contextMenuStripNotesMenu.Size = new System.Drawing.Size(133, 52);
-            // 
-            // renameToolStripMenuItem
-            // 
-            this.renameToolStripMenuItem.Name = "renameToolStripMenuItem";
-            this.renameToolStripMenuItem.Size = new System.Drawing.Size(132, 24);
-            this.renameToolStripMenuItem.Text = "Rename";
-            this.renameToolStripMenuItem.Click += new System.EventHandler(this.renameToolStripMenuItem_Click);
-            // 
-            // deleteToolStripMenuItem
-            // 
-            this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
-            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(132, 24);
-            this.deleteToolStripMenuItem.Text = "Delete";
-            this.deleteToolStripMenuItem.Click += new System.EventHandler(this.deleteToolStripMenuItem_Click);
             // 
             // FormMain
             // 
@@ -256,7 +228,6 @@
             this.toolStrip.ResumeLayout(false);
             this.toolStrip.PerformLayout();
             this.panelSideMenu.ResumeLayout(false);
-            this.contextMenuStripNotesMenu.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -280,8 +251,5 @@
         private ToolStripMenuItem closeToolStripMenuItem;
         private Panel panelSideMenu;
         private ListBox listBoxMenu;
-        private ContextMenuStrip contextMenuStripNotesMenu;
-        private ToolStripMenuItem renameToolStripMenuItem;
-        private ToolStripMenuItem deleteToolStripMenuItem;
     }
 }
