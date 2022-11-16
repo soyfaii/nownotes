@@ -63,8 +63,16 @@ namespace NowNotes_Windows
             }
             catch (Exception ex)
             {
-                MessageBox.Show("The note wasn't able to be saved because another app has the internal note file opened.", "An error occured.", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                ShowInfo("The note wasn't able to be saved because another app has the internal note file opened.");
             }
+        }
+
+        public void ShowInfo(string info)
+        {
+            labelInfo.Text = info;
+            panelInfo.Show();
+            Thread.Sleep(5000);
+            panelInfo.Hide();
         }
 
         private void toolStripButtonMenu_Click(object sender, EventArgs e)
@@ -144,9 +152,17 @@ namespace NowNotes_Windows
             {
                 SaveActualNote(sender, e);
                 string fileToOpen = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + "\\NowNotes\\Notes\\" + listBoxMenu.SelectedItem.ToString() + ".rtf";
-                richTextBox.Rtf = File.ReadAllText(fileToOpen);
-                fileOpened = fileToOpen;
-                ShowHideSideMenu(); 
+                try
+                {
+                    richTextBox.Rtf = File.ReadAllText(fileToOpen);
+                    fileOpened = fileToOpen;
+                    ShowHideSideMenu();
+                }
+                catch (Exception)
+                {
+                    ShowInfo("The note wasn't able to be opened because another app has the internal note file opened.");
+                }
+                
             }
         }
     }

@@ -46,8 +46,11 @@
             this.richTextBox = new System.Windows.Forms.RichTextBox();
             this.panelSideMenu = new System.Windows.Forms.Panel();
             this.listBoxMenu = new System.Windows.Forms.ListBox();
+            this.panelInfo = new System.Windows.Forms.Panel();
+            this.labelInfo = new System.Windows.Forms.Label();
             this.toolStrip.SuspendLayout();
             this.panelSideMenu.SuspendLayout();
+            this.panelInfo.SuspendLayout();
             this.SuspendLayout();
             // 
             // toolStrip
@@ -86,25 +89,25 @@
             // allNotesToolStripMenuItem
             // 
             this.allNotesToolStripMenuItem.Name = "allNotesToolStripMenuItem";
-            this.allNotesToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.allNotesToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.allNotesToolStripMenuItem.Text = "All Notes";
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(221, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(178, 6);
             // 
             // settingsToolStripMenuItem
             // 
             this.settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
-            this.settingsToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.settingsToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.settingsToolStripMenuItem.Text = "Settings";
             // 
             // closeToolStripMenuItem
             // 
             this.closeToolStripMenuItem.Name = "closeToolStripMenuItem";
             this.closeToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.F4)));
-            this.closeToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.closeToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.closeToolStripMenuItem.Text = "Close";
             this.closeToolStripMenuItem.Click += new System.EventHandler(this.closeToolStripMenuItem_Click);
             // 
@@ -183,7 +186,7 @@
             this.richTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.richTextBox.Location = new System.Drawing.Point(0, 30);
             this.richTextBox.Name = "richTextBox";
-            this.richTextBox.Size = new System.Drawing.Size(450, 420);
+            this.richTextBox.Size = new System.Drawing.Size(450, 354);
             this.richTextBox.TabIndex = 2;
             this.richTextBox.Text = "";
             // 
@@ -193,7 +196,7 @@
             this.panelSideMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelSideMenu.Location = new System.Drawing.Point(0, 30);
             this.panelSideMenu.Name = "panelSideMenu";
-            this.panelSideMenu.Size = new System.Drawing.Size(347, 420);
+            this.panelSideMenu.Size = new System.Drawing.Size(347, 354);
             this.panelSideMenu.TabIndex = 3;
             this.panelSideMenu.Visible = false;
             // 
@@ -207,6 +210,27 @@
             this.listBoxMenu.TabIndex = 0;
             this.listBoxMenu.SelectedValueChanged += new System.EventHandler(this.listBoxMenu_SelectedValueChanged);
             // 
+            // panelInfo
+            // 
+            this.panelInfo.BackColor = System.Drawing.SystemColors.Info;
+            this.panelInfo.Controls.Add(this.labelInfo);
+            this.panelInfo.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panelInfo.Location = new System.Drawing.Point(0, 384);
+            this.panelInfo.Name = "panelInfo";
+            this.panelInfo.Size = new System.Drawing.Size(450, 66);
+            this.panelInfo.TabIndex = 4;
+            this.panelInfo.Visible = false;
+            // 
+            // labelInfo
+            // 
+            this.labelInfo.ForeColor = System.Drawing.SystemColors.MenuText;
+            this.labelInfo.Location = new System.Drawing.Point(3, 3);
+            this.labelInfo.Name = "labelInfo";
+            this.labelInfo.Size = new System.Drawing.Size(444, 60);
+            this.labelInfo.TabIndex = 0;
+            this.labelInfo.Text = "Information Panel\r\nInformation Panel";
+            this.labelInfo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -215,6 +239,7 @@
             this.ControlBox = false;
             this.Controls.Add(this.panelSideMenu);
             this.Controls.Add(this.richTextBox);
+            this.Controls.Add(this.panelInfo);
             this.Controls.Add(this.toolStrip);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "FormMain";
@@ -228,6 +253,7 @@
             this.toolStrip.ResumeLayout(false);
             this.toolStrip.PerformLayout();
             this.panelSideMenu.ResumeLayout(false);
+            this.panelInfo.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -251,5 +277,7 @@
         private ToolStripMenuItem closeToolStripMenuItem;
         private Panel panelSideMenu;
         private ListBox listBoxMenu;
+        private Panel panelInfo;
+        private Label labelInfo;
     }
 }
