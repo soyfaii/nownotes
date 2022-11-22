@@ -44,6 +44,9 @@
             this.toolStripButtonItalic = new System.Windows.Forms.ToolStripButton();
             this.toolStripButtonUnderline = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripDropDownButtonNoteOptions = new System.Windows.Forms.ToolStripDropDownButton();
+            this.renameNoteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.deleteNoteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.notifyIcon = new System.Windows.Forms.NotifyIcon(this.components);
             this.richTextBox = new System.Windows.Forms.RichTextBox();
             this.panelSideMenu = new System.Windows.Forms.Panel();
@@ -66,7 +69,8 @@
             this.toolStripButtonBold,
             this.toolStripButtonItalic,
             this.toolStripButtonUnderline,
-            this.toolStripButton2});
+            this.toolStripButton2,
+            this.toolStripDropDownButtonNoteOptions});
             this.toolStrip.Location = new System.Drawing.Point(0, 0);
             this.toolStrip.Name = "toolStrip";
             this.toolStrip.Size = new System.Drawing.Size(450, 30);
@@ -79,6 +83,7 @@
             this.allNotesToolStripMenuItem,
             this.toolStripSeparator2,
             this.settingsToolStripMenuItem,
+            this.debugToolStripMenuItem,
             this.closeToolStripMenuItem});
             this.toolStripButtonMenu.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonMenu.Image")));
             this.toolStripButtonMenu.ImageTransparentColor = System.Drawing.Color.Magenta;
@@ -191,6 +196,34 @@
             this.toolStripButton2.Text = "Title";
             this.toolStripButton2.Click += new System.EventHandler(this.toolStripButton2_Click);
             // 
+            // toolStripDropDownButtonNoteOptions
+            // 
+            this.toolStripDropDownButtonNoteOptions.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.toolStripDropDownButtonNoteOptions.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripDropDownButtonNoteOptions.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.renameNoteToolStripMenuItem,
+            this.deleteNoteToolStripMenuItem});
+            this.toolStripDropDownButtonNoteOptions.Image = ((System.Drawing.Image)(resources.GetObject("toolStripDropDownButtonNoteOptions.Image")));
+            this.toolStripDropDownButtonNoteOptions.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripDropDownButtonNoteOptions.Name = "toolStripDropDownButtonNoteOptions";
+            this.toolStripDropDownButtonNoteOptions.ShowDropDownArrow = false;
+            this.toolStripDropDownButtonNoteOptions.Size = new System.Drawing.Size(24, 27);
+            this.toolStripDropDownButtonNoteOptions.Text = "Note Options";
+            // 
+            // renameNoteToolStripMenuItem
+            // 
+            this.renameNoteToolStripMenuItem.Name = "renameNoteToolStripMenuItem";
+            this.renameNoteToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.renameNoteToolStripMenuItem.Text = "Rename Note";
+            this.renameNoteToolStripMenuItem.Click += new System.EventHandler(this.renameNoteToolStripMenuItem_Click);
+            // 
+            // deleteNoteToolStripMenuItem
+            // 
+            this.deleteNoteToolStripMenuItem.Name = "deleteNoteToolStripMenuItem";
+            this.deleteNoteToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.deleteNoteToolStripMenuItem.Text = "Delete Note";
+            this.deleteNoteToolStripMenuItem.Click += new System.EventHandler(this.deleteNoteToolStripMenuItem_Click);
+            // 
             // notifyIcon
             // 
             this.notifyIcon.Icon = ((System.Drawing.Icon)(resources.GetObject("notifyIcon.Icon")));
@@ -299,5 +332,8 @@
         private Label labelInfo;
         private ToolStripMenuItem debugToolStripMenuItem;
         private ToolStripMenuItem showNotesFolderToolStripMenuItem;
+        private ToolStripDropDownButton toolStripDropDownButtonNoteOptions;
+        private ToolStripMenuItem renameNoteToolStripMenuItem;
+        private ToolStripMenuItem deleteNoteToolStripMenuItem;
     }
 }

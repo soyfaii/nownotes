@@ -124,6 +124,15 @@
         qgAAAABJRU5ErkJggg==
 </value>
   </data>
+  <data name="toolStripDropDownButtonNoteOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAACcSURBVGhD7djBCYNAFEXRKcUSUkI6MCWkU9NB7CTpQP/F
+        GQiSrYsH98CDz6xUhPm8JknSRZ6VTw9zlFtlO4WzGI/K+QU4izFVvpXx8MycRblXXj3MkiTFYX2YjzHP
+        WhmrxJuDJP+Wuah1Iv4F8PsLMUfiq7uJSpIicYEtPXGXGSUWnehYJZijiq34ajG+3AWVOp0oiavXJUkJ
+        WtsBeJU02W25HBwAAAAASUVORK5CYII=
+</value>
+  </data>
   <metadata name="notifyIcon.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>132, 17</value>
   </metadata>

@@ -2,6 +2,7 @@ using Microsoft.VisualBasic;
 using Microsoft.VisualBasic.FileIO;
 using System.Diagnostics;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace NowNotes_Windows
 {
@@ -11,10 +12,31 @@ namespace NowNotes_Windows
         public string fileOpened;
         public bool hasBeenShowed = false;
         public bool sidemenuShowing = false;
-
+        System.Windows.Forms.Timer infoMessageTimer = new System.Windows.Forms.Timer();
+        Form formRenameNote = new Form();
+        System.Windows.Forms.TextBox textBoxRenameNote = new System.Windows.Forms.TextBox();
+        public string noteName;
+        
         public FormMain()
         {
             InitializeComponent();
+            //
+            formRenameNote.FormBorderStyle = FormBorderStyle.FixedToolWindow;
+            formRenameNote.Size = new Size(400, 130);
+            formRenameNote.Text = "Rename Note";
+            formRenameNote.TopMost = true;
+            //
+            textBoxRenameNote.Parent = formRenameNote;
+            textBoxRenameNote.Size = new Size(358, 27);
+            textBoxRenameNote.Location = new Point(12, 12);
+            textBoxRenameNote.Text = noteName;
+            //
+            System.Windows.Forms.Button buttonRename = new System.Windows.Forms.Button();
+            buttonRename.Parent = formRenameNote;
+            buttonRename.Text = "Rename";
+            buttonRename.Size = new Size(94, 29);
+            buttonRename.Location = new Point(276, 45);
+            buttonRename.Click += ButtonRename_Click;
         }
 
         private void FormMain_Load(object sender, EventArgs e)
@@ -175,6 +197,38 @@ namespace NowNotes_Windows
                 }
                 
             }
+        }
+
+        private void showNotesFolderToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Process.Start("explorer.exe", Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + "\\NowNotes\\Notes");
+        }
+
+        private void deleteNoteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            richTextBox.Clear();
+            File.Delete(fileOpened);
+            ShowInfo("The opened note has been deleted.");
+        }
+
+        public string newFileName;
+
+        private void renameNoteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // Get Note Name
+            noteName = fileOpened.Replace(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + "\\NowNotes\\Notes\\", "");
+            noteName = noteName.Replace(".rtf", "");
+
+            formRenameNote.Show();
+            
+        }
+
+        private void ButtonRename_Click(object? sender, EventArgs e)
+        {
+            SaveActualNote(sender, e);
+            Debug.WriteLine("Renaming File");
+            File.Move(fileOpened, Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + "\\NowNotes\\Notes\\" + textBoxRenameNote.Text + ".rtf");
+            formRenameNote.Close();
         }
     }
 }
