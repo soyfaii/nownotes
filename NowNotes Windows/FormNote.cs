@@ -243,5 +243,15 @@ namespace NowNotes_Windows
             File.Move(fileOpened, Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + "\\NowNotes\\Notes\\" + textBoxRenameNote.Text + ".rtf");
             formRenameNote.Hide();
         }
+
+        private void buttonNewNote_Click(object sender, EventArgs e)
+        {
+            SaveActualNote(sender, e);
+            richTextBox.Clear();
+            File.Create(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + "\\NowNotes\\Notes\\" + ((DateTime.Now.ToString()).Replace("/", "-")).Replace(":", "-") + ".rtf");
+            fileOpened = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + "\\NowNotes\\Notes\\" + ((DateTime.Now.ToString()).Replace("/", "-")).Replace(":", "-") + ".rtf";
+            ShowHideSideMenu();
+            ShowInfo("Note saved and cleared.");
+        }
     }
 }

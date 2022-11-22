@@ -50,9 +50,11 @@
             this.notifyIcon = new System.Windows.Forms.NotifyIcon(this.components);
             this.richTextBox = new System.Windows.Forms.RichTextBox();
             this.panelSideMenu = new System.Windows.Forms.Panel();
+            this.buttonNewNote = new System.Windows.Forms.Button();
             this.listBoxMenu = new System.Windows.Forms.ListBox();
             this.panelInfo = new System.Windows.Forms.Panel();
             this.labelInfo = new System.Windows.Forms.Label();
+            this.labelSideMenuTitle = new System.Windows.Forms.Label();
             this.toolStrip.SuspendLayout();
             this.panelSideMenu.SuspendLayout();
             this.panelInfo.SuspendLayout();
@@ -213,14 +215,14 @@
             // renameNoteToolStripMenuItem
             // 
             this.renameNoteToolStripMenuItem.Name = "renameNoteToolStripMenuItem";
-            this.renameNoteToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.renameNoteToolStripMenuItem.Size = new System.Drawing.Size(183, 26);
             this.renameNoteToolStripMenuItem.Text = "Rename Note";
             this.renameNoteToolStripMenuItem.Click += new System.EventHandler(this.renameNoteToolStripMenuItem_Click);
             // 
             // deleteNoteToolStripMenuItem
             // 
             this.deleteNoteToolStripMenuItem.Name = "deleteNoteToolStripMenuItem";
-            this.deleteNoteToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.deleteNoteToolStripMenuItem.Size = new System.Drawing.Size(183, 26);
             this.deleteNoteToolStripMenuItem.Text = "Delete Note";
             this.deleteNoteToolStripMenuItem.Click += new System.EventHandler(this.deleteNoteToolStripMenuItem_Click);
             // 
@@ -243,6 +245,8 @@
             // 
             // panelSideMenu
             // 
+            this.panelSideMenu.Controls.Add(this.labelSideMenuTitle);
+            this.panelSideMenu.Controls.Add(this.buttonNewNote);
             this.panelSideMenu.Controls.Add(this.listBoxMenu);
             this.panelSideMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelSideMenu.Location = new System.Drawing.Point(0, 30);
@@ -251,13 +255,23 @@
             this.panelSideMenu.TabIndex = 3;
             this.panelSideMenu.Visible = false;
             // 
+            // buttonNewNote
+            // 
+            this.buttonNewNote.Location = new System.Drawing.Point(184, 8);
+            this.buttonNewNote.Name = "buttonNewNote";
+            this.buttonNewNote.Size = new System.Drawing.Size(150, 29);
+            this.buttonNewNote.TabIndex = 1;
+            this.buttonNewNote.Text = "Save and Clear";
+            this.buttonNewNote.UseVisualStyleBackColor = true;
+            this.buttonNewNote.Click += new System.EventHandler(this.buttonNewNote_Click);
+            // 
             // listBoxMenu
             // 
             this.listBoxMenu.FormattingEnabled = true;
             this.listBoxMenu.ItemHeight = 20;
-            this.listBoxMenu.Location = new System.Drawing.Point(3, 3);
+            this.listBoxMenu.Location = new System.Drawing.Point(3, 43);
             this.listBoxMenu.Name = "listBoxMenu";
-            this.listBoxMenu.Size = new System.Drawing.Size(341, 404);
+            this.listBoxMenu.Size = new System.Drawing.Size(341, 364);
             this.listBoxMenu.TabIndex = 0;
             this.listBoxMenu.SelectedValueChanged += new System.EventHandler(this.listBoxMenu_SelectedValueChanged);
             // 
@@ -282,6 +296,16 @@
             this.labelInfo.Text = "Information Panel\r\nInformation Panel";
             this.labelInfo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // labelSideMenuTitle
+            // 
+            this.labelSideMenuTitle.AutoSize = true;
+            this.labelSideMenuTitle.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.labelSideMenuTitle.Location = new System.Drawing.Point(12, 6);
+            this.labelSideMenuTitle.Name = "labelSideMenuTitle";
+            this.labelSideMenuTitle.Size = new System.Drawing.Size(116, 28);
+            this.labelSideMenuTitle.TabIndex = 2;
+            this.labelSideMenuTitle.Text = "Your Notes";
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -304,6 +328,7 @@
             this.toolStrip.ResumeLayout(false);
             this.toolStrip.PerformLayout();
             this.panelSideMenu.ResumeLayout(false);
+            this.panelSideMenu.PerformLayout();
             this.panelInfo.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -335,5 +360,7 @@
         private ToolStripDropDownButton toolStripDropDownButtonNoteOptions;
         private ToolStripMenuItem renameNoteToolStripMenuItem;
         private ToolStripMenuItem deleteNoteToolStripMenuItem;
+        private Button buttonNewNote;
+        private Label labelSideMenuTitle;
     }
 }
