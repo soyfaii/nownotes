@@ -1,5 +1,7 @@
 using Microsoft.VisualBasic;
 using Microsoft.VisualBasic.FileIO;
+using Microsoft.Win32;
+using NowNotes_Windows.Properties;
 using System.Diagnostics;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
@@ -49,6 +51,17 @@ namespace NowNotes_Windows
             if (Debugger.IsAttached)
             {
                 debugToolStripMenuItem.Visible = true;
+            }
+            if (Settings.Default.FirstLaunch)
+            {
+                DialogResult result = MessageBox.Show("Do you want to set NowNotes to launch on startup?", "Launch on Startup", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (result == DialogResult.Yes)
+                {
+                    RegistryKey rkey = Registry.CurrentUser.CreateSubKey("Software\\Microsoft\\Windows\\CurrentVersion\\Run");
+                    rkey.SetValue("NowNotes", Application.ExecutablePath);
+                }
+                Settings.Default.FirstLaunch = false;
+                Settings.Default.Save();
             }
         }
 
