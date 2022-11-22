@@ -35,6 +35,8 @@
             this.allNotesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.settingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.debugToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.showNotesFolderToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.closeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripButtonNormal = new System.Windows.Forms.ToolStripButton();
@@ -102,6 +104,22 @@
             this.settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
             this.settingsToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.settingsToolStripMenuItem.Text = "Settings";
+            // 
+            // debugToolStripMenuItem
+            // 
+            this.debugToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.showNotesFolderToolStripMenuItem});
+            this.debugToolStripMenuItem.Name = "debugToolStripMenuItem";
+            this.debugToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.debugToolStripMenuItem.Text = "Debug";
+            this.debugToolStripMenuItem.Visible = false;
+            // 
+            // showNotesFolderToolStripMenuItem
+            // 
+            this.showNotesFolderToolStripMenuItem.Name = "showNotesFolderToolStripMenuItem";
+            this.showNotesFolderToolStripMenuItem.Size = new System.Drawing.Size(217, 26);
+            this.showNotesFolderToolStripMenuItem.Text = "Show Notes Folder";
+            this.showNotesFolderToolStripMenuItem.Click += new System.EventHandler(this.showNotesFolderToolStripMenuItem_Click);
             // 
             // closeToolStripMenuItem
             // 
@@ -279,5 +297,7 @@
         private ListBox listBoxMenu;
         private Panel panelInfo;
         private Label labelInfo;
+        private ToolStripMenuItem debugToolStripMenuItem;
+        private ToolStripMenuItem showNotesFolderToolStripMenuItem;
     }
 }

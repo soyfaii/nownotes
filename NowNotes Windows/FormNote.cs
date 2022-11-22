@@ -24,6 +24,10 @@ namespace NowNotes_Windows
                 Directory.CreateDirectory(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + "\\NowNotes");
                 Directory.CreateDirectory(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + "\\NowNotes\\Notes");
             }
+            if (Debugger.IsAttached)
+            {
+                debugToolStripMenuItem.Visible = true;
+            }
         }
 
         private void notifyIcon_Click(object sender, EventArgs e)
