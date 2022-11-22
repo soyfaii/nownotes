@@ -9,7 +9,7 @@
 [Setup]
 ; NOTE: The value of AppId uniquely identifies this application. Do not use the same AppId value in installers for other applications.
 ; (To generate a new GUID, click Tools | Generate GUID inside the IDE.)
-AppId={{0E6BA400-96F0-4627-B841-94CE675D7615}
+AppId={{55BCDF9A-E857-4D45-919F-1208705DB04E}
 AppName={#MyAppName}
 AppVersion={#MyAppVersion}
 ;AppVerName={#MyAppName} {#MyAppVersion}
@@ -19,7 +19,7 @@ DisableProgramGroupPage=yes
 ; Uncomment the following line to run in non administrative install mode (install for current user only.)
 ;PrivilegesRequired=lowest
 PrivilegesRequiredOverridesAllowed=dialog
-OutputBaseFilename=NowNote_Setup
+OutputBaseFilename=NowNotes Setup
 Compression=lzma
 SolidCompression=yes
 WizardStyle=modern
@@ -56,10 +56,7 @@ Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{
 
 [Files]
 Source: "C:\Users\fyrub\source\repos\NowNotes\NowNotes Windows\bin\Debug\net6.0-windows7.0\{#MyAppExeName}"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Users\fyrub\source\repos\NowNotes\NowNotes Windows\bin\Debug\net6.0-windows7.0\NowNotes Windows.deps.json"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Users\fyrub\source\repos\NowNotes\NowNotes Windows\bin\Debug\net6.0-windows7.0\NowNotes Windows.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Users\fyrub\source\repos\NowNotes\NowNotes Windows\bin\Debug\net6.0-windows7.0\NowNotes Windows.pdb"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Users\fyrub\source\repos\NowNotes\NowNotes Windows\bin\Debug\net6.0-windows7.0\NowNotes Windows.runtimeconfig.json"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Users\fyrub\source\repos\NowNotes\NowNotes Windows\bin\Debug\net6.0-windows7.0\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
 [Icons]
