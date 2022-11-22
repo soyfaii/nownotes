@@ -71,7 +71,14 @@ namespace NowNotes_Windows
         {
             labelInfo.Text = info;
             panelInfo.Show();
-            Thread.Sleep(5000);
+            infoMessageTimer.Tick += InfoMessageTimer_Tick;
+            infoMessageTimer.Interval = 5000;
+            infoMessageTimer.Start();
+        }
+
+        private void InfoMessageTimer_Tick(object? sender, EventArgs e)
+        {
+            infoMessageTimer.Stop();
             panelInfo.Hide();
         }
 
