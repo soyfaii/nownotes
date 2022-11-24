@@ -9,7 +9,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <SupportedOSPlatformVersion>7.0</SupportedOSPlatformVersion>
     <StartupObject></StartupObject>
-    <Version>0.2.0-beta1</Version>
+    <Version>0.3.0-beta1</Version>
     <PackageId>NowNotesWindows</PackageId>
     <Title>NowNotes</Title>
   </PropertyGroup>
