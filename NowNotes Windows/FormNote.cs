@@ -123,7 +123,7 @@ namespace NowNotes_Windows
 
         private void toolStripButtonMenu_Click(object sender, EventArgs e)
         {
-
+            ShowHideSideMenu();
         }
 
         private void toolStripButtonBold_Click(object sender, EventArgs e)
