@@ -55,6 +55,8 @@
             this.toolStripButtonItalic = new System.Windows.Forms.ToolStripButton();
             this.toolStripButtonUnderline = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
+            this.timerScrolling = new System.Windows.Forms.Timer(this.components);
+            this.toolStripLabelTitle = new System.Windows.Forms.ToolStripLabel();
             this.toolStrip.SuspendLayout();
             this.panelSideMenu.SuspendLayout();
             this.panelSideMenuTitle.SuspendLayout();
@@ -70,7 +72,8 @@
             this.toolStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.toolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripButtonMenu,
-            this.toolStripDropDownButtonNoteOptions});
+            this.toolStripDropDownButtonNoteOptions,
+            this.toolStripLabelTitle});
             this.toolStrip.Location = new System.Drawing.Point(347, 0);
             this.toolStrip.Name = "toolStrip";
             this.toolStrip.Size = new System.Drawing.Size(185, 64);
@@ -352,6 +355,18 @@
             this.toolStripButton2.Text = "T";
             this.toolStripButton2.Click += new System.EventHandler(this.toolStripButton2_Click);
             // 
+            // timerScrolling
+            // 
+            this.timerScrolling.Interval = 10;
+            this.timerScrolling.Tick += new System.EventHandler(this.timerScrolling_Tick);
+            // 
+            // toolStripLabelTitle
+            // 
+            this.toolStripLabelTitle.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.toolStripLabelTitle.Name = "toolStripLabelTitle";
+            this.toolStripLabelTitle.Size = new System.Drawing.Size(49, 61);
+            this.toolStripLabelTitle.Text = "Title";
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -413,5 +428,7 @@
         private ToolStripButton toolStripButton2;
         private RoundButton roundButtonNewNote;
         private Panel panelSideMenuTitle;
+        private System.Windows.Forms.Timer timerScrolling;
+        private ToolStripLabel toolStripLabelTitle;
     }
 }

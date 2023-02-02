@@ -69,6 +69,7 @@ namespace NowNotes_Windows
                 return (Image)(new Bitmap(imgToResize, size));
             }
             this.roundButtonNewNote.Image = resizeImage(Resources.add, new Size(24, 24));
+            timerScrolling.Start();
         }
 
         private void notifyIcon_Click(object sender, EventArgs e)
@@ -90,6 +91,9 @@ namespace NowNotes_Windows
                     savingTimer.Interval = 60000;
                     savingTimer.Tick += SavingTimer_Tick;
                     savingTimer.Start();
+                    noteName = fileOpened.Replace(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData) + "\\NowNotes\\Notes\\", "");
+                    noteName = noteName.Replace(".rtf", "");
+                    toolStripLabelTitle.Text = noteName;
                     hasBeenShowed = true;
                 }
             }
@@ -216,6 +220,9 @@ namespace NowNotes_Windows
                 }
                 
             }
+            noteName = fileOpened.Replace(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData) + "\\NowNotes\\Notes\\", "");
+            noteName = noteName.Replace(".rtf", "");
+            toolStripLabelTitle.Text = noteName;
         }
 
         private void showNotesFolderToolStripMenuItem_Click(object sender, EventArgs e)
@@ -239,7 +246,7 @@ namespace NowNotes_Windows
             noteName = noteName.Replace(".rtf", "");
 
             formRenameNote.Show();
-            
+            toolStripLabelTitle.Text = noteName;
         }
 
         private void ButtonRename_Click(object? sender, EventArgs e)
@@ -270,6 +277,18 @@ namespace NowNotes_Windows
         private void FormMain_Resize(object sender, EventArgs e)
         {
             roundButtonNewNote.Location = new Point(Size.Width - 89, Size.Height - 115);
+        }
+
+        private void timerScrolling_Tick(object sender, EventArgs e)
+        {
+            if(richTextBox.GetPositionFromCharIndex(0).Y < 0)
+            {
+                toolStrip.BackColor = Color.FromArgb(232, 226, 208);
+            }
+            else
+            {
+                toolStrip.BackColor = Color.FromArgb(255, 251, 255);
+            }
         }
     }
     public class RoundButton : System.Windows.Forms.Button
