@@ -64,6 +64,11 @@ namespace NowNotes_Windows
                 Settings.Default.FirstLaunch = false;
                 Settings.Default.Save();
             }
+            Image resizeImage(Image imgToResize, Size size)
+            {
+                return (Image)(new Bitmap(imgToResize, size));
+            }
+            this.roundButtonNewNote.Image = resizeImage(Resources.add, new Size(24, 24));
         }
 
         private void notifyIcon_Click(object sender, EventArgs e)
@@ -264,7 +269,7 @@ namespace NowNotes_Windows
 
         private void FormMain_Resize(object sender, EventArgs e)
         {
-            roundButtonNewNote.Location = new Point(Size.Width - 90, Size.Height - 120);
+            roundButtonNewNote.Location = new Point(Size.Width - 89, Size.Height - 115);
         }
     }
     public class RoundButton : System.Windows.Forms.Button

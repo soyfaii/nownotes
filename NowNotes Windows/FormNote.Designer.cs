@@ -256,11 +256,11 @@
             this.roundButtonNewNote.Cursor = System.Windows.Forms.Cursors.Hand;
             this.roundButtonNewNote.FlatAppearance.BorderSize = 0;
             this.roundButtonNewNote.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundButtonNewNote.Location = new System.Drawing.Point(460, 451);
+            this.roundButtonNewNote.Image = global::NowNotes_Windows.Properties.Resources.add;
+            this.roundButtonNewNote.Location = new System.Drawing.Point(461, 455);
             this.roundButtonNewNote.Name = "roundButtonNewNote";
-            this.roundButtonNewNote.Size = new System.Drawing.Size(60, 60);
+            this.roundButtonNewNote.Size = new System.Drawing.Size(56, 56);
             this.roundButtonNewNote.TabIndex = 6;
-            this.roundButtonNewNote.Text = "+";
             this.roundButtonNewNote.UseVisualStyleBackColor = false;
             this.roundButtonNewNote.Click += new System.EventHandler(this.buttonNewNote_Click);
             // 
