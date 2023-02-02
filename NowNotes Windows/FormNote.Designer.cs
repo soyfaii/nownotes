@@ -63,6 +63,7 @@
             // toolStrip
             // 
             this.toolStrip.AutoSize = false;
+            this.toolStrip.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
             this.toolStrip.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
             this.toolStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.toolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -162,8 +163,10 @@
             // 
             // richTextBox
             // 
+            this.richTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
             this.richTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.richTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.richTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(28)))), ((int)(((byte)(22)))));
             this.richTextBox.Location = new System.Drawing.Point(0, 64);
             this.richTextBox.Name = "richTextBox";
             this.richTextBox.Size = new System.Drawing.Size(450, 240);
@@ -172,10 +175,12 @@
             // 
             // panelSideMenu
             // 
+            this.panelSideMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(226)))), ((int)(((byte)(208)))));
             this.panelSideMenu.Controls.Add(this.labelSideMenuTitle);
             this.panelSideMenu.Controls.Add(this.buttonNewNote);
             this.panelSideMenu.Controls.Add(this.listBoxMenu);
             this.panelSideMenu.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panelSideMenu.ForeColor = System.Drawing.SystemColors.ControlText;
             this.panelSideMenu.Location = new System.Drawing.Point(0, 64);
             this.panelSideMenu.Name = "panelSideMenu";
             this.panelSideMenu.Size = new System.Drawing.Size(347, 240);
@@ -208,13 +213,13 @@
             this.listBoxMenu.ItemHeight = 20;
             this.listBoxMenu.Location = new System.Drawing.Point(3, 43);
             this.listBoxMenu.Name = "listBoxMenu";
-            this.listBoxMenu.Size = new System.Drawing.Size(341, 264);
+            this.listBoxMenu.Size = new System.Drawing.Size(341, 244);
             this.listBoxMenu.TabIndex = 0;
             this.listBoxMenu.SelectedValueChanged += new System.EventHandler(this.listBoxMenu_SelectedValueChanged);
             // 
             // panelInfo
             // 
-            this.panelInfo.BackColor = System.Drawing.SystemColors.Info;
+            this.panelInfo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(4)))), ((int)(((byte)(0)))));
             this.panelInfo.Controls.Add(this.labelInfo);
             this.panelInfo.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panelInfo.Location = new System.Drawing.Point(0, 304);
@@ -225,10 +230,12 @@
             // 
             // labelInfo
             // 
-            this.labelInfo.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.labelInfo.Location = new System.Drawing.Point(3, 3);
+            this.labelInfo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(4)))), ((int)(((byte)(0)))));
+            this.labelInfo.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.labelInfo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(227)))), ((int)(((byte)(233)))));
+            this.labelInfo.Location = new System.Drawing.Point(0, 0);
             this.labelInfo.Name = "labelInfo";
-            this.labelInfo.Size = new System.Drawing.Size(444, 60);
+            this.labelInfo.Size = new System.Drawing.Size(450, 66);
             this.labelInfo.TabIndex = 0;
             this.labelInfo.Text = "Information Panel\r\nInformation Panel";
             this.labelInfo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -236,6 +243,7 @@
             // toolBar
             // 
             this.toolBar.AutoSize = false;
+            this.toolBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
             this.toolBar.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.toolBar.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
             this.toolBar.ImageScalingSize = new System.Drawing.Size(20, 20);
@@ -255,6 +263,7 @@
             // 
             this.toolStripButtonNormal.AutoSize = false;
             this.toolStripButtonNormal.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.toolStripButtonNormal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(71)))), ((int)(((byte)(57)))));
             this.toolStripButtonNormal.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonNormal.Image")));
             this.toolStripButtonNormal.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButtonNormal.Margin = new System.Windows.Forms.Padding(4, 1, 0, 2);
@@ -268,6 +277,7 @@
             this.toolStripButtonBold.AutoSize = false;
             this.toolStripButtonBold.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.toolStripButtonBold.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.toolStripButtonBold.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(71)))), ((int)(((byte)(57)))));
             this.toolStripButtonBold.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonBold.Image")));
             this.toolStripButtonBold.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButtonBold.Name = "toolStripButtonBold";
@@ -281,6 +291,7 @@
             this.toolStripButtonItalic.AutoSize = false;
             this.toolStripButtonItalic.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.toolStripButtonItalic.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.toolStripButtonItalic.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(71)))), ((int)(((byte)(57)))));
             this.toolStripButtonItalic.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonItalic.Image")));
             this.toolStripButtonItalic.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButtonItalic.Name = "toolStripButtonItalic";
@@ -294,6 +305,7 @@
             this.toolStripButtonUnderline.AutoSize = false;
             this.toolStripButtonUnderline.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.toolStripButtonUnderline.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point);
+            this.toolStripButtonUnderline.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(71)))), ((int)(((byte)(57)))));
             this.toolStripButtonUnderline.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonUnderline.Image")));
             this.toolStripButtonUnderline.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButtonUnderline.Name = "toolStripButtonUnderline";
@@ -307,6 +319,7 @@
             this.toolStripButton2.AutoSize = false;
             this.toolStripButton2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.toolStripButton2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.toolStripButton2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(71)))), ((int)(((byte)(57)))));
             this.toolStripButton2.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton2.Image")));
             this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton2.Name = "toolStripButton2";
