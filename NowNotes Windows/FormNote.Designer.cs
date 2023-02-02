@@ -71,7 +71,7 @@
             this.toolStripDropDownButtonNoteOptions});
             this.toolStrip.Location = new System.Drawing.Point(0, 0);
             this.toolStrip.Name = "toolStrip";
-            this.toolStrip.Size = new System.Drawing.Size(450, 64);
+            this.toolStrip.Size = new System.Drawing.Size(462, 64);
             this.toolStrip.TabIndex = 0;
             this.toolStrip.Text = "toolStrip1";
             // 
@@ -169,7 +169,7 @@
             this.richTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(28)))), ((int)(((byte)(22)))));
             this.richTextBox.Location = new System.Drawing.Point(0, 64);
             this.richTextBox.Name = "richTextBox";
-            this.richTextBox.Size = new System.Drawing.Size(450, 240);
+            this.richTextBox.Size = new System.Drawing.Size(462, 263);
             this.richTextBox.TabIndex = 2;
             this.richTextBox.Text = "";
             // 
@@ -183,7 +183,7 @@
             this.panelSideMenu.ForeColor = System.Drawing.SystemColors.ControlText;
             this.panelSideMenu.Location = new System.Drawing.Point(0, 64);
             this.panelSideMenu.Name = "panelSideMenu";
-            this.panelSideMenu.Size = new System.Drawing.Size(347, 240);
+            this.panelSideMenu.Size = new System.Drawing.Size(347, 263);
             this.panelSideMenu.TabIndex = 3;
             this.panelSideMenu.Visible = false;
             // 
@@ -219,23 +219,26 @@
             // 
             // panelInfo
             // 
+            this.panelInfo.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.panelInfo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(4)))), ((int)(((byte)(0)))));
+            this.panelInfo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelInfo.Controls.Add(this.labelInfo);
             this.panelInfo.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelInfo.Location = new System.Drawing.Point(0, 304);
+            this.panelInfo.Location = new System.Drawing.Point(0, 327);
+            this.panelInfo.Margin = new System.Windows.Forms.Padding(50);
             this.panelInfo.Name = "panelInfo";
-            this.panelInfo.Size = new System.Drawing.Size(450, 66);
+            this.panelInfo.Padding = new System.Windows.Forms.Padding(5);
+            this.panelInfo.Size = new System.Drawing.Size(462, 66);
             this.panelInfo.TabIndex = 4;
             this.panelInfo.Visible = false;
             // 
             // labelInfo
             // 
             this.labelInfo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(4)))), ((int)(((byte)(0)))));
-            this.labelInfo.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.labelInfo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(227)))), ((int)(((byte)(233)))));
-            this.labelInfo.Location = new System.Drawing.Point(0, 0);
+            this.labelInfo.Location = new System.Drawing.Point(11, 5);
             this.labelInfo.Name = "labelInfo";
-            this.labelInfo.Size = new System.Drawing.Size(450, 66);
+            this.labelInfo.Size = new System.Drawing.Size(458, 54);
             this.labelInfo.TabIndex = 0;
             this.labelInfo.Text = "Information Panel\r\nInformation Panel";
             this.labelInfo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -253,9 +256,9 @@
             this.toolStripButtonItalic,
             this.toolStripButtonUnderline,
             this.toolStripButton2});
-            this.toolBar.Location = new System.Drawing.Point(0, 370);
+            this.toolBar.Location = new System.Drawing.Point(0, 393);
             this.toolBar.Name = "toolBar";
-            this.toolBar.Size = new System.Drawing.Size(450, 80);
+            this.toolBar.Size = new System.Drawing.Size(462, 80);
             this.toolBar.TabIndex = 5;
             this.toolBar.Text = "toolStrip1";
             // 
@@ -331,7 +334,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(450, 450);
+            this.ClientSize = new System.Drawing.Size(462, 473);
             this.ControlBox = false;
             this.Controls.Add(this.panelSideMenu);
             this.Controls.Add(this.richTextBox);
