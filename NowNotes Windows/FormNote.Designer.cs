@@ -363,7 +363,7 @@
             this.Controls.Add(this.toolBar);
             this.Controls.Add(this.toolStrip);
             this.Controls.Add(this.panelSideMenu);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Name = "FormMain";
             this.Opacity = 0D;
             this.ShowIcon = false;
