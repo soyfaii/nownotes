@@ -3,6 +3,7 @@ using Microsoft.VisualBasic.FileIO;
 using Microsoft.Win32;
 using NowNotes_Windows.Properties;
 using System.Diagnostics;
+using System.Drawing.Drawing2D;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
@@ -63,6 +64,12 @@ namespace NowNotes_Windows
                 Settings.Default.FirstLaunch = false;
                 Settings.Default.Save();
             }
+            Image resizeImage(Image imgToResize, Size size)
+            {
+                return (Image)(new Bitmap(imgToResize, size));
+            }
+            this.roundButtonNewNote.Image = resizeImage(Resources.add, new Size(24, 24));
+            timerScrolling.Start();
         }
 
         private void notifyIcon_Click(object sender, EventArgs e)
@@ -84,6 +91,9 @@ namespace NowNotes_Windows
                     savingTimer.Interval = 60000;
                     savingTimer.Tick += SavingTimer_Tick;
                     savingTimer.Start();
+                    noteName = fileOpened.Replace(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData) + "\\NowNotes\\Notes\\", "");
+                    noteName = noteName.Replace(".rtf", "");
+                    toolStripLabelTitle.Text = noteName;
                     hasBeenShowed = true;
                 }
             }
@@ -123,7 +133,7 @@ namespace NowNotes_Windows
 
         private void toolStripButtonMenu_Click(object sender, EventArgs e)
         {
-
+            ShowHideSideMenu();
         }
 
         private void toolStripButtonBold_Click(object sender, EventArgs e)
@@ -210,6 +220,9 @@ namespace NowNotes_Windows
                 }
                 
             }
+            noteName = fileOpened.Replace(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData) + "\\NowNotes\\Notes\\", "");
+            noteName = noteName.Replace(".rtf", "");
+            toolStripLabelTitle.Text = noteName;
         }
 
         private void showNotesFolderToolStripMenuItem_Click(object sender, EventArgs e)
@@ -233,14 +246,21 @@ namespace NowNotes_Windows
             noteName = noteName.Replace(".rtf", "");
 
             formRenameNote.Show();
-            
+            toolStripLabelTitle.Text = noteName;
         }
 
         private void ButtonRename_Click(object? sender, EventArgs e)
         {
             SaveActualNote(sender, e);
             Debug.WriteLine("Renaming File");
-            File.Move(fileOpened, Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData) + "\\NowNotes\\Notes\\" + textBoxRenameNote.Text + ".rtf");
+            try
+            {
+                File.Move(fileOpened, Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData) + "\\NowNotes\\Notes\\" + textBoxRenameNote.Text + ".rtf");
+            }
+            catch (Exception ex)
+            {
+                ShowInfo("The note wasn't able to be renamed and saved because another app has the internal note file opened.");
+            }
             formRenameNote.Hide();
         }
 
@@ -250,8 +270,35 @@ namespace NowNotes_Windows
             richTextBox.Clear();
             File.Create(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData) + "\\NowNotes\\Notes\\" + ((DateTime.Now.ToString()).Replace("/", "-")).Replace(":", "-") + ".rtf");
             fileOpened = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData) + "\\NowNotes\\Notes\\" + ((DateTime.Now.ToString()).Replace("/", "-")).Replace(":", "-") + ".rtf";
-            ShowHideSideMenu();
+            if (sidemenuShowing) ShowHideSideMenu();
             ShowInfo("Note saved and cleared.");
+        }
+
+        private void FormMain_Resize(object sender, EventArgs e)
+        {
+            roundButtonNewNote.Location = new Point(Size.Width - 89, Size.Height - 115);
+        }
+
+        private void timerScrolling_Tick(object sender, EventArgs e)
+        {
+            if(richTextBox.GetPositionFromCharIndex(0).Y < 0)
+            {
+                toolStrip.BackColor = Color.FromArgb(232, 226, 208);
+            }
+            else
+            {
+                toolStrip.BackColor = Color.FromArgb(255, 251, 255);
+            }
+        }
+    }
+    public class RoundButton : System.Windows.Forms.Button
+    {
+        protected override void OnPaint(System.Windows.Forms.PaintEventArgs e)
+        {
+            GraphicsPath grPath = new GraphicsPath();
+            grPath.AddEllipse(0, 0, ClientSize.Width, ClientSize.Height);
+            this.Region = new System.Drawing.Region(grPath);
+            base.OnPaint(e);
         }
     }
 }
