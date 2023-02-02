@@ -73,7 +73,7 @@
             this.toolStripDropDownButtonNoteOptions});
             this.toolStrip.Location = new System.Drawing.Point(347, 0);
             this.toolStrip.Name = "toolStrip";
-            this.toolStrip.Size = new System.Drawing.Size(115, 64);
+            this.toolStrip.Size = new System.Drawing.Size(185, 64);
             this.toolStrip.TabIndex = 0;
             this.toolStrip.Text = "toolStrip1";
             // 
@@ -171,7 +171,7 @@
             this.richTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(28)))), ((int)(((byte)(22)))));
             this.richTextBox.Location = new System.Drawing.Point(347, 64);
             this.richTextBox.Name = "richTextBox";
-            this.richTextBox.Size = new System.Drawing.Size(115, 263);
+            this.richTextBox.Size = new System.Drawing.Size(185, 313);
             this.richTextBox.TabIndex = 2;
             this.richTextBox.Text = "";
             // 
@@ -185,7 +185,7 @@
             this.panelSideMenu.Location = new System.Drawing.Point(0, 0);
             this.panelSideMenu.Name = "panelSideMenu";
             this.panelSideMenu.Padding = new System.Windows.Forms.Padding(12, 0, 12, 0);
-            this.panelSideMenu.Size = new System.Drawing.Size(347, 473);
+            this.panelSideMenu.Size = new System.Drawing.Size(347, 523);
             this.panelSideMenu.TabIndex = 3;
             this.panelSideMenu.Visible = false;
             // 
@@ -200,7 +200,7 @@
             this.listBoxMenu.Location = new System.Drawing.Point(12, 41);
             this.listBoxMenu.Margin = new System.Windows.Forms.Padding(12, 3, 12, 3);
             this.listBoxMenu.Name = "listBoxMenu";
-            this.listBoxMenu.Size = new System.Drawing.Size(323, 432);
+            this.listBoxMenu.Size = new System.Drawing.Size(323, 482);
             this.listBoxMenu.TabIndex = 0;
             this.listBoxMenu.SelectedValueChanged += new System.EventHandler(this.listBoxMenu_SelectedValueChanged);
             // 
@@ -231,11 +231,11 @@
             this.panelInfo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelInfo.Controls.Add(this.labelInfo);
             this.panelInfo.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelInfo.Location = new System.Drawing.Point(347, 327);
+            this.panelInfo.Location = new System.Drawing.Point(347, 377);
             this.panelInfo.Margin = new System.Windows.Forms.Padding(50);
             this.panelInfo.Name = "panelInfo";
             this.panelInfo.Padding = new System.Windows.Forms.Padding(5);
-            this.panelInfo.Size = new System.Drawing.Size(115, 66);
+            this.panelInfo.Size = new System.Drawing.Size(185, 66);
             this.panelInfo.TabIndex = 4;
             this.panelInfo.Visible = false;
             // 
@@ -248,7 +248,7 @@
             this.labelInfo.Size = new System.Drawing.Size(441, 54);
             this.labelInfo.TabIndex = 0;
             this.labelInfo.Text = "Information Panel\r\nInformation Panel";
-            this.labelInfo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelInfo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // roundButtonNewNote
             // 
@@ -256,7 +256,7 @@
             this.roundButtonNewNote.Cursor = System.Windows.Forms.Cursors.Hand;
             this.roundButtonNewNote.FlatAppearance.BorderSize = 0;
             this.roundButtonNewNote.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundButtonNewNote.Location = new System.Drawing.Point(389, 402);
+            this.roundButtonNewNote.Location = new System.Drawing.Point(460, 451);
             this.roundButtonNewNote.Name = "roundButtonNewNote";
             this.roundButtonNewNote.Size = new System.Drawing.Size(60, 60);
             this.roundButtonNewNote.TabIndex = 6;
@@ -277,9 +277,9 @@
             this.toolStripButtonItalic,
             this.toolStripButtonUnderline,
             this.toolStripButton2});
-            this.toolBar.Location = new System.Drawing.Point(347, 393);
+            this.toolBar.Location = new System.Drawing.Point(347, 443);
             this.toolBar.Name = "toolBar";
-            this.toolBar.Size = new System.Drawing.Size(115, 80);
+            this.toolBar.Size = new System.Drawing.Size(185, 80);
             this.toolBar.TabIndex = 5;
             this.toolBar.Text = "toolStrip1";
             // 
@@ -355,7 +355,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(462, 473);
+            this.ClientSize = new System.Drawing.Size(532, 523);
             this.ControlBox = false;
             this.Controls.Add(this.richTextBox);
             this.Controls.Add(this.roundButtonNewNote);
