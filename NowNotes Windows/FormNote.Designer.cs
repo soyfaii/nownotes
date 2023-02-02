@@ -48,6 +48,7 @@
             this.listBoxMenu = new System.Windows.Forms.ListBox();
             this.panelInfo = new System.Windows.Forms.Panel();
             this.labelInfo = new System.Windows.Forms.Label();
+            this.roundButtonNewNote = new NowNotes_Windows.RoundButton();
             this.toolBar = new System.Windows.Forms.ToolStrip();
             this.toolStripButtonNormal = new System.Windows.Forms.ToolStripButton();
             this.toolStripButtonBold = new System.Windows.Forms.ToolStripButton();
@@ -238,10 +239,24 @@
             this.labelInfo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(227)))), ((int)(((byte)(233)))));
             this.labelInfo.Location = new System.Drawing.Point(11, 5);
             this.labelInfo.Name = "labelInfo";
-            this.labelInfo.Size = new System.Drawing.Size(458, 54);
+            this.labelInfo.Size = new System.Drawing.Size(441, 54);
             this.labelInfo.TabIndex = 0;
             this.labelInfo.Text = "Information Panel\r\nInformation Panel";
             this.labelInfo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // roundButtonNewNote
+            // 
+            this.roundButtonNewNote.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(227)))), ((int)(((byte)(101)))));
+            this.roundButtonNewNote.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.roundButtonNewNote.FlatAppearance.BorderSize = 0;
+            this.roundButtonNewNote.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.roundButtonNewNote.Location = new System.Drawing.Point(389, 402);
+            this.roundButtonNewNote.Name = "roundButtonNewNote";
+            this.roundButtonNewNote.Size = new System.Drawing.Size(60, 60);
+            this.roundButtonNewNote.TabIndex = 6;
+            this.roundButtonNewNote.Text = "+";
+            this.roundButtonNewNote.UseVisualStyleBackColor = false;
+            this.roundButtonNewNote.Click += new System.EventHandler(this.buttonNewNote_Click);
             // 
             // toolBar
             // 
@@ -338,6 +353,7 @@
             this.ControlBox = false;
             this.Controls.Add(this.panelSideMenu);
             this.Controls.Add(this.richTextBox);
+            this.Controls.Add(this.roundButtonNewNote);
             this.Controls.Add(this.panelInfo);
             this.Controls.Add(this.toolBar);
             this.Controls.Add(this.toolStrip);
@@ -387,5 +403,6 @@
         private ToolStripButton toolStripButtonItalic;
         private ToolStripButton toolStripButtonUnderline;
         private ToolStripButton toolStripButton2;
+        private RoundButton roundButtonNewNote;
     }
 }

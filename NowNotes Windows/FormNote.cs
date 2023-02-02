@@ -3,6 +3,7 @@ using Microsoft.VisualBasic.FileIO;
 using Microsoft.Win32;
 using NowNotes_Windows.Properties;
 using System.Diagnostics;
+using System.Drawing.Drawing2D;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
@@ -240,7 +241,14 @@ namespace NowNotes_Windows
         {
             SaveActualNote(sender, e);
             Debug.WriteLine("Renaming File");
-            File.Move(fileOpened, Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData) + "\\NowNotes\\Notes\\" + textBoxRenameNote.Text + ".rtf");
+            try
+            {
+                File.Move(fileOpened, Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData) + "\\NowNotes\\Notes\\" + textBoxRenameNote.Text + ".rtf");
+            }
+            catch (Exception ex)
+            {
+                ShowInfo("The note wasn't able to be renamed and saved because another app has the internal note file opened.");
+            }
             formRenameNote.Hide();
         }
 
@@ -250,8 +258,18 @@ namespace NowNotes_Windows
             richTextBox.Clear();
             File.Create(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData) + "\\NowNotes\\Notes\\" + ((DateTime.Now.ToString()).Replace("/", "-")).Replace(":", "-") + ".rtf");
             fileOpened = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData) + "\\NowNotes\\Notes\\" + ((DateTime.Now.ToString()).Replace("/", "-")).Replace(":", "-") + ".rtf";
-            ShowHideSideMenu();
+            if (sidemenuShowing) ShowHideSideMenu();
             ShowInfo("Note saved and cleared.");
+        }
+    }
+    public class RoundButton : System.Windows.Forms.Button
+    {
+        protected override void OnPaint(System.Windows.Forms.PaintEventArgs e)
+        {
+            GraphicsPath grPath = new GraphicsPath();
+            grPath.AddEllipse(0, 0, ClientSize.Width, ClientSize.Height);
+            this.Region = new System.Drawing.Region(grPath);
+            base.OnPaint(e);
         }
     }
 }
