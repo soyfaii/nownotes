@@ -261,6 +261,11 @@ namespace NowNotes_Windows
             if (sidemenuShowing) ShowHideSideMenu();
             ShowInfo("Note saved and cleared.");
         }
+
+        private void FormMain_Resize(object sender, EventArgs e)
+        {
+            roundButtonNewNote.Location = new Point(Size.Width - 90, Size.Height - 120);
+        }
     }
     public class RoundButton : System.Windows.Forms.Button
     {
