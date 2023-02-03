@@ -49,6 +49,7 @@ namespace NowNotes_Windows
             {
                 Directory.CreateDirectory(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData) + "\\NowNotes");
                 Directory.CreateDirectory(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData) + "\\NowNotes\\Notes");
+                Directory.CreateDirectory(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData) + "\\NowNotes\\UpdateDownload");
             }
             if (Debugger.IsAttached)
             {
@@ -84,13 +85,14 @@ namespace NowNotes_Windows
             content = content.Replace(Environment.NewLine, "");
             Debug.WriteLine("Readed " + content);
             Debug.WriteLine("Product version is " + Application.ProductVersion);
-            if (!content.Contains(Application.ProductVersion))
+            if (!Application.ProductVersion.Contains(content))
             {
                 DialogResult result = MessageBox.Show("There's an update available for NowNotes. Do you want to install it?", "Update Available", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1);
                 if (result == DialogResult.Yes)
                 {
                     client.DownloadFile("https://github.com/SoyFaii/NowNotes/releases/download/v" + content + "/NowNotes_Setup.exe", Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData) + "\\NowNotes\\UpdateDownload\\NowNotes_Setup.exe");
                     Process.Start(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData) + "\\NowNotes\\UpdateDownload\\NowNotes_Setup.exe");
+                    Application.Exit();
                 }
             }
         }
