@@ -150,5 +150,23 @@ namespace NowNotes_Windows.Properties {
                 return ResourceManager.GetString("The_opened_note_has_been_delet", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a There&apos;s an update available for NowNotes. Do you want to install it?.
+        /// </summary>
+        public static string There_s_an_update_available_fo {
+            get {
+                return ResourceManager.GetString("There_s_an_update_available_fo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Update Available.
+        /// </summary>
+        public static string Update_Available {
+            get {
+                return ResourceManager.GetString("Update_Available", resourceCulture);
+            }
+        }
     }
 }

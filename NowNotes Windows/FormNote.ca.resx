@@ -117,41 +117,72 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Do_you_want_to_set_NowNotes_to" xml:space="preserve">
-    <value>Do you want to set NowNotes to launch on startup?</value>
+  <data name="closeToolStripMenuItem.Text" xml:space="preserve">
+    <value>Tanca</value>
   </data>
-  <data name="Launch_on_Startup" xml:space="preserve">
-    <value>Launch on Startup</value>
+  <data name="debugToolStripMenuItem.Text" xml:space="preserve">
+    <value>Depuració</value>
   </data>
-  <data name="Note_saved_and_cleared" xml:space="preserve">
-    <value>Note saved and cleared.</value>
+  <data name="deleteNoteToolStripMenuItem.Text" xml:space="preserve">
+    <value>Esborra la nota</value>
   </data>
-  <data name="Rename" xml:space="preserve">
-    <value>Rename</value>
+  <data name="focusToolStripMenuItem.Text" xml:space="preserve">
+    <value>Concentració</value>
   </data>
-  <data name="Rename_Note" xml:space="preserve">
-    <value>Rename Note</value>
+  <data name="labelInfo.Text" xml:space="preserve">
+    <value>Panel d'informació
+Panel d'informació</value>
   </data>
-  <data name="The_note_wasn_t_able_to_be_ope" xml:space="preserve">
-    <value>The note wasn't able to be opened because another app has the internal note file opened.</value>
+  <data name="labelSideMenuTitle.Text" xml:space="preserve">
+    <value>Les teves notes</value>
   </data>
-  <data name="The_note_wasn_t_able_to_be_ren" xml:space="preserve">
-    <value>The note wasn't able to be renamed and saved because another app has the internal note file opened.</value>
+  <data name="notifyIcon.Text" xml:space="preserve">
+    <value>Obre la teva nota del NowNotes</value>
   </data>
-  <data name="The_note_wasn_t_able_to_be_sav" xml:space="preserve">
-    <value>The note wasn't able to be saved because another app has the internal note file opened.</value>
+  <data name="renameNoteToolStripMenuItem.Text" xml:space="preserve">
+    <value>Canvïa el nom de la nota</value>
   </data>
-  <data name="The_opened_note_has_been_delet" xml:space="preserve">
-    <value>The opened note has been deleted.</value>
+  <data name="settingsToolStripMenuItem.Text" xml:space="preserve">
+    <value>Configuració</value>
   </data>
-  <data name="There_s_an_update_available_fo" xml:space="preserve">
-    <value>There's an update available for NowNotes. Do you want to install it?</value>
+  <data name="showNotesFolderToolStripMenuItem.Text" xml:space="preserve">
+    <value>Mostra la carpeta de les notes</value>
   </data>
-  <data name="Update_Available" xml:space="preserve">
-    <value>Update Available</value>
+  <data name="toolStripButton2.ToolTipText" xml:space="preserve">
+    <value>Títol</value>
+    <comment>Previous text: T</comment>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="add" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\actions_icons\add.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="toolStripButtonBold.Text" xml:space="preserve">
+    <value>N</value>
+  </data>
+  <data name="toolStripButtonBold.ToolTipText" xml:space="preserve">
+    <value>Negreta</value>
+  </data>
+  <data name="toolStripButtonItalic.Text" xml:space="preserve">
+    <value>C</value>
+  </data>
+  <data name="toolStripButtonItalic.ToolTipText" xml:space="preserve">
+    <value>Cursiva</value>
+  </data>
+  <data name="toolStripButtonMenu.Text" xml:space="preserve">
+    <value>Menú</value>
+  </data>
+  <data name="toolStripButtonMenu.ToolTipText" xml:space="preserve">
+    <value>Menú</value>
+  </data>
+  <data name="toolStripButtonUnderline.Text" xml:space="preserve">
+    <value>S</value>
+  </data>
+  <data name="toolStripButtonUnderline.ToolTipText" xml:space="preserve">
+    <value>Subrajat</value>
+  </data>
+  <data name="toolStripDropDownButtonNoteOptions.Text" xml:space="preserve">
+    <value>Opcions de la nota</value>
+  </data>
+  <data name="toolStripDropDownButtonNoteOptions.ToolTipText" xml:space="preserve">
+    <value>Opcions de la nota</value>
+  </data>
+  <data name="toolStripLabelTitle.Text" xml:space="preserve">
+    <value>Títol</value>
   </data>
 </root>

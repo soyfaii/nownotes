@@ -87,7 +87,7 @@ namespace NowNotes_Windows
             Debug.WriteLine("Product version is " + Application.ProductVersion);
             if (!Application.ProductVersion.Contains(content))
             {
-                DialogResult result = MessageBox.Show("There's an update available for NowNotes. Do you want to install it?", "Update Available", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1);
+                DialogResult result = MessageBox.Show(Resources.There_s_an_update_available_fo, Resources.Update_Available, MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1);
                 if (result == DialogResult.Yes)
                 {
                     client.DownloadFile("https://github.com/SoyFaii/NowNotes/releases/download/v" + content + "/NowNotes_Setup.exe", Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData) + "\\NowNotes\\UpdateDownload\\NowNotes_Setup.exe");

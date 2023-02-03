@@ -101,6 +101,12 @@
     <StringID>34</StringID>
     <Comment>Previous text: N</Comment>
   </GeneralIds>
+  <GeneralIds>
+    <StringID>35</StringID>
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>36</StringID>
+  </GeneralIds>
   <Languages>
     <LanguageID>9</LanguageID>
     <LanguageName>Inglés</LanguageName>
@@ -112,6 +118,12 @@
     <LanguageName>Español</LanguageName>
     <IetfLanguageTag>es</IetfLanguageTag>
     <ColumnNumber>1</ColumnNumber>
+  </Languages>
+  <Languages>
+    <LanguageID>3</LanguageID>
+    <LanguageName>Catalán</LanguageName>
+    <IetfLanguageTag>ca</IetfLanguageTag>
+    <ColumnNumber>2</ColumnNumber>
   </Languages>
   <GeneralTexts>
     <StringID>1</StringID>
@@ -474,6 +486,199 @@ Panel informativo</LanguageText>
     <LanguageID>9</LanguageID>
     <LanguageText>Normal</LanguageText>
     <Status>1</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>10</StringID>
+    <LanguageID>3</LanguageID>
+    <LanguageText>Tanca</LanguageText>
+    <Status>2</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>8</StringID>
+    <LanguageID>3</LanguageID>
+    <LanguageText>Depuració</LanguageText>
+    <Status>2</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>6</StringID>
+    <LanguageID>3</LanguageID>
+    <LanguageText>Esborra la nota</LanguageText>
+    <Status>2</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>31</StringID>
+    <LanguageID>3</LanguageID>
+    <LanguageText>Concentració</LanguageText>
+    <Status>2</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>14</StringID>
+    <LanguageID>3</LanguageID>
+    <LanguageText>Panel d'informació
+Panel d'informació</LanguageText>
+    <Status>2</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>13</StringID>
+    <LanguageID>3</LanguageID>
+    <LanguageText>Les teves notes</LanguageText>
+    <Status>2</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>12</StringID>
+    <LanguageID>3</LanguageID>
+    <LanguageText>Obre la teva nota del NowNotes</LanguageText>
+    <Status>2</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>5</StringID>
+    <LanguageID>3</LanguageID>
+    <LanguageText>Canvïa el nom de la nota</LanguageText>
+    <Status>2</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>7</StringID>
+    <LanguageID>3</LanguageID>
+    <LanguageText>Configuració</LanguageText>
+    <Status>2</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>9</StringID>
+    <LanguageID>3</LanguageID>
+    <LanguageText>Mostra la carpeta de les notes</LanguageText>
+    <Status>2</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>33</StringID>
+    <LanguageID>3</LanguageID>
+    <LanguageText>Títol</LanguageText>
+    <Status>2</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>33</StringID>
+    <LanguageID>10</LanguageID>
+    <LanguageText>Título</LanguageText>
+    <Status>2</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>16</StringID>
+    <LanguageID>3</LanguageID>
+    <LanguageText>N</LanguageText>
+    <Status>2</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>17</StringID>
+    <LanguageID>3</LanguageID>
+    <LanguageText>Negreta</LanguageText>
+    <Status>2</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>19</StringID>
+    <LanguageID>3</LanguageID>
+    <LanguageText>Cursiva</LanguageText>
+    <Status>2</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>18</StringID>
+    <LanguageID>3</LanguageID>
+    <LanguageText>C</LanguageText>
+    <Status>2</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>3</StringID>
+    <LanguageID>3</LanguageID>
+    <LanguageText>Menú</LanguageText>
+    <Status>2</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>20</StringID>
+    <LanguageID>3</LanguageID>
+    <LanguageText>S</LanguageText>
+    <Status>2</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>21</StringID>
+    <LanguageID>3</LanguageID>
+    <LanguageText>Subrajat</LanguageText>
+    <Status>2</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>4</StringID>
+    <LanguageID>3</LanguageID>
+    <LanguageText>Opcions de la nota</LanguageText>
+    <Status>2</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>11</StringID>
+    <LanguageID>3</LanguageID>
+    <LanguageText>Títol</LanguageText>
+    <Status>2</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>30</StringID>
+    <LanguageID>3</LanguageID>
+    <LanguageText>Canvïa el nom</LanguageText>
+    <Status>2</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>24</StringID>
+    <LanguageID>3</LanguageID>
+    <LanguageText>Desitjes establir el NowNotes perquè s'obri al inici?</LanguageText>
+    <Status>2</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>23</StringID>
+    <LanguageID>3</LanguageID>
+    <LanguageText>Obertura al inici</LanguageText>
+    <Status>2</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>25</StringID>
+    <LanguageID>3</LanguageID>
+    <LanguageText>Aquesta nota no s'ha pogut desar perquè un altre programari ha obert el fitxer intern de la nota.</LanguageText>
+    <Status>2</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>26</StringID>
+    <LanguageID>3</LanguageID>
+    <LanguageText>Aquesta nota no s'ha pogut obrir perquè un altre programari ha obert el fitxer intern de la nota.</LanguageText>
+    <Status>2</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>28</StringID>
+    <LanguageID>3</LanguageID>
+    <LanguageText>La nota oberta s'ha esborrat.</LanguageText>
+    <Status>2</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>27</StringID>
+    <LanguageID>3</LanguageID>
+    <LanguageText>Aquesta nota no ha pogut ser cambiada de nom perquè un altre programari ha obert el fitxer intern de la nota.</LanguageText>
+    <Status>2</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>29</StringID>
+    <LanguageID>3</LanguageID>
+    <LanguageText>Nota desada i natejada</LanguageText>
+    <Status>2</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>35</StringID>
+    <LanguageID>9</LanguageID>
+    <LanguageText>There's an update available for NowNotes. Do you want to install it?</LanguageText>
+    <Status>1</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>36</StringID>
+    <LanguageID>9</LanguageID>
+    <LanguageText>Update Available</LanguageText>
+    <Status>1</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>35</StringID>
+    <LanguageID>3</LanguageID>
+    <LanguageText>N'hi ha una actualització per el NowNotes disponible. Vols instalar-la?</LanguageText>
+    <Status>2</Status>
   </GeneralTexts>
   <Properties>
     <Component>FormNote.cs</Component>
@@ -975,6 +1180,22 @@ Panel informativo</LanguageText>
     <StringID>1</StringID>
     <Selected>true</Selected>
     <ResourceName>$this.Text</ResourceName>
+    <Hidden>false</Hidden>
+  </Properties>
+  <Properties>
+    <Component>Resources.resx</Component>
+    <Name>There_s_an_update_available_fo</Name>
+    <StringID>35</StringID>
+    <Selected>true</Selected>
+    <ResourceName>There_s_an_update_available_fo</ResourceName>
+    <Hidden>false</Hidden>
+  </Properties>
+  <Properties>
+    <Component>Resources.resx</Component>
+    <Name>Update_Available</Name>
+    <StringID>36</StringID>
+    <Selected>true</Selected>
+    <ResourceName>Update_Available</ResourceName>
     <Hidden>false</Hidden>
   </Properties>
   <GeneralAttributes>

@@ -148,6 +148,10 @@ Panel informativo</value>
   <data name="showNotesFolderToolStripMenuItem.Text" xml:space="preserve">
     <value>Mostrar carpeta de notas</value>
   </data>
+  <data name="toolStripButton2.ToolTipText" xml:space="preserve">
+    <value>Título</value>
+    <comment>Previous text: T</comment>
+  </data>
   <data name="toolStripButtonBold.Text" xml:space="preserve">
     <value>N</value>
   </data>
