@@ -69,5 +69,86 @@ namespace NowNotes_Windows.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Do you want to set NowNotes to launch on startup?.
+        /// </summary>
+        public static string Do_you_want_to_set_NowNotes_to {
+            get {
+                return ResourceManager.GetString("Do_you_want_to_set_NowNotes_to", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Launch on Startup.
+        /// </summary>
+        public static string Launch_on_Startup {
+            get {
+                return ResourceManager.GetString("Launch_on_Startup", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Note saved and cleared..
+        /// </summary>
+        public static string Note_saved_and_cleared {
+            get {
+                return ResourceManager.GetString("Note_saved_and_cleared", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Rename.
+        /// </summary>
+        public static string Rename {
+            get {
+                return ResourceManager.GetString("Rename", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Rename Note.
+        /// </summary>
+        public static string Rename_Note {
+            get {
+                return ResourceManager.GetString("Rename_Note", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a The note wasn&apos;t able to be opened because another app has the internal note file opened..
+        /// </summary>
+        public static string The_note_wasn_t_able_to_be_ope {
+            get {
+                return ResourceManager.GetString("The_note_wasn_t_able_to_be_ope", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a The note wasn&apos;t able to be renamed and saved because another app has the internal note file opened..
+        /// </summary>
+        public static string The_note_wasn_t_able_to_be_ren {
+            get {
+                return ResourceManager.GetString("The_note_wasn_t_able_to_be_ren", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a The note wasn&apos;t able to be saved because another app has the internal note file opened..
+        /// </summary>
+        public static string The_note_wasn_t_able_to_be_sav {
+            get {
+                return ResourceManager.GetString("The_note_wasn_t_able_to_be_sav", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a The opened note has been deleted..
+        /// </summary>
+        public static string The_opened_note_has_been_delet {
+            get {
+                return ResourceManager.GetString("The_opened_note_has_been_delet", resourceCulture);
+            }
+        }
     }
 }
