@@ -363,3 +363,5 @@ MigrationBackup/
 FodyWeavers.xsd
 /NowNotes Windows/ProgramSetup/Output
 /NowNotes Color Palette.png
+/NowNotes Windows/ml_temp_ControlsScan.xml
+/NowNotes Windows/ml_temp_SourceScan.xml

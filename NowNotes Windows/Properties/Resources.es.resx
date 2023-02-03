@@ -118,34 +118,30 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Do_you_want_to_set_NowNotes_to" xml:space="preserve">
-    <value>Do you want to set NowNotes to launch on startup?</value>
+    <value>¿Quieres establecer NowNotes para iniciarse junto al sistema?</value>
   </data>
   <data name="Launch_on_Startup" xml:space="preserve">
-    <value>Launch on Startup</value>
+    <value>Inicio junto al sistema</value>
   </data>
   <data name="Note_saved_and_cleared" xml:space="preserve">
-    <value>Note saved and cleared.</value>
+    <value>Nota guardada y limpiada.</value>
   </data>
   <data name="Rename" xml:space="preserve">
-    <value>Rename</value>
+    <value>Renombrar</value>
   </data>
   <data name="Rename_Note" xml:space="preserve">
-    <value>Rename Note</value>
+    <value>Renombrar nota</value>
   </data>
   <data name="The_note_wasn_t_able_to_be_ope" xml:space="preserve">
-    <value>The note wasn't able to be opened because another app has the internal note file opened.</value>
+    <value>La nota no se ha podido abrir debido a que otra aplicación tiene abierto el archivo interno de la nota.</value>
   </data>
   <data name="The_note_wasn_t_able_to_be_ren" xml:space="preserve">
-    <value>The note wasn't able to be renamed and saved because another app has the internal note file opened.</value>
+    <value>La nota no se ha podido renombrar y guardar debido a que otra aplicación tiene abierto el archivo interno de la nota.</value>
   </data>
   <data name="The_note_wasn_t_able_to_be_sav" xml:space="preserve">
-    <value>The note wasn't able to be saved because another app has the internal note file opened.</value>
+    <value>La nota no se ha podido guardar debido a que otra aplicación tiene abierto el archivo interno de la nota.</value>
   </data>
   <data name="The_opened_note_has_been_delet" xml:space="preserve">
-    <value>The opened note has been deleted.</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="add" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\actions_icons\add.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>La nota abierta ha sido eliminada.</value>
   </data>
 </root>

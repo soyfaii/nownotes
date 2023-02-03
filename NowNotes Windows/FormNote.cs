@@ -26,7 +26,7 @@ namespace NowNotes_Windows
             //
             formRenameNote.FormBorderStyle = FormBorderStyle.FixedToolWindow;
             formRenameNote.Size = new Size(400, 130);
-            formRenameNote.Text = "Rename Note";
+            formRenameNote.Text = Resources.Rename_Note;
             formRenameNote.TopMost = true;
             //
             textBoxRenameNote.Parent = formRenameNote;
@@ -36,7 +36,7 @@ namespace NowNotes_Windows
             //
             System.Windows.Forms.Button buttonRename = new System.Windows.Forms.Button();
             buttonRename.Parent = formRenameNote;
-            buttonRename.Text = "Rename";
+            buttonRename.Text = Resources.Rename;
             buttonRename.Size = new Size(94, 29);
             buttonRename.Location = new Point(276, 45);
             buttonRename.Click += ButtonRename_Click;
@@ -55,7 +55,7 @@ namespace NowNotes_Windows
             }
             if (Settings.Default.FirstLaunch)
             {
-                DialogResult result = MessageBox.Show("Do you want to set NowNotes to launch on startup?", "Launch on Startup", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                DialogResult result = MessageBox.Show(Resources.Do_you_want_to_set_NowNotes_to, Resources.Launch_on_Startup, MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if (result == DialogResult.Yes)
                 {
                     RegistryKey rkey = Registry.CurrentUser.CreateSubKey("Software\\Microsoft\\Windows\\CurrentVersion\\Run");
@@ -112,7 +112,7 @@ namespace NowNotes_Windows
             }
             catch (Exception ex)
             {
-                ShowInfo("The note wasn't able to be saved because another app has the internal note file opened.");
+                ShowInfo(Resources.The_note_wasn_t_able_to_be_sav);
             }
         }
 
@@ -216,7 +216,7 @@ namespace NowNotes_Windows
                 }
                 catch (Exception)
                 {
-                    ShowInfo("The note wasn't able to be opened because another app has the internal note file opened.");
+                    ShowInfo(Resources.The_note_wasn_t_able_to_be_ope);
                 }
                 
             }
@@ -234,7 +234,7 @@ namespace NowNotes_Windows
         {
             richTextBox.Clear();
             File.Delete(fileOpened);
-            ShowInfo("The opened note has been deleted.");
+            ShowInfo(Resources.The_opened_note_has_been_delet);
         }
 
         public string newFileName;
@@ -259,7 +259,7 @@ namespace NowNotes_Windows
             }
             catch (Exception ex)
             {
-                ShowInfo("The note wasn't able to be renamed and saved because another app has the internal note file opened.");
+                ShowInfo(Resources.The_note_wasn_t_able_to_be_ren);
             }
             formRenameNote.Hide();
         }
@@ -271,7 +271,7 @@ namespace NowNotes_Windows
             File.Create(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData) + "\\NowNotes\\Notes\\" + ((DateTime.Now.ToString()).Replace("/", "-")).Replace(":", "-") + ".rtf");
             fileOpened = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData) + "\\NowNotes\\Notes\\" + ((DateTime.Now.ToString()).Replace("/", "-")).Replace(":", "-") + ".rtf";
             if (sidemenuShowing) ShowHideSideMenu();
-            ShowInfo("Note saved and cleared.");
+            ShowInfo(Resources.Note_saved_and_cleared);
         }
 
         private void FormMain_Resize(object sender, EventArgs e)
@@ -288,6 +288,20 @@ namespace NowNotes_Windows
             else
             {
                 toolStrip.BackColor = Color.FromArgb(255, 251, 255);
+            }
+        }
+
+        private void focusToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (WindowState == FormWindowState.Normal)
+            {
+                FormBorderStyle = FormBorderStyle.None;
+                WindowState = FormWindowState.Maximized;
+            }
+            else
+            {
+                FormBorderStyle = FormBorderStyle.FixedToolWindow;
+                WindowState = FormWindowState.Normal;
             }
         }
     }
