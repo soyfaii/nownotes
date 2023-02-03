@@ -131,7 +131,6 @@
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>NowNotes</value>
-    <comment>Previous text: </comment>
   </data>
   <data name="labelInfo.Text" xml:space="preserve">
     <value>Information Panel
@@ -154,10 +153,10 @@ Information Panel</value>
   </data>
   <data name="toolStripButton2.Text" xml:space="preserve">
     <value>T</value>
-    <comment>Previous text: </comment>
   </data>
   <data name="toolStripButton2.ToolTipText" xml:space="preserve">
     <value>Title</value>
+    <comment>Previous text: T</comment>
   </data>
   <data name="toolStripButtonBold.Text" xml:space="preserve">
     <value>B</value>
@@ -179,10 +178,10 @@ Information Panel</value>
   </data>
   <data name="toolStripButtonNormal.Text" xml:space="preserve">
     <value>N</value>
-    <comment>Previous text: </comment>
   </data>
   <data name="toolStripButtonNormal.ToolTipText" xml:space="preserve">
     <value>Normal</value>
+    <comment>Previous text: N</comment>
   </data>
   <data name="toolStripButtonUnderline.Text" xml:space="preserve">
     <value>U</value>

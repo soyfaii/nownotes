@@ -4,9 +4,6 @@
     <StringID>1</StringID>
   </GeneralIds>
   <GeneralIds>
-    <StringID>2</StringID>
-  </GeneralIds>
-  <GeneralIds>
     <StringID>3</StringID>
   </GeneralIds>
   <GeneralIds>
@@ -93,6 +90,17 @@
   <GeneralIds>
     <StringID>31</StringID>
   </GeneralIds>
+  <GeneralIds>
+    <StringID>32</StringID>
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>33</StringID>
+    <Comment>Previous text: T</Comment>
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>34</StringID>
+    <Comment>Previous text: N</Comment>
+  </GeneralIds>
   <Languages>
     <LanguageID>9</LanguageID>
     <LanguageName>Inglés</LanguageName>
@@ -109,12 +117,6 @@
     <StringID>1</StringID>
     <LanguageID>9</LanguageID>
     <LanguageText>NowNotes</LanguageText>
-    <Status>1</Status>
-  </GeneralTexts>
-  <GeneralTexts>
-    <StringID>2</StringID>
-    <LanguageID>9</LanguageID>
-    <LanguageText>toolStrip1</LanguageText>
     <Status>1</Status>
   </GeneralTexts>
   <GeneralTexts>
@@ -455,6 +457,24 @@ Panel informativo</LanguageText>
     <LanguageText>Concentración</LanguageText>
     <Status>2</Status>
   </GeneralTexts>
+  <GeneralTexts>
+    <StringID>32</StringID>
+    <LanguageID>9</LanguageID>
+    <LanguageText>Normal</LanguageText>
+    <Status>1</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>33</StringID>
+    <LanguageID>9</LanguageID>
+    <LanguageText>Title</LanguageText>
+    <Status>1</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>34</StringID>
+    <LanguageID>9</LanguageID>
+    <LanguageText>Normal</LanguageText>
+    <Status>1</Status>
+  </GeneralTexts>
   <Properties>
     <Component>FormNote.cs</Component>
     <Name>FormMain.Text</Name>
@@ -466,8 +486,7 @@ Panel informativo</LanguageText>
   <Properties>
     <Component>FormNote.cs</Component>
     <Name>toolStrip.Text</Name>
-    <StringID>2</StringID>
-    <Selected>true</Selected>
+    <Selected>false</Selected>
     <ResourceName>toolStrip.Text</ResourceName>
     <Hidden>false</Hidden>
   </Properties>
@@ -586,8 +605,7 @@ Panel informativo</LanguageText>
   <Properties>
     <Component>FormNote.cs</Component>
     <Name>toolBar.Text</Name>
-    <StringID>2</StringID>
-    <Selected>true</Selected>
+    <Selected>false</Selected>
     <ResourceName>toolBar.Text</ResourceName>
     <Hidden>false</Hidden>
   </Properties>
@@ -602,7 +620,7 @@ Panel informativo</LanguageText>
   <Properties>
     <Component>FormNote.cs</Component>
     <Name>toolStripButtonNormal.ToolTipText</Name>
-    <StringID>15</StringID>
+    <StringID>34</StringID>
     <Selected>true</Selected>
     <ResourceName>toolStripButtonNormal.ToolTipText</ResourceName>
     <Hidden>false</Hidden>
@@ -666,7 +684,7 @@ Panel informativo</LanguageText>
   <Properties>
     <Component>FormNote.cs</Component>
     <Name>toolStripButton2.ToolTipText</Name>
-    <StringID>22</StringID>
+    <StringID>33</StringID>
     <Selected>true</Selected>
     <ResourceName>toolStripButton2.ToolTipText</ResourceName>
     <Hidden>false</Hidden>
@@ -749,6 +767,214 @@ Panel informativo</LanguageText>
     <StringID>31</StringID>
     <Selected>true</Selected>
     <ResourceName>focusToolStripMenuItem.Text</ResourceName>
+    <Hidden>false</Hidden>
+  </Properties>
+  <Properties>
+    <Component>FormNote.resx</Component>
+    <Name>toolStripButtonMenu.Text</Name>
+    <StringID>3</StringID>
+    <Selected>true</Selected>
+    <ResourceName>toolStripButtonMenu.Text</ResourceName>
+    <Hidden>false</Hidden>
+  </Properties>
+  <Properties>
+    <Component>FormNote.resx</Component>
+    <Name>toolStripButtonMenu.ToolTipText</Name>
+    <StringID>3</StringID>
+    <Selected>true</Selected>
+    <ResourceName>toolStripButtonMenu.ToolTipText</ResourceName>
+    <Hidden>false</Hidden>
+  </Properties>
+  <Properties>
+    <Component>FormNote.resx</Component>
+    <Name>renameNoteToolStripMenuItem.Text</Name>
+    <StringID>5</StringID>
+    <Selected>true</Selected>
+    <ResourceName>renameNoteToolStripMenuItem.Text</ResourceName>
+    <Hidden>false</Hidden>
+  </Properties>
+  <Properties>
+    <Component>FormNote.resx</Component>
+    <Name>deleteNoteToolStripMenuItem.Text</Name>
+    <StringID>6</StringID>
+    <Selected>true</Selected>
+    <ResourceName>deleteNoteToolStripMenuItem.Text</ResourceName>
+    <Hidden>false</Hidden>
+  </Properties>
+  <Properties>
+    <Component>FormNote.resx</Component>
+    <Name>focusToolStripMenuItem.Text</Name>
+    <StringID>31</StringID>
+    <Selected>true</Selected>
+    <ResourceName>focusToolStripMenuItem.Text</ResourceName>
+    <Hidden>false</Hidden>
+  </Properties>
+  <Properties>
+    <Component>FormNote.resx</Component>
+    <Name>settingsToolStripMenuItem.Text</Name>
+    <StringID>7</StringID>
+    <Selected>true</Selected>
+    <ResourceName>settingsToolStripMenuItem.Text</ResourceName>
+    <Hidden>false</Hidden>
+  </Properties>
+  <Properties>
+    <Component>FormNote.resx</Component>
+    <Name>showNotesFolderToolStripMenuItem.Text</Name>
+    <StringID>9</StringID>
+    <Selected>true</Selected>
+    <ResourceName>showNotesFolderToolStripMenuItem.Text</ResourceName>
+    <Hidden>false</Hidden>
+  </Properties>
+  <Properties>
+    <Component>FormNote.resx</Component>
+    <Name>debugToolStripMenuItem.Text</Name>
+    <StringID>8</StringID>
+    <Selected>true</Selected>
+    <ResourceName>debugToolStripMenuItem.Text</ResourceName>
+    <Hidden>false</Hidden>
+  </Properties>
+  <Properties>
+    <Component>FormNote.resx</Component>
+    <Name>closeToolStripMenuItem.Text</Name>
+    <StringID>10</StringID>
+    <Selected>true</Selected>
+    <ResourceName>closeToolStripMenuItem.Text</ResourceName>
+    <Hidden>false</Hidden>
+  </Properties>
+  <Properties>
+    <Component>FormNote.resx</Component>
+    <Name>toolStripDropDownButtonNoteOptions.Text</Name>
+    <StringID>4</StringID>
+    <Selected>true</Selected>
+    <ResourceName>toolStripDropDownButtonNoteOptions.Text</ResourceName>
+    <Hidden>false</Hidden>
+  </Properties>
+  <Properties>
+    <Component>FormNote.resx</Component>
+    <Name>toolStripDropDownButtonNoteOptions.ToolTipText</Name>
+    <StringID>4</StringID>
+    <Selected>true</Selected>
+    <ResourceName>toolStripDropDownButtonNoteOptions.ToolTipText</ResourceName>
+    <Hidden>false</Hidden>
+  </Properties>
+  <Properties>
+    <Component>FormNote.resx</Component>
+    <Name>toolStripLabelTitle.Text</Name>
+    <StringID>11</StringID>
+    <Selected>true</Selected>
+    <ResourceName>toolStripLabelTitle.Text</ResourceName>
+    <Hidden>false</Hidden>
+  </Properties>
+  <Properties>
+    <Component>FormNote.resx</Component>
+    <Name>notifyIcon.Text</Name>
+    <StringID>12</StringID>
+    <Selected>true</Selected>
+    <ResourceName>notifyIcon.Text</ResourceName>
+    <Hidden>false</Hidden>
+  </Properties>
+  <Properties>
+    <Component>FormNote.resx</Component>
+    <Name>labelSideMenuTitle.Text</Name>
+    <StringID>13</StringID>
+    <Selected>true</Selected>
+    <ResourceName>labelSideMenuTitle.Text</ResourceName>
+    <Hidden>false</Hidden>
+  </Properties>
+  <Properties>
+    <Component>FormNote.resx</Component>
+    <Name>labelInfo.Text</Name>
+    <StringID>14</StringID>
+    <Selected>true</Selected>
+    <ResourceName>labelInfo.Text</ResourceName>
+    <Hidden>false</Hidden>
+  </Properties>
+  <Properties>
+    <Component>FormNote.resx</Component>
+    <Name>toolStripButtonNormal.Text</Name>
+    <StringID>15</StringID>
+    <Selected>true</Selected>
+    <ResourceName>toolStripButtonNormal.Text</ResourceName>
+    <Hidden>false</Hidden>
+  </Properties>
+  <Properties>
+    <Component>FormNote.resx</Component>
+    <Name>toolStripButtonNormal.ToolTipText</Name>
+    <StringID>32</StringID>
+    <Selected>true</Selected>
+    <ResourceName>toolStripButtonNormal.ToolTipText</ResourceName>
+    <Hidden>false</Hidden>
+  </Properties>
+  <Properties>
+    <Component>FormNote.resx</Component>
+    <Name>toolStripButtonBold.Text</Name>
+    <StringID>16</StringID>
+    <Selected>true</Selected>
+    <ResourceName>toolStripButtonBold.Text</ResourceName>
+    <Hidden>false</Hidden>
+  </Properties>
+  <Properties>
+    <Component>FormNote.resx</Component>
+    <Name>toolStripButtonBold.ToolTipText</Name>
+    <StringID>17</StringID>
+    <Selected>true</Selected>
+    <ResourceName>toolStripButtonBold.ToolTipText</ResourceName>
+    <Hidden>false</Hidden>
+  </Properties>
+  <Properties>
+    <Component>FormNote.resx</Component>
+    <Name>toolStripButtonItalic.Text</Name>
+    <StringID>18</StringID>
+    <Selected>true</Selected>
+    <ResourceName>toolStripButtonItalic.Text</ResourceName>
+    <Hidden>false</Hidden>
+  </Properties>
+  <Properties>
+    <Component>FormNote.resx</Component>
+    <Name>toolStripButtonItalic.ToolTipText</Name>
+    <StringID>19</StringID>
+    <Selected>true</Selected>
+    <ResourceName>toolStripButtonItalic.ToolTipText</ResourceName>
+    <Hidden>false</Hidden>
+  </Properties>
+  <Properties>
+    <Component>FormNote.resx</Component>
+    <Name>toolStripButtonUnderline.Text</Name>
+    <StringID>20</StringID>
+    <Selected>true</Selected>
+    <ResourceName>toolStripButtonUnderline.Text</ResourceName>
+    <Hidden>false</Hidden>
+  </Properties>
+  <Properties>
+    <Component>FormNote.resx</Component>
+    <Name>toolStripButtonUnderline.ToolTipText</Name>
+    <StringID>21</StringID>
+    <Selected>true</Selected>
+    <ResourceName>toolStripButtonUnderline.ToolTipText</ResourceName>
+    <Hidden>false</Hidden>
+  </Properties>
+  <Properties>
+    <Component>FormNote.resx</Component>
+    <Name>toolStripButton2.Text</Name>
+    <StringID>22</StringID>
+    <Selected>true</Selected>
+    <ResourceName>toolStripButton2.Text</ResourceName>
+    <Hidden>false</Hidden>
+  </Properties>
+  <Properties>
+    <Component>FormNote.resx</Component>
+    <Name>toolStripButton2.ToolTipText</Name>
+    <StringID>11</StringID>
+    <Selected>true</Selected>
+    <ResourceName>toolStripButton2.ToolTipText</ResourceName>
+    <Hidden>false</Hidden>
+  </Properties>
+  <Properties>
+    <Component>FormNote.resx</Component>
+    <Name>$this.Text</Name>
+    <StringID>1</StringID>
+    <Selected>true</Selected>
+    <ResourceName>$this.Text</ResourceName>
     <Hidden>false</Hidden>
   </Properties>
   <GeneralAttributes>
