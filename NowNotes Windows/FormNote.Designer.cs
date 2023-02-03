@@ -36,6 +36,7 @@
             this.renameNoteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.deleteNoteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.focusToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.settingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.debugToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.showNotesFolderToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -57,7 +58,6 @@
             this.toolStripButtonUnderline = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
             this.timerScrolling = new System.Windows.Forms.Timer(this.components);
-            this.focusToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStrip.SuspendLayout();
             this.panelSideMenu.SuspendLayout();
             this.panelSideMenuTitle.SuspendLayout();
@@ -116,6 +116,12 @@
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
             resources.ApplyResources(this.toolStripSeparator2, "toolStripSeparator2");
+            // 
+            // focusToolStripMenuItem
+            // 
+            this.focusToolStripMenuItem.Name = "focusToolStripMenuItem";
+            resources.ApplyResources(this.focusToolStripMenuItem, "focusToolStripMenuItem");
+            this.focusToolStripMenuItem.Click += new System.EventHandler(this.focusToolStripMenuItem_Click);
             // 
             // settingsToolStripMenuItem
             // 
@@ -275,12 +281,6 @@
             // 
             this.timerScrolling.Interval = 10;
             this.timerScrolling.Tick += new System.EventHandler(this.timerScrolling_Tick);
-            // 
-            // focusToolStripMenuItem
-            // 
-            this.focusToolStripMenuItem.Name = "focusToolStripMenuItem";
-            resources.ApplyResources(this.focusToolStripMenuItem, "focusToolStripMenuItem");
-            this.focusToolStripMenuItem.Click += new System.EventHandler(this.focusToolStripMenuItem_Click);
             // 
             // FormMain
             // 
