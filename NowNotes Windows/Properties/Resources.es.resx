@@ -144,4 +144,7 @@
   <data name="The_opened_note_has_been_delet" xml:space="preserve">
     <value>La nota abierta ha sido eliminada.</value>
   </data>
+  <data name="There_s_an_update_available_fo" xml:space="preserve">
+    <value>Hay una actualización disponible para NowNotes. ¿Deseas instalarla?</value>
+  </data>
 </root>

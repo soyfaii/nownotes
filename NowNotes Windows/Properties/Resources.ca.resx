@@ -147,4 +147,7 @@
   <data name="There_s_an_update_available_fo" xml:space="preserve">
     <value>N'hi ha una actualització per el NowNotes disponible. Vols instalar-la?</value>
   </data>
+  <data name="Update_Available" xml:space="preserve">
+    <value>Actualització disponible</value>
+  </data>
 </root>

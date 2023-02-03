@@ -680,6 +680,18 @@ Panel d'informació</LanguageText>
     <LanguageText>N'hi ha una actualització per el NowNotes disponible. Vols instalar-la?</LanguageText>
     <Status>2</Status>
   </GeneralTexts>
+  <GeneralTexts>
+    <StringID>36</StringID>
+    <LanguageID>3</LanguageID>
+    <LanguageText>Actualització disponible</LanguageText>
+    <Status>2</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>35</StringID>
+    <LanguageID>10</LanguageID>
+    <LanguageText>Hay una actualización disponible para NowNotes. ¿Deseas instalarla?</LanguageText>
+    <Status>2</Status>
+  </GeneralTexts>
   <Properties>
     <Component>FormNote.cs</Component>
     <Name>FormMain.Text</Name>
