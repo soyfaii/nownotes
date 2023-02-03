@@ -4,6 +4,7 @@ using Microsoft.Win32;
 using NowNotes_Windows.Properties;
 using System.Diagnostics;
 using System.Drawing.Drawing2D;
+using System.Net;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
@@ -59,7 +60,7 @@ namespace NowNotes_Windows
                 if (result == DialogResult.Yes)
                 {
                     RegistryKey rkey = Registry.CurrentUser.CreateSubKey("Software\\Microsoft\\Windows\\CurrentVersion\\Run");
-                    rkey.SetValue("NowNotes", Application.ExecutablePath);
+                    rkey.SetValue("NowNotes", System.Windows.Forms.Application.ExecutablePath);
                 }
                 Settings.Default.FirstLaunch = false;
                 Settings.Default.Save();
@@ -70,6 +71,28 @@ namespace NowNotes_Windows
             }
             this.roundButtonNewNote.Image = resizeImage(Resources.add, new Size(24, 24));
             timerScrolling.Start();
+            // Check for updates and install if there's one
+            Debug.WriteLine("Checking for updates...");
+            WebClient client = new WebClient();
+            Debug.WriteLine("WebClient created");
+            Stream stream = client.OpenRead("https://raw.githubusercontent.com/SoyFaii/NowNotes/master/NowNotes%20Windows/latest_stable_version.txt");
+            Debug.WriteLine("Page opened");
+            StreamReader reader = new StreamReader(stream);
+            Debug.WriteLine("Reader created");
+            String content = reader.ReadToEnd();
+            content = content.Replace(" ", "");
+            content = content.Replace(Environment.NewLine, "");
+            Debug.WriteLine("Readed " + content);
+            Debug.WriteLine("Product version is " + Application.ProductVersion);
+            if (!content.Contains(Application.ProductVersion))
+            {
+                DialogResult result = MessageBox.Show("There's an update available for NowNotes. Do you want to install it?", "Update Available", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1);
+                if (result == DialogResult.Yes)
+                {
+                    client.DownloadFile("https://github.com/SoyFaii/NowNotes/releases/download/v" + content + "/NowNotes_Setup.exe", Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData) + "\\NowNotes\\UpdateDownload\\NowNotes_Setup.exe");
+                    Process.Start(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData) + "\\NowNotes\\UpdateDownload\\NowNotes_Setup.exe");
+                }
+            }
         }
 
         private void notifyIcon_Click(object sender, EventArgs e)
