@@ -82,7 +82,7 @@ namespace NowNotes_Windows
             Debug.WriteLine("Reader created");
             String content = reader.ReadToEnd();
             content = content.Replace(" ", "");
-            content = content.Replace(Environment.NewLine, "");
+            content = content.Replace("\r", "").Replace("\n", "");
             Debug.WriteLine("Readed " + content);
             Debug.WriteLine("Product version is " + Application.ProductVersion);
             if (!Application.ProductVersion.Contains(content))
@@ -90,7 +90,9 @@ namespace NowNotes_Windows
                 DialogResult result = MessageBox.Show(Resources.There_s_an_update_available_fo, Resources.Update_Available, MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1);
                 if (result == DialogResult.Yes)
                 {
-                    client.DownloadFile("https://github.com/SoyFaii/NowNotes/releases/download/v" + content + "/NowNotes_Setup.exe", Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData) + "\\NowNotes\\UpdateDownload\\NowNotes_Setup.exe");
+                    string downloadPage = "https://github.com/SoyFaii/NowNotes/releases/download/v" + content + "/NowNotes_Setup.exe";
+                    Debug.WriteLine("Latest release download page: " + downloadPage);
+                    client.DownloadFile(downloadPage, Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData) + "\\NowNotes\\UpdateDownload\\NowNotes_Setup.exe");
                     Process.Start(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData) + "\\NowNotes\\UpdateDownload\\NowNotes_Setup.exe");
                     Application.Exit();
                 }
