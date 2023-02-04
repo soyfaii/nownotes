@@ -95,17 +95,18 @@
   </GeneralIds>
   <GeneralIds>
     <StringID>33</StringID>
-    <Comment>Previous text: T</Comment>
   </GeneralIds>
   <GeneralIds>
     <StringID>34</StringID>
-    <Comment>Previous text: N</Comment>
   </GeneralIds>
   <GeneralIds>
     <StringID>35</StringID>
   </GeneralIds>
   <GeneralIds>
     <StringID>36</StringID>
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>37</StringID>
   </GeneralIds>
   <Languages>
     <LanguageID>9</LanguageID>
@@ -897,6 +898,30 @@ Panneau d'information</LanguageText>
     <LanguageText>G</LanguageText>
     <Status>2</Status>
   </GeneralTexts>
+  <GeneralTexts>
+    <StringID>37</StringID>
+    <LanguageID>9</LanguageID>
+    <LanguageText>Untitled - </LanguageText>
+    <Status>1</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>37</StringID>
+    <LanguageID>10</LanguageID>
+    <LanguageText>Sin título - </LanguageText>
+    <Status>2</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>37</StringID>
+    <LanguageID>3</LanguageID>
+    <LanguageText>Sense títul - </LanguageText>
+    <Status>2</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>37</StringID>
+    <LanguageID>12</LanguageID>
+    <LanguageText>Sans titre - </LanguageText>
+    <Status>2</Status>
+  </GeneralTexts>
   <Properties>
     <Component>FormNote.cs</Component>
     <Name>FormMain.Text</Name>
@@ -1413,6 +1438,14 @@ Panneau d'information</LanguageText>
     <StringID>36</StringID>
     <Selected>true</Selected>
     <ResourceName>Update_Available</ResourceName>
+    <Hidden>false</Hidden>
+  </Properties>
+  <Properties>
+    <Component>Resources.resx</Component>
+    <Name>Untitled</Name>
+    <StringID>37</StringID>
+    <Selected>true</Selected>
+    <ResourceName>Untitled</ResourceName>
     <Hidden>false</Hidden>
   </Properties>
   <GeneralAttributes>

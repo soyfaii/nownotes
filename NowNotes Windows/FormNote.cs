@@ -110,8 +110,8 @@ namespace NowNotes_Windows
                 Opacity = 100;
                 if (!hasBeenShowed)
                 {
-                    File.Create(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData) + "\\NowNotes\\Notes\\" + ((DateTime.Now.ToString()).Replace("/", "-")).Replace(":", "-") + ".rtf");
-                    fileOpened = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData) + "\\NowNotes\\Notes\\" + ((DateTime.Now.ToString()).Replace("/", "-")).Replace(":", "-") + ".rtf";
+                    File.Create(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData) + "\\NowNotes\\Notes\\" + Resources.Untitled + ((DateTime.Now.ToString()).Replace("/", "-")).Replace(":", "-") + ".rtf");
+                    fileOpened = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData) + "\\NowNotes\\Notes\\" + Resources.Untitled + ((DateTime.Now.ToString()).Replace("/", "-")).Replace(":", "-") + ".rtf";
                     System.Windows.Forms.Timer savingTimer = new System.Windows.Forms.Timer();
                     savingTimer.Interval = 60000;
                     savingTimer.Tick += SavingTimer_Tick;
@@ -293,8 +293,8 @@ namespace NowNotes_Windows
         {
             SaveActualNote(sender, e);
             richTextBox.Clear();
-            File.Create(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData) + "\\NowNotes\\Notes\\" + ((DateTime.Now.ToString()).Replace("/", "-")).Replace(":", "-") + ".rtf");
-            fileOpened = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData) + "\\NowNotes\\Notes\\" + ((DateTime.Now.ToString()).Replace("/", "-")).Replace(":", "-") + ".rtf";
+            File.Create(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData) + "\\NowNotes\\Notes\\" + Resources.Untitled + ((DateTime.Now.ToString()).Replace("/", "-")).Replace(":", "-") + ".rtf");
+            fileOpened = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData) + "\\NowNotes\\Notes\\" + Resources.Untitled + ((DateTime.Now.ToString()).Replace("/", "-")).Replace(":", "-") + ".rtf";
             if (sidemenuShowing) ShowHideSideMenu();
             ShowInfo(Resources.Note_saved_and_cleared);
         }

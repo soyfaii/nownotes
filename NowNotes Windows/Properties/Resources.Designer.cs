@@ -161,6 +161,15 @@ namespace NowNotes_Windows.Properties {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Untitled - .
+        /// </summary>
+        public static string Untitled {
+            get {
+                return ResourceManager.GetString("Untitled", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Update Available.
         /// </summary>
         public static string Update_Available {
