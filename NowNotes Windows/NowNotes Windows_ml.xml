@@ -125,6 +125,12 @@
     <IetfLanguageTag>ca</IetfLanguageTag>
     <ColumnNumber>2</ColumnNumber>
   </Languages>
+  <Languages>
+    <LanguageID>12</LanguageID>
+    <LanguageName>Francés</LanguageName>
+    <IetfLanguageTag>fr</IetfLanguageTag>
+    <ColumnNumber>3</ColumnNumber>
+  </Languages>
   <GeneralTexts>
     <StringID>1</StringID>
     <LanguageID>9</LanguageID>
@@ -692,6 +698,205 @@ Panel d'informació</LanguageText>
     <LanguageText>Hay una actualización disponible para NowNotes. ¿Deseas instalarla?</LanguageText>
     <Status>2</Status>
   </GeneralTexts>
+  <GeneralTexts>
+    <StringID>36</StringID>
+    <LanguageID>10</LanguageID>
+    <LanguageText>Actualización disponible</LanguageText>
+    <Status>2</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>10</StringID>
+    <LanguageID>12</LanguageID>
+    <LanguageText>Fermer</LanguageText>
+    <Status>3</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>17</StringID>
+    <LanguageID>12</LanguageID>
+    <LanguageText>Gras</LanguageText>
+    <Status>2</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>19</StringID>
+    <LanguageID>12</LanguageID>
+    <LanguageText>Italique</LanguageText>
+    <Status>2</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>3</StringID>
+    <LanguageID>12</LanguageID>
+    <LanguageText>Menu</LanguageText>
+    <Status>2</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>31</StringID>
+    <LanguageID>12</LanguageID>
+    <LanguageText>Concentré</LanguageText>
+    <Status>2</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>14</StringID>
+    <LanguageID>12</LanguageID>
+    <LanguageText>Panneau d'information
+Panneau d'information</LanguageText>
+    <Status>2</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>13</StringID>
+    <LanguageID>12</LanguageID>
+    <LanguageText>Tes notes</LanguageText>
+    <Status>2</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>12</StringID>
+    <LanguageID>12</LanguageID>
+    <LanguageText>Ouvrez votre note NowNotes</LanguageText>
+    <Status>2</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>1</StringID>
+    <LanguageID>12</LanguageID>
+    <LanguageText>NowNotes</LanguageText>
+    <Status>2</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>8</StringID>
+    <LanguageID>12</LanguageID>
+    <LanguageText>Déboguer</LanguageText>
+    <Status>5</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>6</StringID>
+    <LanguageID>12</LanguageID>
+    <LanguageText>Supprimer la note</LanguageText>
+    <Status>5</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>7</StringID>
+    <LanguageID>12</LanguageID>
+    <LanguageText>Paramètres</LanguageText>
+    <Status>5</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>9</StringID>
+    <LanguageID>12</LanguageID>
+    <LanguageText>Afficher le dossier des notes</LanguageText>
+    <Status>2</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>22</StringID>
+    <LanguageID>12</LanguageID>
+    <LanguageText>T</LanguageText>
+    <Status>2</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>33</StringID>
+    <LanguageID>12</LanguageID>
+    <LanguageText>Titre</LanguageText>
+    <Status>5</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>18</StringID>
+    <LanguageID>12</LanguageID>
+    <LanguageText>I</LanguageText>
+    <Status>2</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>20</StringID>
+    <LanguageID>12</LanguageID>
+    <LanguageText>S</LanguageText>
+    <Status>2</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>21</StringID>
+    <LanguageID>12</LanguageID>
+    <LanguageText>Souligné</LanguageText>
+    <Status>2</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>4</StringID>
+    <LanguageID>12</LanguageID>
+    <LanguageText>Option de note</LanguageText>
+    <Status>2</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>11</StringID>
+    <LanguageID>12</LanguageID>
+    <LanguageText>Titre</LanguageText>
+    <Status>5</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>5</StringID>
+    <LanguageID>12</LanguageID>
+    <LanguageText>Renommer la note</LanguageText>
+    <Status>5</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>30</StringID>
+    <LanguageID>12</LanguageID>
+    <LanguageText>Renommer</LanguageText>
+    <Status>5</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>24</StringID>
+    <LanguageID>12</LanguageID>
+    <LanguageText>Voulez-vous configurer NowNotes pour qu'il se lance au démarrage ?</LanguageText>
+    <Status>5</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>23</StringID>
+    <LanguageID>12</LanguageID>
+    <LanguageText>Lancement au démarrage</LanguageText>
+    <Status>5</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>35</StringID>
+    <LanguageID>12</LanguageID>
+    <LanguageText>Une mise à jour est disponible pour NowNotes. Voulez-vous l'installer ?</LanguageText>
+    <Status>5</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>36</StringID>
+    <LanguageID>12</LanguageID>
+    <LanguageText>Mise à jour disponible</LanguageText>
+    <Status>5</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>25</StringID>
+    <LanguageID>12</LanguageID>
+    <LanguageText>La note n'a pas pu être enregistrée car une autre application a ouvert le fichier de note interne.</LanguageText>
+    <Status>5</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>26</StringID>
+    <LanguageID>12</LanguageID>
+    <LanguageText>La note n'a pas pu être ouverte car une autre application a ouvert le fichier de note interne.</LanguageText>
+    <Status>5</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>28</StringID>
+    <LanguageID>12</LanguageID>
+    <LanguageText>La note ouverte a été supprimée.</LanguageText>
+    <Status>5</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>27</StringID>
+    <LanguageID>12</LanguageID>
+    <LanguageText>La note n'a pas pu être renommée et enregistrée car une autre application a ouvert le fichier de note interne.</LanguageText>
+    <Status>5</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>29</StringID>
+    <LanguageID>12</LanguageID>
+    <LanguageText>Note enregistrée et effacée.</LanguageText>
+    <Status>2</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>16</StringID>
+    <LanguageID>12</LanguageID>
+    <LanguageText>G</LanguageText>
+    <Status>2</Status>
+  </GeneralTexts>
   <Properties>
     <Component>FormNote.cs</Component>
     <Name>FormMain.Text</Name>
@@ -1217,7 +1422,7 @@ Panel d'informació</LanguageText>
   </GeneralAttributes>
   <GeneralAttributes>
     <Name>StatusHash</Name>
-    <TextValue>Bf5AV1MWbxJVWefJrFWGVPEHx+k=</TextValue>
+    <TextValue>htKra7TjY5zykcCe7vdOeSsZPH8=</TextValue>
     <NumValue>0</NumValue>
   </GeneralAttributes>
   <GeneralAttributes>
