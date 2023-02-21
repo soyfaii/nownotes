@@ -16,6 +16,12 @@ It's simple to use, just click on the anytime available icon at the system tray 
 
 Your desktop will never be a disaster again. The notes are saved *automatically* right on NowNotes, and aren't on any common folder, so don't mind. Talking about desktop: when NowNotes is open, it's all time on the top of it, so you don't have to reopen and reopen the app every time it dissapears.
 
+## To-do list
+
+- [ ] Cloud sync
+- [ ] Dark mode
+- [ ] Folders
+
 ## Installing
 
 Just download the latest .exe on 'Releases', or clone the repository and compile it with Visual Studio .NET.
