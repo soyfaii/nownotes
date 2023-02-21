@@ -12,6 +12,8 @@
     <Version>0.5.0-beta1</Version>
     <PackageId>NowNotesWindows</PackageId>
     <Title>NowNotes</Title>
+    <PackageIcon>128px-logo-transparent.png</PackageIcon>
+    <ApplicationIcon>appicon.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
@@ -20,6 +22,17 @@
 
   <ItemGroup>
     <AdditionalFiles Include="NowNotes Windows_ml.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="appicon.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\BrandResources\128px-logo-transparent.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
 
   <ItemGroup>
