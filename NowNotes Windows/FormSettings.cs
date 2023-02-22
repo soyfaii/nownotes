@@ -14,6 +14,8 @@ namespace NowNotes_Windows
 	public partial class FormSettings : Form
 	{
 		bool necessarytoReopenApp = false;
+		string previousNotesFolder;
+		bool onedriveFolderChanged = false;
 
 		public FormSettings()
 		{
@@ -24,11 +26,28 @@ namespace NowNotes_Windows
 		{
 			// Load all the parameters
 
+			// Cloud Sync
+			if (Settings.Default.CloudSyncEnabled) { checkBoxEnableSync.Checked = true; comboBoxOneDriveAccount.Enabled = true; } else { checkBoxEnableSync.Checked = false; comboBoxOneDriveAccount.Enabled = false; }
+			{
+				// Load OneDrive Folders
+				string rootPath = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile);
+				string[] dirs = Directory.GetDirectories(rootPath, "OneDrive", SearchOption.TopDirectoryOnly);
+				for (int i = 0; i < dirs.Length; i++)
+				{
+					dirs[i] = Path.GetFileName(dirs[i]);
+				}
+				comboBoxOneDriveAccount.Items.Clear();
+				comboBoxOneDriveAccount.Items.AddRange(dirs);
+				comboBoxOneDriveAccount.Text = Settings.Default.OneDriveFolder;
+				previousNotesFolder = Settings.Default.OneDriveFolder;
+			}
+
 		}
 
 		private void buttonOK_Click(object sender, EventArgs e)
 		{
 			// Saves and closes the window, also closes NowNotes if necessary
+			if (onedriveFolderChanged) { OneDriveSyncChangedOperations(); }
 			Settings.Default.Save();
 			Close();
 			Dispose();
@@ -55,6 +74,8 @@ namespace NowNotes_Windows
 		private void buttonApply_Click(object sender, EventArgs e)
 		{
 			// Applies everything without closing the window
+			if (onedriveFolderChanged) { OneDriveSyncChangedOperations(); }
+
 			Settings.Default.Save();
 		}
 
@@ -62,6 +83,56 @@ namespace NowNotes_Windows
 		{
 			AboutNowNotesBox about = new AboutNowNotesBox();
 			about.Show();
+		}
+
+		private void checkBoxEnableSync_CheckedChanged(object sender, EventArgs e)
+		{
+			if (checkBoxEnableSync.Checked == true) { comboBoxOneDriveAccount.Enabled = true; }
+			else { comboBoxOneDriveAccount.Enabled = false; }
+			necessarytoReopenApp = true;
+		}
+
+		private void comboBoxOneDriveAccount_SelectedIndexChanged(object sender, EventArgs e)
+		{
+			necessarytoReopenApp = true;
+		}
+
+		public void OneDriveSyncChangedOperations()
+		{
+			// Checks what kind of transfer is needed
+			bool toOneDrive;
+			if (checkBoxEnableSync.Checked)
+			{
+				toOneDrive = true;
+			}
+			else
+			{
+			    toOneDrive = false;
+			}
+			// Transfers files form previous folder to new folder
+			string sourceFolder = previousNotesFolder;
+			string destinationFolder;
+			if (toOneDrive)
+			{
+				destinationFolder = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile) + "\\" + comboBoxOneDriveAccount.Text + "\\NowNotes\\Notes";
+			}
+			else
+			{
+				destinationFolder = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData) + "\\NowNotes\\Notes";
+			}
+			string[] files = Directory.GetFiles(sourceFolder);
+			foreach (string file in files)
+			{
+				string fileName = Path.GetFileName(file);
+				string destinationFile = Path.Combine(destinationFolder, fileName);
+				File.Copy(file, destinationFile);
+			}
+		}
+
+		public void SettingsApplying()
+		{
+			if (checkBoxEnableSync.Checked) { Settings.Default.CloudSyncEnabled = true; } else { Settings.Default.CloudSyncEnabled = false; }
+			Settings.Default.OneDriveFolder = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile) + "\\" + comboBoxOneDriveAccount.Text + "\\NowNotes\\Notes";
 		}
 	}
 }
