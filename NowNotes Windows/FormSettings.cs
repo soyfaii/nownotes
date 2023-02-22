@@ -110,6 +110,12 @@ namespace NowNotes_Windows
 			{
 			    toOneDrive = false;
 			}
+			// Creates NowNotes folders on OneDrive if they don't exist
+			if (toOneDrive)
+			{
+				Directory.CreateDirectory(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile) + "\\" + comboBoxOneDriveAccount.Text + "\\NowNotes");
+				Directory.CreateDirectory(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile) + "\\" + comboBoxOneDriveAccount.Text + "\\NowNotes\\Notes"); 
+			}
 			// Transfers files form previous folder to new folder
 			string sourceFolder = previousNotesFolder;
 			string destinationFolder;
