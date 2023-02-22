@@ -331,8 +331,14 @@ namespace NowNotes_Windows
                 WindowState = FormWindowState.Normal;
             }
         }
-    }
-    public class RoundButton : System.Windows.Forms.Button
+
+		private void settingsToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+            FormSettings form = new FormSettings();
+            form.Show();
+		}
+	}
+	public class RoundButton : System.Windows.Forms.Button
     {
         protected override void OnPaint(System.Windows.Forms.PaintEventArgs e)
         {
