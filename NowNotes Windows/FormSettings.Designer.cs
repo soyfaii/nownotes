@@ -37,8 +37,8 @@
 			this.buttonApply = new System.Windows.Forms.Button();
 			this.buttonDeleteAllNotes = new System.Windows.Forms.Button();
 			this.checkBoxEnableSync = new System.Windows.Forms.CheckBox();
-			this.label1 = new System.Windows.Forms.Label();
-			this.comboBox1 = new System.Windows.Forms.ComboBox();
+			this.labelOneDriveAccount = new System.Windows.Forms.Label();
+			this.comboBoxOneDriveAccount = new System.Windows.Forms.ComboBox();
 			this.tabControlSettingsTabs.SuspendLayout();
 			this.tabPageSync.SuspendLayout();
 			this.tabPageAdvanced.SuspendLayout();
@@ -55,8 +55,8 @@
 			// 
 			// tabPageSync
 			// 
-			this.tabPageSync.Controls.Add(this.comboBox1);
-			this.tabPageSync.Controls.Add(this.label1);
+			this.tabPageSync.Controls.Add(this.comboBoxOneDriveAccount);
+			this.tabPageSync.Controls.Add(this.labelOneDriveAccount);
 			this.tabPageSync.Controls.Add(this.checkBoxEnableSync);
 			resources.ApplyResources(this.tabPageSync, "tabPageSync");
 			this.tabPageSync.Name = "tabPageSync";
@@ -74,18 +74,21 @@
 			resources.ApplyResources(this.buttonOK, "buttonOK");
 			this.buttonOK.Name = "buttonOK";
 			this.buttonOK.UseVisualStyleBackColor = true;
+			this.buttonOK.Click += new System.EventHandler(this.buttonOK_Click);
 			// 
 			// buttonCancel
 			// 
 			resources.ApplyResources(this.buttonCancel, "buttonCancel");
 			this.buttonCancel.Name = "buttonCancel";
 			this.buttonCancel.UseVisualStyleBackColor = true;
+			this.buttonCancel.Click += new System.EventHandler(this.buttonCancel_Click);
 			// 
 			// buttonApply
 			// 
 			resources.ApplyResources(this.buttonApply, "buttonApply");
 			this.buttonApply.Name = "buttonApply";
 			this.buttonApply.UseVisualStyleBackColor = true;
+			this.buttonApply.Click += new System.EventHandler(this.buttonApply_Click);
 			// 
 			// buttonDeleteAllNotes
 			// 
@@ -99,17 +102,17 @@
 			this.checkBoxEnableSync.Name = "checkBoxEnableSync";
 			this.checkBoxEnableSync.UseVisualStyleBackColor = true;
 			// 
-			// label1
+			// labelOneDriveAccount
 			// 
-			resources.ApplyResources(this.label1, "label1");
-			this.label1.Name = "label1";
+			resources.ApplyResources(this.labelOneDriveAccount, "labelOneDriveAccount");
+			this.labelOneDriveAccount.Name = "labelOneDriveAccount";
 			// 
-			// comboBox1
+			// comboBoxOneDriveAccount
 			// 
-			this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.comboBox1.FormattingEnabled = true;
-			resources.ApplyResources(this.comboBox1, "comboBox1");
-			this.comboBox1.Name = "comboBox1";
+			this.comboBoxOneDriveAccount.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.comboBoxOneDriveAccount.FormattingEnabled = true;
+			resources.ApplyResources(this.comboBoxOneDriveAccount, "comboBoxOneDriveAccount");
+			this.comboBoxOneDriveAccount.Name = "comboBoxOneDriveAccount";
 			// 
 			// FormSettings
 			// 
@@ -122,6 +125,7 @@
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
 			this.Name = "FormSettings";
 			this.TopMost = true;
+			this.Load += new System.EventHandler(this.FormSettings_Load);
 			this.tabControlSettingsTabs.ResumeLayout(false);
 			this.tabPageSync.ResumeLayout(false);
 			this.tabPageSync.PerformLayout();
@@ -138,8 +142,8 @@
 		private Button buttonOK;
 		private Button buttonCancel;
 		private Button buttonApply;
-		private ComboBox comboBox1;
-		private Label label1;
+		private ComboBox comboBoxOneDriveAccount;
+		private Label labelOneDriveAccount;
 		private CheckBox checkBoxEnableSync;
 		private Button buttonDeleteAllNotes;
 	}
