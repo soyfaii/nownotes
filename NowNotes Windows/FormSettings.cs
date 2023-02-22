@@ -57,5 +57,11 @@ namespace NowNotes_Windows
 			// Applies everything without closing the window
 			Settings.Default.Save();
 		}
+
+		private void buttonAboutNowNotes_Click(object sender, EventArgs e)
+		{
+			AboutNowNotesBox about = new AboutNowNotesBox();
+			about.Show();
+		}
 	}
 }

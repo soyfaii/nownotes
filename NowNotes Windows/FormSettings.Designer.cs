@@ -39,6 +39,8 @@
 			this.checkBoxEnableSync = new System.Windows.Forms.CheckBox();
 			this.labelOneDriveAccount = new System.Windows.Forms.Label();
 			this.comboBoxOneDriveAccount = new System.Windows.Forms.ComboBox();
+			this.checkBoxStartup = new System.Windows.Forms.CheckBox();
+			this.buttonAboutNowNotes = new System.Windows.Forms.Button();
 			this.tabControlSettingsTabs.SuspendLayout();
 			this.tabPageSync.SuspendLayout();
 			this.tabPageAdvanced.SuspendLayout();
@@ -64,6 +66,7 @@
 			// 
 			// tabPageAdvanced
 			// 
+			this.tabPageAdvanced.Controls.Add(this.checkBoxStartup);
 			this.tabPageAdvanced.Controls.Add(this.buttonDeleteAllNotes);
 			resources.ApplyResources(this.tabPageAdvanced, "tabPageAdvanced");
 			this.tabPageAdvanced.Name = "tabPageAdvanced";
@@ -114,10 +117,24 @@
 			resources.ApplyResources(this.comboBoxOneDriveAccount, "comboBoxOneDriveAccount");
 			this.comboBoxOneDriveAccount.Name = "comboBoxOneDriveAccount";
 			// 
+			// checkBoxStartup
+			// 
+			resources.ApplyResources(this.checkBoxStartup, "checkBoxStartup");
+			this.checkBoxStartup.Name = "checkBoxStartup";
+			this.checkBoxStartup.UseVisualStyleBackColor = true;
+			// 
+			// buttonAboutNowNotes
+			// 
+			resources.ApplyResources(this.buttonAboutNowNotes, "buttonAboutNowNotes");
+			this.buttonAboutNowNotes.Name = "buttonAboutNowNotes";
+			this.buttonAboutNowNotes.UseVisualStyleBackColor = true;
+			this.buttonAboutNowNotes.Click += new System.EventHandler(this.buttonAboutNowNotes_Click);
+			// 
 			// FormSettings
 			// 
 			resources.ApplyResources(this, "$this");
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+			this.Controls.Add(this.buttonAboutNowNotes);
 			this.Controls.Add(this.buttonApply);
 			this.Controls.Add(this.buttonCancel);
 			this.Controls.Add(this.buttonOK);
@@ -130,6 +147,7 @@
 			this.tabPageSync.ResumeLayout(false);
 			this.tabPageSync.PerformLayout();
 			this.tabPageAdvanced.ResumeLayout(false);
+			this.tabPageAdvanced.PerformLayout();
 			this.ResumeLayout(false);
 
 		}
@@ -146,5 +164,7 @@
 		private Label labelOneDriveAccount;
 		private CheckBox checkBoxEnableSync;
 		private Button buttonDeleteAllNotes;
+		private CheckBox checkBoxStartup;
+		private Button buttonAboutNowNotes;
 	}
 }
