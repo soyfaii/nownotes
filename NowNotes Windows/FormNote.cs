@@ -20,6 +20,7 @@ namespace NowNotes_Windows
         Form formRenameNote = new Form();
         System.Windows.Forms.TextBox textBoxRenameNote = new System.Windows.Forms.TextBox();
         public string noteName;
+        public string noteFolderPath;
         
         public FormMain()
         {
@@ -66,6 +67,8 @@ namespace NowNotes_Windows
                 Settings.Default.FirstLaunch = false;
                 Settings.Default.Save();
             }
+            if(Settings.Default.CloudSyncEnabled) { noteFolderPath = Settings.Default.OneDriveFolder; }
+            else { noteFolderPath = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData) + "\\NowNotes\\Notes"; }
             Image resizeImage(Image imgToResize, Size size)
             {
                 return (Image)(new Bitmap(imgToResize, size));
@@ -112,13 +115,13 @@ namespace NowNotes_Windows
                 Opacity = 100;
                 if (!hasBeenShowed)
                 {
-                    File.Create(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData) + "\\NowNotes\\Notes\\" + Resources.Untitled + ((DateTime.Now.ToString()).Replace("/", "-")).Replace(":", "-") + ".rtf");
-                    fileOpened = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData) + "\\NowNotes\\Notes\\" + Resources.Untitled + ((DateTime.Now.ToString()).Replace("/", "-")).Replace(":", "-") + ".rtf";
+                    File.Create(noteFolderPath + "\\" + Resources.Untitled + ((DateTime.Now.ToString()).Replace("/", "-")).Replace(":", "-") + ".rtf");
+                    fileOpened = noteFolderPath + "\\" + Resources.Untitled + ((DateTime.Now.ToString()).Replace("/", "-")).Replace(":", "-") + ".rtf";
                     System.Windows.Forms.Timer savingTimer = new System.Windows.Forms.Timer();
                     savingTimer.Interval = 60000;
                     savingTimer.Tick += SavingTimer_Tick;
                     savingTimer.Start();
-                    noteName = fileOpened.Replace(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData) + "\\NowNotes\\Notes\\", "");
+                    noteName = fileOpened.Replace(noteFolderPath + "\\", "");
                     noteName = noteName.Replace(".rtf", "");
                     toolStripLabelTitle.Text = noteName;
                     hasBeenShowed = true;
@@ -215,10 +218,10 @@ namespace NowNotes_Windows
             {
                 panelSideMenu.Show();
                 toolStripButtonMenu.Select();
-                string[] notesFileNames = Directory.EnumerateFiles(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData) + "\\NowNotes\\Notes").ToArray();
+                string[] notesFileNames = Directory.EnumerateFiles(noteFolderPath).ToArray();
                 for (int i = 0; i < notesFileNames.Length; i++)
                 {
-                    notesFileNames[i] = notesFileNames[i].Replace(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData) + "\\NowNotes\\Notes\\", "");
+                    notesFileNames[i] = notesFileNames[i].Replace(noteFolderPath + "\\", "");
                     notesFileNames[i] = notesFileNames[i].Replace(".rtf", "");
                 }
                 listBoxMenu.Items.Clear();
@@ -234,7 +237,7 @@ namespace NowNotes_Windows
             if (sidemenuShowing)
             {
                 SaveActualNote(sender, e);
-                string fileToOpen = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData) + "\\NowNotes\\Notes\\" + listBoxMenu.SelectedItem.ToString() + ".rtf";
+                string fileToOpen = noteFolderPath + "\\" + listBoxMenu.SelectedItem.ToString() + ".rtf";
                 try
                 {
                     richTextBox.Rtf = File.ReadAllText(fileToOpen);
@@ -247,14 +250,14 @@ namespace NowNotes_Windows
                 }
                 
             }
-            noteName = fileOpened.Replace(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData) + "\\NowNotes\\Notes\\", "");
+            noteName = fileOpened.Replace(noteFolderPath + "\\", "");
             noteName = noteName.Replace(".rtf", "");
             toolStripLabelTitle.Text = noteName;
         }
 
         private void showNotesFolderToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Process.Start("explorer.exe", Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData) + "\\NowNotes\\Notes");
+            Process.Start("explorer.exe", noteFolderPath);
         }
 
         private void deleteNoteToolStripMenuItem_Click(object sender, EventArgs e)
@@ -269,7 +272,7 @@ namespace NowNotes_Windows
         private void renameNoteToolStripMenuItem_Click(object sender, EventArgs e)
         {
             // Get Note Name
-            noteName = fileOpened.Replace(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData) + "\\NowNotes\\Notes\\", "");
+            noteName = fileOpened.Replace(noteFolderPath + "\\", "");
             noteName = noteName.Replace(".rtf", "");
 
             formRenameNote.Show();
@@ -282,7 +285,7 @@ namespace NowNotes_Windows
             Debug.WriteLine("Renaming File");
             try
             {
-                File.Move(fileOpened, Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData) + "\\NowNotes\\Notes\\" + textBoxRenameNote.Text + ".rtf");
+                File.Move(fileOpened, noteFolderPath + "\\" + textBoxRenameNote.Text + ".rtf");
             }
             catch (Exception ex)
             {
@@ -295,8 +298,8 @@ namespace NowNotes_Windows
         {
             SaveActualNote(sender, e);
             richTextBox.Clear();
-            File.Create(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData) + "\\NowNotes\\Notes\\" + Resources.Untitled + ((DateTime.Now.ToString()).Replace("/", "-")).Replace(":", "-") + ".rtf");
-            fileOpened = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData) + "\\NowNotes\\Notes\\" + Resources.Untitled + ((DateTime.Now.ToString()).Replace("/", "-")).Replace(":", "-") + ".rtf";
+            File.Create(noteFolderPath + "\\" + Resources.Untitled + ((DateTime.Now.ToString()).Replace("/", "-")).Replace(":", "-") + ".rtf");
+            fileOpened = noteFolderPath + "\\" + Resources.Untitled + ((DateTime.Now.ToString()).Replace("/", "-")).Replace(":", "-") + ".rtf";
             if (sidemenuShowing) ShowHideSideMenu();
             ShowInfo(Resources.Note_saved_and_cleared);
         }
