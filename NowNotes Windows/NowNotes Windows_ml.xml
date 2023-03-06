@@ -108,6 +108,39 @@
   <GeneralIds>
     <StringID>37</StringID>
   </GeneralIds>
+  <GeneralIds>
+    <StringID>38</StringID>
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>39</StringID>
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>40</StringID>
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>41</StringID>
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>42</StringID>
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>43</StringID>
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>44</StringID>
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>45</StringID>
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>46</StringID>
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>47</StringID>
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>48</StringID>
+  </GeneralIds>
   <Languages>
     <LanguageID>9</LanguageID>
     <LanguageName>Inglés</LanguageName>
@@ -922,6 +955,120 @@ Panneau d'information</LanguageText>
     <LanguageText>Sans titre - </LanguageText>
     <Status>2</Status>
   </GeneralTexts>
+  <GeneralTexts>
+    <StringID>38</StringID>
+    <LanguageID>9</LanguageID>
+    <LanguageText>OneDrive Account:</LanguageText>
+    <Status>1</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>39</StringID>
+    <LanguageID>9</LanguageID>
+    <LanguageText>Enable Cloud Sync</LanguageText>
+    <Status>1</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>40</StringID>
+    <LanguageID>9</LanguageID>
+    <LanguageText>Cloud Sync</LanguageText>
+    <Status>1</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>41</StringID>
+    <LanguageID>9</LanguageID>
+    <LanguageText>Launch On Startup</LanguageText>
+    <Status>1</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>42</StringID>
+    <LanguageID>9</LanguageID>
+    <LanguageText>Delete All Notes</LanguageText>
+    <Status>1</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>43</StringID>
+    <LanguageID>9</LanguageID>
+    <LanguageText>Advanced</LanguageText>
+    <Status>1</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>44</StringID>
+    <LanguageID>9</LanguageID>
+    <LanguageText>OK</LanguageText>
+    <Status>1</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>45</StringID>
+    <LanguageID>9</LanguageID>
+    <LanguageText>Cancel</LanguageText>
+    <Status>1</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>46</StringID>
+    <LanguageID>9</LanguageID>
+    <LanguageText>Apply</LanguageText>
+    <Status>1</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>47</StringID>
+    <LanguageID>9</LanguageID>
+    <LanguageText>About NowNotes</LanguageText>
+    <Status>1</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>48</StringID>
+    <LanguageID>9</LanguageID>
+    <LanguageText>NowNotes Settings</LanguageText>
+    <Status>1</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>46</StringID>
+    <LanguageID>10</LanguageID>
+    <LanguageText>Aplicar</LanguageText>
+    <Status>3</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>46</StringID>
+    <LanguageID>12</LanguageID>
+    <LanguageText>Appliquer</LanguageText>
+    <Status>3</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>45</StringID>
+    <LanguageID>10</LanguageID>
+    <LanguageText>Cancelar</LanguageText>
+    <Status>3</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>45</StringID>
+    <LanguageID>12</LanguageID>
+    <LanguageText>Annuler</LanguageText>
+    <Status>3</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>44</StringID>
+    <LanguageID>10</LanguageID>
+    <LanguageText>Aceptar</LanguageText>
+    <Status>3</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>44</StringID>
+    <LanguageID>12</LanguageID>
+    <LanguageText>OK</LanguageText>
+    <Status>3</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>41</StringID>
+    <LanguageID>3</LanguageID>
+    <LanguageText>Obertura al inici</LanguageText>
+    <Status>3</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>41</StringID>
+    <LanguageID>10</LanguageID>
+    <LanguageText>Inicio junto al sistema</LanguageText>
+    <Status>3</Status>
+  </GeneralTexts>
   <Properties>
     <Component>FormNote.cs</Component>
     <Name>FormMain.Text</Name>
@@ -1446,6 +1593,94 @@ Panneau d'information</LanguageText>
     <StringID>37</StringID>
     <Selected>true</Selected>
     <ResourceName>Untitled</ResourceName>
+    <Hidden>false</Hidden>
+  </Properties>
+  <Properties>
+    <Component>FormSettings.resx</Component>
+    <Name>labelOneDriveAccount.Text</Name>
+    <StringID>38</StringID>
+    <Selected>true</Selected>
+    <ResourceName>labelOneDriveAccount.Text</ResourceName>
+    <Hidden>false</Hidden>
+  </Properties>
+  <Properties>
+    <Component>FormSettings.resx</Component>
+    <Name>checkBoxEnableSync.Text</Name>
+    <StringID>39</StringID>
+    <Selected>true</Selected>
+    <ResourceName>checkBoxEnableSync.Text</ResourceName>
+    <Hidden>false</Hidden>
+  </Properties>
+  <Properties>
+    <Component>FormSettings.resx</Component>
+    <Name>tabPageSync.Text</Name>
+    <StringID>40</StringID>
+    <Selected>true</Selected>
+    <ResourceName>tabPageSync.Text</ResourceName>
+    <Hidden>false</Hidden>
+  </Properties>
+  <Properties>
+    <Component>FormSettings.resx</Component>
+    <Name>checkBoxStartup.Text</Name>
+    <StringID>41</StringID>
+    <Selected>true</Selected>
+    <ResourceName>checkBoxStartup.Text</ResourceName>
+    <Hidden>false</Hidden>
+  </Properties>
+  <Properties>
+    <Component>FormSettings.resx</Component>
+    <Name>buttonDeleteAllNotes.Text</Name>
+    <StringID>42</StringID>
+    <Selected>true</Selected>
+    <ResourceName>buttonDeleteAllNotes.Text</ResourceName>
+    <Hidden>false</Hidden>
+  </Properties>
+  <Properties>
+    <Component>FormSettings.resx</Component>
+    <Name>tabPageAdvanced.Text</Name>
+    <StringID>43</StringID>
+    <Selected>true</Selected>
+    <ResourceName>tabPageAdvanced.Text</ResourceName>
+    <Hidden>false</Hidden>
+  </Properties>
+  <Properties>
+    <Component>FormSettings.resx</Component>
+    <Name>buttonOK.Text</Name>
+    <StringID>44</StringID>
+    <Selected>true</Selected>
+    <ResourceName>buttonOK.Text</ResourceName>
+    <Hidden>false</Hidden>
+  </Properties>
+  <Properties>
+    <Component>FormSettings.resx</Component>
+    <Name>buttonCancel.Text</Name>
+    <StringID>45</StringID>
+    <Selected>true</Selected>
+    <ResourceName>buttonCancel.Text</ResourceName>
+    <Hidden>false</Hidden>
+  </Properties>
+  <Properties>
+    <Component>FormSettings.resx</Component>
+    <Name>buttonApply.Text</Name>
+    <StringID>46</StringID>
+    <Selected>true</Selected>
+    <ResourceName>buttonApply.Text</ResourceName>
+    <Hidden>false</Hidden>
+  </Properties>
+  <Properties>
+    <Component>FormSettings.resx</Component>
+    <Name>buttonAboutNowNotes.Text</Name>
+    <StringID>47</StringID>
+    <Selected>true</Selected>
+    <ResourceName>buttonAboutNowNotes.Text</ResourceName>
+    <Hidden>false</Hidden>
+  </Properties>
+  <Properties>
+    <Component>FormSettings.resx</Component>
+    <Name>$this.Text</Name>
+    <StringID>48</StringID>
+    <Selected>true</Selected>
+    <ResourceName>$this.Text</ResourceName>
     <Hidden>false</Hidden>
   </Properties>
   <GeneralAttributes>

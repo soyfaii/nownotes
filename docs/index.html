@@ -23,6 +23,16 @@
 
         gtag('config', 'G-M7H35G324X');
     </script>
+    <script>
+        function select_language(language) {
+            $("[lang]").each(function () {
+                if ($(this).attr("lang") == language)
+                    $(this).show();
+                else
+                    $(this).hide();
+            });
+        }
+    </script>
 </head>
 <body style="background-color: #fff1b9">
     <font face="Roboto Slab">
@@ -50,8 +60,8 @@
                     </div>
                 </div>
                 <div style="background-color: #fff9ed; height: 200px;">
-                    <div style="display: table; height: 200px; overflow: hidden; width: 700px">
-                        <div style="display: table-cell; vertical-align: middle;">
+                    <div style="display: table; height: 200px; overflow: hidden; width: 900px">
+                        <div style="display: table-cell; vertical-align: middle; text-align: left">
                             <h2>Simple, but clearer texts.</h2>
                             <p>It's simple to use, just click on the anytime available icon at the system tray and start typing. With NowNotes, notes are more intuitive. It allows you to do simple formating; <b>bold</b>, <i>italic</i> or <u>underlined</u> text are available, as well as titles.</p>
 
