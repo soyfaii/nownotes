@@ -1,4 +1,4 @@
-# NowNotes
+# <img src="BrandResources/64px-logo-transparent.png" width=24> NowNotes
 
 NowNotes is a simple app made as a *usable* replacement for the Windows Notepad.
 
