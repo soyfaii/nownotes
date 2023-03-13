@@ -29,129 +29,156 @@
 		private void InitializeComponent()
 		{
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormSettings));
-			this.tabControlSettingsTabs = new System.Windows.Forms.TabControl();
-			this.tabPageSync = new System.Windows.Forms.TabPage();
-			this.comboBoxOneDriveAccount = new System.Windows.Forms.ComboBox();
-			this.labelOneDriveAccount = new System.Windows.Forms.Label();
-			this.checkBoxEnableSync = new System.Windows.Forms.CheckBox();
-			this.tabPageAdvanced = new System.Windows.Forms.TabPage();
-			this.checkBoxStartup = new System.Windows.Forms.CheckBox();
-			this.buttonDeleteAllNotes = new System.Windows.Forms.Button();
-			this.buttonOK = new System.Windows.Forms.Button();
-			this.buttonCancel = new System.Windows.Forms.Button();
-			this.buttonApply = new System.Windows.Forms.Button();
-			this.buttonAboutNowNotes = new System.Windows.Forms.Button();
-			this.tabControlSettingsTabs.SuspendLayout();
-			this.tabPageSync.SuspendLayout();
-			this.tabPageAdvanced.SuspendLayout();
-			this.SuspendLayout();
+			tabControlSettingsTabs = new TabControl();
+			tabPageSync = new TabPage();
+			comboBoxOneDriveAccount = new ComboBox();
+			labelOneDriveAccount = new Label();
+			checkBoxEnableSync = new CheckBox();
+			tabPageAdvanced = new TabPage();
+			checkBoxStartup = new CheckBox();
+			buttonDeleteAllNotes = new Button();
+			buttonOK = new Button();
+			buttonCancel = new Button();
+			buttonApply = new Button();
+			buttonAboutNowNotes = new Button();
+			tabPageAppearance = new TabPage();
+			comboBox1 = new ComboBox();
+			label1 = new Label();
+			tabControlSettingsTabs.SuspendLayout();
+			tabPageSync.SuspendLayout();
+			tabPageAdvanced.SuspendLayout();
+			tabPageAppearance.SuspendLayout();
+			SuspendLayout();
 			// 
 			// tabControlSettingsTabs
 			// 
-			this.tabControlSettingsTabs.Controls.Add(this.tabPageSync);
-			this.tabControlSettingsTabs.Controls.Add(this.tabPageAdvanced);
-			resources.ApplyResources(this.tabControlSettingsTabs, "tabControlSettingsTabs");
-			this.tabControlSettingsTabs.Multiline = true;
-			this.tabControlSettingsTabs.Name = "tabControlSettingsTabs";
-			this.tabControlSettingsTabs.SelectedIndex = 0;
+			tabControlSettingsTabs.Controls.Add(tabPageAppearance);
+			tabControlSettingsTabs.Controls.Add(tabPageSync);
+			tabControlSettingsTabs.Controls.Add(tabPageAdvanced);
+			resources.ApplyResources(tabControlSettingsTabs, "tabControlSettingsTabs");
+			tabControlSettingsTabs.Multiline = true;
+			tabControlSettingsTabs.Name = "tabControlSettingsTabs";
+			tabControlSettingsTabs.SelectedIndex = 0;
 			// 
 			// tabPageSync
 			// 
-			this.tabPageSync.Controls.Add(this.comboBoxOneDriveAccount);
-			this.tabPageSync.Controls.Add(this.labelOneDriveAccount);
-			this.tabPageSync.Controls.Add(this.checkBoxEnableSync);
-			resources.ApplyResources(this.tabPageSync, "tabPageSync");
-			this.tabPageSync.Name = "tabPageSync";
-			this.tabPageSync.UseVisualStyleBackColor = true;
+			tabPageSync.Controls.Add(comboBoxOneDriveAccount);
+			tabPageSync.Controls.Add(labelOneDriveAccount);
+			tabPageSync.Controls.Add(checkBoxEnableSync);
+			resources.ApplyResources(tabPageSync, "tabPageSync");
+			tabPageSync.Name = "tabPageSync";
+			tabPageSync.UseVisualStyleBackColor = true;
 			// 
 			// comboBoxOneDriveAccount
 			// 
-			this.comboBoxOneDriveAccount.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.comboBoxOneDriveAccount.FormattingEnabled = true;
-			resources.ApplyResources(this.comboBoxOneDriveAccount, "comboBoxOneDriveAccount");
-			this.comboBoxOneDriveAccount.Name = "comboBoxOneDriveAccount";
-			this.comboBoxOneDriveAccount.SelectedIndexChanged += new System.EventHandler(this.comboBoxOneDriveAccount_SelectedIndexChanged);
+			comboBoxOneDriveAccount.DropDownStyle = ComboBoxStyle.DropDownList;
+			comboBoxOneDriveAccount.FormattingEnabled = true;
+			resources.ApplyResources(comboBoxOneDriveAccount, "comboBoxOneDriveAccount");
+			comboBoxOneDriveAccount.Name = "comboBoxOneDriveAccount";
+			comboBoxOneDriveAccount.SelectedIndexChanged += comboBoxOneDriveAccount_SelectedIndexChanged;
 			// 
 			// labelOneDriveAccount
 			// 
-			resources.ApplyResources(this.labelOneDriveAccount, "labelOneDriveAccount");
-			this.labelOneDriveAccount.Name = "labelOneDriveAccount";
+			resources.ApplyResources(labelOneDriveAccount, "labelOneDriveAccount");
+			labelOneDriveAccount.Name = "labelOneDriveAccount";
 			// 
 			// checkBoxEnableSync
 			// 
-			resources.ApplyResources(this.checkBoxEnableSync, "checkBoxEnableSync");
-			this.checkBoxEnableSync.Name = "checkBoxEnableSync";
-			this.checkBoxEnableSync.UseVisualStyleBackColor = true;
-			this.checkBoxEnableSync.CheckedChanged += new System.EventHandler(this.checkBoxEnableSync_CheckedChanged);
+			resources.ApplyResources(checkBoxEnableSync, "checkBoxEnableSync");
+			checkBoxEnableSync.Name = "checkBoxEnableSync";
+			checkBoxEnableSync.UseVisualStyleBackColor = true;
+			checkBoxEnableSync.CheckedChanged += checkBoxEnableSync_CheckedChanged;
 			// 
 			// tabPageAdvanced
 			// 
-			this.tabPageAdvanced.Controls.Add(this.checkBoxStartup);
-			this.tabPageAdvanced.Controls.Add(this.buttonDeleteAllNotes);
-			resources.ApplyResources(this.tabPageAdvanced, "tabPageAdvanced");
-			this.tabPageAdvanced.Name = "tabPageAdvanced";
-			this.tabPageAdvanced.UseVisualStyleBackColor = true;
+			tabPageAdvanced.Controls.Add(checkBoxStartup);
+			tabPageAdvanced.Controls.Add(buttonDeleteAllNotes);
+			resources.ApplyResources(tabPageAdvanced, "tabPageAdvanced");
+			tabPageAdvanced.Name = "tabPageAdvanced";
+			tabPageAdvanced.UseVisualStyleBackColor = true;
 			// 
 			// checkBoxStartup
 			// 
-			resources.ApplyResources(this.checkBoxStartup, "checkBoxStartup");
-			this.checkBoxStartup.Name = "checkBoxStartup";
-			this.checkBoxStartup.UseVisualStyleBackColor = true;
+			resources.ApplyResources(checkBoxStartup, "checkBoxStartup");
+			checkBoxStartup.Name = "checkBoxStartup";
+			checkBoxStartup.UseVisualStyleBackColor = true;
 			// 
 			// buttonDeleteAllNotes
 			// 
-			resources.ApplyResources(this.buttonDeleteAllNotes, "buttonDeleteAllNotes");
-			this.buttonDeleteAllNotes.Name = "buttonDeleteAllNotes";
-			this.buttonDeleteAllNotes.UseVisualStyleBackColor = true;
+			resources.ApplyResources(buttonDeleteAllNotes, "buttonDeleteAllNotes");
+			buttonDeleteAllNotes.Name = "buttonDeleteAllNotes";
+			buttonDeleteAllNotes.UseVisualStyleBackColor = true;
 			// 
 			// buttonOK
 			// 
-			resources.ApplyResources(this.buttonOK, "buttonOK");
-			this.buttonOK.Name = "buttonOK";
-			this.buttonOK.UseVisualStyleBackColor = true;
-			this.buttonOK.Click += new System.EventHandler(this.buttonOK_Click);
+			resources.ApplyResources(buttonOK, "buttonOK");
+			buttonOK.Name = "buttonOK";
+			buttonOK.UseVisualStyleBackColor = true;
+			buttonOK.Click += buttonOK_Click;
 			// 
 			// buttonCancel
 			// 
-			resources.ApplyResources(this.buttonCancel, "buttonCancel");
-			this.buttonCancel.Name = "buttonCancel";
-			this.buttonCancel.UseVisualStyleBackColor = true;
-			this.buttonCancel.Click += new System.EventHandler(this.buttonCancel_Click);
+			resources.ApplyResources(buttonCancel, "buttonCancel");
+			buttonCancel.Name = "buttonCancel";
+			buttonCancel.UseVisualStyleBackColor = true;
+			buttonCancel.Click += buttonCancel_Click;
 			// 
 			// buttonApply
 			// 
-			resources.ApplyResources(this.buttonApply, "buttonApply");
-			this.buttonApply.Name = "buttonApply";
-			this.buttonApply.UseVisualStyleBackColor = true;
-			this.buttonApply.Click += new System.EventHandler(this.buttonApply_Click);
+			resources.ApplyResources(buttonApply, "buttonApply");
+			buttonApply.Name = "buttonApply";
+			buttonApply.UseVisualStyleBackColor = true;
+			buttonApply.Click += buttonApply_Click;
 			// 
 			// buttonAboutNowNotes
 			// 
-			resources.ApplyResources(this.buttonAboutNowNotes, "buttonAboutNowNotes");
-			this.buttonAboutNowNotes.Name = "buttonAboutNowNotes";
-			this.buttonAboutNowNotes.UseVisualStyleBackColor = true;
-			this.buttonAboutNowNotes.Click += new System.EventHandler(this.buttonAboutNowNotes_Click);
+			resources.ApplyResources(buttonAboutNowNotes, "buttonAboutNowNotes");
+			buttonAboutNowNotes.Name = "buttonAboutNowNotes";
+			buttonAboutNowNotes.UseVisualStyleBackColor = true;
+			buttonAboutNowNotes.Click += buttonAboutNowNotes_Click;
+			// 
+			// tabPageAppearance
+			// 
+			tabPageAppearance.Controls.Add(label1);
+			tabPageAppearance.Controls.Add(comboBox1);
+			resources.ApplyResources(tabPageAppearance, "tabPageAppearance");
+			tabPageAppearance.Name = "tabPageAppearance";
+			tabPageAppearance.UseVisualStyleBackColor = true;
+			// 
+			// comboBox1
+			// 
+			comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
+			comboBox1.FormattingEnabled = true;
+			comboBox1.Items.AddRange(new object[] { resources.GetString("comboBox1.Items"), resources.GetString("comboBox1.Items1"), resources.GetString("comboBox1.Items2") });
+			resources.ApplyResources(comboBox1, "comboBox1");
+			comboBox1.Name = "comboBox1";
+			// 
+			// label1
+			// 
+			resources.ApplyResources(label1, "label1");
+			label1.Name = "label1";
 			// 
 			// FormSettings
 			// 
 			resources.ApplyResources(this, "$this");
-			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.Controls.Add(this.buttonAboutNowNotes);
-			this.Controls.Add(this.buttonApply);
-			this.Controls.Add(this.buttonCancel);
-			this.Controls.Add(this.buttonOK);
-			this.Controls.Add(this.tabControlSettingsTabs);
-			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-			this.Name = "FormSettings";
-			this.TopMost = true;
-			this.Load += new System.EventHandler(this.FormSettings_Load);
-			this.tabControlSettingsTabs.ResumeLayout(false);
-			this.tabPageSync.ResumeLayout(false);
-			this.tabPageSync.PerformLayout();
-			this.tabPageAdvanced.ResumeLayout(false);
-			this.tabPageAdvanced.PerformLayout();
-			this.ResumeLayout(false);
-
+			AutoScaleMode = AutoScaleMode.Font;
+			Controls.Add(buttonAboutNowNotes);
+			Controls.Add(buttonApply);
+			Controls.Add(buttonCancel);
+			Controls.Add(buttonOK);
+			Controls.Add(tabControlSettingsTabs);
+			FormBorderStyle = FormBorderStyle.FixedSingle;
+			Name = "FormSettings";
+			TopMost = true;
+			Load += FormSettings_Load;
+			tabControlSettingsTabs.ResumeLayout(false);
+			tabPageSync.ResumeLayout(false);
+			tabPageSync.PerformLayout();
+			tabPageAdvanced.ResumeLayout(false);
+			tabPageAdvanced.PerformLayout();
+			tabPageAppearance.ResumeLayout(false);
+			tabPageAppearance.PerformLayout();
+			ResumeLayout(false);
 		}
 
 		#endregion
@@ -168,5 +195,8 @@
 		private Button buttonDeleteAllNotes;
 		private CheckBox checkBoxStartup;
 		private Button buttonAboutNowNotes;
+		private TabPage tabPageAppearance;
+		private Label label1;
+		private ComboBox comboBox1;
 	}
 }
