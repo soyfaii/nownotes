@@ -100,6 +100,34 @@ namespace NowNotes_Windows
                     Application.Exit();
                 }
             }
+            // Theme applying
+            if (Settings.Default.Theme == "dark") { ApplyDarkTheme(); }
+            else if (Settings.Default.Theme == "auto")
+            {
+                try
+                {
+					RegistryKey key = Registry.CurrentUser.OpenSubKey(@"Software\Microsoft\Windows\CurrentVersion\Themes\Personalize");
+
+					if (key != null)
+					{
+						object value = key.GetValue("AppsUseLightTheme");
+						if (value != null)
+						{
+							int lightTheme = (int)value;
+                            if (lightTheme == 0)
+                            {
+                                ApplyDarkTheme();
+                            }
+						}
+					}
+				}
+                catch (Exception ex) {}
+            }
+        }
+
+        public void ApplyDarkTheme ()
+        {
+
         }
 
         private void notifyIcon_Click(object sender, EventArgs e)

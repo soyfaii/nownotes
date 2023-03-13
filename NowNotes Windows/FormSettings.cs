@@ -58,7 +58,7 @@ namespace NowNotes_Windows
 			if (onedriveFolderChanged) { OneDriveSyncChangedOperations(); }
 			if (comboBoxTheme.Text == "Auto (System defined)") { Settings.Default.Theme = "auto"; }
 			else if (comboBoxTheme.Text == "Light") { Settings.Default.Theme = "light"; }
-			else if (comboBoxTheme.Text == "Dark)") { Settings.Default.Theme = "dark"; }
+			else if (comboBoxTheme.Text == "Dark") { Settings.Default.Theme = "dark"; }
 			SettingsApplying();
 			Settings.Default.Save();
 			Close();
@@ -89,7 +89,7 @@ namespace NowNotes_Windows
 			if (onedriveFolderChanged) { OneDriveSyncChangedOperations(); }
 			if (comboBoxTheme.Text == "Auto (System defined)") { Settings.Default.Theme = "auto"; }
 			else if (comboBoxTheme.Text == "Light") { Settings.Default.Theme = "light"; }
-			else if (comboBoxTheme.Text == "Dark)") { Settings.Default.Theme = "dark"; }
+			else if (comboBoxTheme.Text == "Dark") { Settings.Default.Theme = "dark"; }
 			SettingsApplying();
 			Settings.Default.Save();
 		}
