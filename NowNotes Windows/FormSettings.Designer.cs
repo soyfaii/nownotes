@@ -30,6 +30,9 @@
 		{
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormSettings));
 			tabControlSettingsTabs = new TabControl();
+			tabPageAppearance = new TabPage();
+			labelTheme = new Label();
+			comboBoxTheme = new ComboBox();
 			tabPageSync = new TabPage();
 			comboBoxOneDriveAccount = new ComboBox();
 			labelOneDriveAccount = new Label();
@@ -41,13 +44,10 @@
 			buttonCancel = new Button();
 			buttonApply = new Button();
 			buttonAboutNowNotes = new Button();
-			tabPageAppearance = new TabPage();
-			comboBox1 = new ComboBox();
-			label1 = new Label();
 			tabControlSettingsTabs.SuspendLayout();
+			tabPageAppearance.SuspendLayout();
 			tabPageSync.SuspendLayout();
 			tabPageAdvanced.SuspendLayout();
-			tabPageAppearance.SuspendLayout();
 			SuspendLayout();
 			// 
 			// tabControlSettingsTabs
@@ -59,6 +59,27 @@
 			tabControlSettingsTabs.Multiline = true;
 			tabControlSettingsTabs.Name = "tabControlSettingsTabs";
 			tabControlSettingsTabs.SelectedIndex = 0;
+			// 
+			// tabPageAppearance
+			// 
+			tabPageAppearance.Controls.Add(labelTheme);
+			tabPageAppearance.Controls.Add(comboBoxTheme);
+			resources.ApplyResources(tabPageAppearance, "tabPageAppearance");
+			tabPageAppearance.Name = "tabPageAppearance";
+			tabPageAppearance.UseVisualStyleBackColor = true;
+			// 
+			// labelTheme
+			// 
+			resources.ApplyResources(labelTheme, "labelTheme");
+			labelTheme.Name = "labelTheme";
+			// 
+			// comboBoxTheme
+			// 
+			comboBoxTheme.DropDownStyle = ComboBoxStyle.DropDownList;
+			comboBoxTheme.FormattingEnabled = true;
+			comboBoxTheme.Items.AddRange(new object[] { resources.GetString("comboBoxTheme.Items"), resources.GetString("comboBoxTheme.Items1"), resources.GetString("comboBoxTheme.Items2") });
+			resources.ApplyResources(comboBoxTheme, "comboBoxTheme");
+			comboBoxTheme.Name = "comboBoxTheme";
 			// 
 			// tabPageSync
 			// 
@@ -137,27 +158,6 @@
 			buttonAboutNowNotes.UseVisualStyleBackColor = true;
 			buttonAboutNowNotes.Click += buttonAboutNowNotes_Click;
 			// 
-			// tabPageAppearance
-			// 
-			tabPageAppearance.Controls.Add(label1);
-			tabPageAppearance.Controls.Add(comboBox1);
-			resources.ApplyResources(tabPageAppearance, "tabPageAppearance");
-			tabPageAppearance.Name = "tabPageAppearance";
-			tabPageAppearance.UseVisualStyleBackColor = true;
-			// 
-			// comboBox1
-			// 
-			comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
-			comboBox1.FormattingEnabled = true;
-			comboBox1.Items.AddRange(new object[] { resources.GetString("comboBox1.Items"), resources.GetString("comboBox1.Items1"), resources.GetString("comboBox1.Items2") });
-			resources.ApplyResources(comboBox1, "comboBox1");
-			comboBox1.Name = "comboBox1";
-			// 
-			// label1
-			// 
-			resources.ApplyResources(label1, "label1");
-			label1.Name = "label1";
-			// 
 			// FormSettings
 			// 
 			resources.ApplyResources(this, "$this");
@@ -172,12 +172,12 @@
 			TopMost = true;
 			Load += FormSettings_Load;
 			tabControlSettingsTabs.ResumeLayout(false);
+			tabPageAppearance.ResumeLayout(false);
+			tabPageAppearance.PerformLayout();
 			tabPageSync.ResumeLayout(false);
 			tabPageSync.PerformLayout();
 			tabPageAdvanced.ResumeLayout(false);
 			tabPageAdvanced.PerformLayout();
-			tabPageAppearance.ResumeLayout(false);
-			tabPageAppearance.PerformLayout();
 			ResumeLayout(false);
 		}
 
@@ -196,7 +196,7 @@
 		private CheckBox checkBoxStartup;
 		private Button buttonAboutNowNotes;
 		private TabPage tabPageAppearance;
-		private Label label1;
-		private ComboBox comboBox1;
+		private Label labelTheme;
+		private ComboBox comboBoxTheme;
 	}
 }
