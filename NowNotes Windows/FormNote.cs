@@ -21,6 +21,7 @@ namespace NowNotes_Windows
 		System.Windows.Forms.TextBox textBoxRenameNote = new System.Windows.Forms.TextBox();
 		public string noteName;
 		public string noteFolderPath;
+		public bool themesDark = false;
 
 		public FormMain()
 		{
@@ -101,7 +102,7 @@ namespace NowNotes_Windows
 				}
 			}
 			// Theme applying
-			if (Settings.Default.Theme == "dark") { ApplyDarkTheme(); }
+			if (Settings.Default.Theme == "dark") { ApplyDarkTheme(); themesDark = true; }
 			else if (Settings.Default.Theme == "auto")
 			{
 				try
@@ -117,6 +118,7 @@ namespace NowNotes_Windows
 							if (lightTheme == 0)
 							{
 								ApplyDarkTheme();
+								themesDark = true;
 							}
 						}
 					}
@@ -355,11 +357,25 @@ namespace NowNotes_Windows
 		{
 			if (richTextBox.GetPositionFromCharIndex(0).Y < 0)
 			{
-				toolStrip.BackColor = Color.FromArgb(232, 226, 208);
+				if (!themesDark)
+				{
+					toolStrip.BackColor = Color.FromArgb(232, 226, 208); 
+				}
+				else
+				{
+					toolStrip.BackColor = Color.FromArgb(205, 198, 180);
+				}
 			}
 			else
 			{
-				toolStrip.BackColor = Color.FromArgb(255, 251, 255);
+				if (!themesDark)
+				{
+					toolStrip.BackColor = Color.FromArgb(255, 251, 255);
+				}
+				else
+				{
+					toolStrip.BackColor = Color.FromArgb(74, 71, 57);
+				}
 			}
 		}
 
