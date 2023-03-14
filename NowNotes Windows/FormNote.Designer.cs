@@ -178,12 +178,12 @@
 			// 
 			panelSideMenuTitle.Controls.Add(labelSideMenuTitle);
 			resources.ApplyResources(panelSideMenuTitle, "panelSideMenuTitle");
+			panelSideMenuTitle.ForeColor = Color.FromArgb(74, 71, 57);
 			panelSideMenuTitle.Name = "panelSideMenuTitle";
 			// 
 			// labelSideMenuTitle
 			// 
 			resources.ApplyResources(labelSideMenuTitle, "labelSideMenuTitle");
-			labelSideMenuTitle.ForeColor = Color.FromArgb(74, 71, 57);
 			labelSideMenuTitle.Name = "labelSideMenuTitle";
 			// 
 			// panelInfo
