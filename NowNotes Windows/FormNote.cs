@@ -383,14 +383,4 @@ namespace NowNotes_Windows
             form.Show();
 		}
 	}
-	public class RoundButton : System.Windows.Forms.Button
-    {
-        protected override void OnPaint(System.Windows.Forms.PaintEventArgs e)
-        {
-            GraphicsPath grPath = new GraphicsPath();
-            grPath.AddEllipse(0, 0, ClientSize.Width, ClientSize.Height);
-            this.Region = new System.Drawing.Region(grPath);
-            base.OnPaint(e);
-        }
-    }
 }
