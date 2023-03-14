@@ -35,4 +35,13 @@ namespace NowNotes_Windows
 			}
 		}
 	}
+	public class ToolStripSystemRendererNoBorder : ToolStripSystemRenderer
+	{
+		public ToolStripSystemRendererNoBorder() { }
+
+		protected override void OnRenderToolStripBorder(ToolStripRenderEventArgs e)
+		{
+			//base.OnRenderToolStripBorder(e);
+		}
+	}
 }
