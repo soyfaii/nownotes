@@ -216,6 +216,7 @@
 			// 
 			resources.ApplyResources(toolBar, "toolBar");
 			toolBar.BackColor = Color.FromArgb(232, 226, 208);
+			toolBar.ForeColor = Color.FromArgb(74, 71, 57);
 			toolBar.GripStyle = ToolStripGripStyle.Hidden;
 			toolBar.ImageScalingSize = new Size(20, 20);
 			toolBar.Items.AddRange(new ToolStripItem[] { toolStripButtonNormal, toolStripButtonBold, toolStripButtonItalic, toolStripButtonUnderline, toolStripButton2 });

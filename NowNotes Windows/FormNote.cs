@@ -43,6 +43,7 @@ namespace NowNotes_Windows
 			buttonRename.Size = new Size(94, 29);
 			buttonRename.Location = new Point(276, 45);
 			buttonRename.Click += ButtonRename_Click;
+
 		}
 
 		private void FormMain_Load(object sender, EventArgs e)
@@ -102,6 +103,7 @@ namespace NowNotes_Windows
 				}
 			}
 			// Theme applying
+			toolStrip.ForeColor = Color.FromArgb(74, 71, 57);
 			if (Settings.Default.Theme == "dark") { ApplyDarkTheme(); themesDark = true; }
 			else if (Settings.Default.Theme == "auto")
 			{
@@ -134,6 +136,8 @@ namespace NowNotes_Windows
 			richTextBox.BackColor = Color.FromArgb(29, 27, 22);
 			richTextBox.ForeColor = Color.FromArgb(231, 226, 217);
 			labelInfo.ForeColor = Color.FromArgb(231, 226, 217);
+			panelInfo.ForeColor = Color.FromArgb(231, 226, 217);
+			labelInfo.BackColor = Color.FromArgb(29, 27, 22);
 			panelInfo.BackColor = Color.FromArgb(29, 27, 22);
 			toolBar.BackColor = Color.FromArgb(74, 71, 57);
 			toolBar.ForeColor = Color.FromArgb(205, 198, 180);
@@ -359,7 +363,7 @@ namespace NowNotes_Windows
 			{
 				if (!themesDark)
 				{
-					toolStrip.BackColor = Color.FromArgb(232, 226, 208); 
+					toolStrip.BackColor = Color.FromArgb(232, 226, 208);
 				}
 				else
 				{
