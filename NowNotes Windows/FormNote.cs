@@ -131,6 +131,7 @@ namespace NowNotes_Windows
 
 		public void ApplyDarkTheme()
 		{
+			// Modify simple colors
 			toolStrip.BackColor = Color.FromArgb(74, 71, 57);
 			toolStrip.ForeColor = Color.FromArgb(205, 198, 180);
 			richTextBox.BackColor = Color.FromArgb(29, 27, 22);
@@ -148,6 +149,52 @@ namespace NowNotes_Windows
 			listBoxMenu.ForeColor = Color.FromArgb(205, 198, 180);
 			panelSideMenuTitle.BackColor = Color.FromArgb(74, 71, 57);
 			panelSideMenuTitle.ForeColor = Color.FromArgb(205, 198, 180);
+			// Modify icons
+			{
+				// Menu
+				{
+					Bitmap pic = new Bitmap(toolStripButtonMenu.Image);
+					for (int y = 0; (y <= (pic.Height - 1)); y++)
+					{
+						for (int x = 0; (x <= (pic.Width - 1)); x++)
+						{
+							Color inv = pic.GetPixel(x, y);
+							inv = Color.FromArgb(inv.A, (255 - inv.R), (255 - inv.G), (255 - inv.B));
+							pic.SetPixel(x, y, inv);
+						}
+					}
+
+					toolStripButtonMenu.Image = pic;
+				}
+				// Add
+				{
+					Bitmap pic = new Bitmap(roundButtonNewNote.Image);
+					for (int y = 0; (y <= (pic.Height - 1)); y++)
+					{
+						for (int x = 0; (x <= (pic.Width - 1)); x++)
+						{
+							Color inv = pic.GetPixel(x, y);
+							inv = Color.FromArgb(inv.A, (255 - inv.R), (255 - inv.G), (255 - inv.B));
+							pic.SetPixel(x, y, inv);
+						}
+					}
+					roundButtonNewNote.Image = pic;
+				}
+				// More
+				{
+					Bitmap pic = new Bitmap(toolStripDropDownButtonNoteOptions.Image);
+					for (int y = 0; (y <= (pic.Height - 1)); y++)
+					{
+						for (int x = 0; (x <= (pic.Width - 1)); x++)
+						{
+							Color inv = pic.GetPixel(x, y);
+							inv = Color.FromArgb(inv.A, (255 - inv.R), (255 - inv.G), (255 - inv.B));
+							pic.SetPixel(x, y, inv);
+						}
+					}
+					toolStripDropDownButtonNoteOptions.Image = pic;
+				}
+			}
 		}
 
 		private void notifyIcon_Click(object sender, EventArgs e)
