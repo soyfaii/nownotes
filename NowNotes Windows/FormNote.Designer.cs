@@ -208,7 +208,6 @@
 			roundButtonNewNote.Cursor = Cursors.Hand;
 			roundButtonNewNote.FlatAppearance.BorderSize = 0;
 			resources.ApplyResources(roundButtonNewNote, "roundButtonNewNote");
-			roundButtonNewNote.Image = Properties.Resources.add;
 			roundButtonNewNote.Name = "roundButtonNewNote";
 			roundButtonNewNote.UseVisualStyleBackColor = false;
 			roundButtonNewNote.Click += buttonNewNote_Click;

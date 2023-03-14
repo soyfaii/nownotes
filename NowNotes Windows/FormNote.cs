@@ -75,7 +75,7 @@ namespace NowNotes_Windows
 			{
 				return (Image)(new Bitmap(imgToResize, size));
 			}
-			this.roundButtonNewNote.Image = resizeImage(Resources.add, new Size(24, 24));
+			roundButtonNewNote.Image = resizeImage(roundButtonNewNote.Image, new Size(24, 24));
 			timerScrolling.Start();
 			// Check for updates and install if there's one
 			Debug.WriteLine("Checking for updates...");

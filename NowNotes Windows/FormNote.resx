@@ -70,10 +70,10 @@
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="toolStripButtonMenu.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAABTSURBVFhH7darEcBADANRd3YpLZ1dOsuHCwg4Ftk3s1DU
-        4wIA4Bd3KJsaT2S7QgHocrytQDZ1oyayqfFEtjMUgC7f67MD2dSNmsimxhMBANCq6gEbofaTObrnJwAA
-        AABJRU5ErkJggg==
+        iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAABoSURBVGhD7djRCYAwDEDBjuImOoqjuJlups0EWrA04h28
+        /+QrtAUA4H1rbU9WzPTYVjuTFTM9ZoEONS0w1ZZkxUwAH+GQdcgCo2taAGCseDzMyWp60DhkHfrXAvGJ
+        dCSr6WMLAOBWKRcMhrpguIjL5gAAAABJRU5ErkJggg==
 </value>
   </data>
   <data name="toolStripButtonMenu.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
@@ -149,10 +149,10 @@
   <data name="toolStripDropDownButtonNoteOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAACcSURBVGhD7djBCYNAFEXRKcUSUkI6MCWkU9NB7CTpQP/F
-        GQiSrYsH98CDz6xUhPm8JknSRZ6VTw9zlFtlO4WzGI/K+QU4izFVvpXx8MycRblXXj3MkiTFYX2YjzHP
-        WhmrxJuDJP+Wuah1Iv4F8PsLMUfiq7uJSpIicYEtPXGXGSUWnehYJZijiq34ajG+3AWVOp0oiavXJUkJ
-        WtsBeJU02W25HBwAAAAASUVORK5CYII=
+        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAACxSURBVGhD7djRCcJQDIXhO4IjOIKjOIIb6AZ1BDfQEdxI
+        N9AN6jmQgoQO0AP/BwcueUpoH0IGAGCrrsqnMrmQ5KTMLa7FeCp9ANdi3JQ+gGsxdspXWZr3e69E8RCX
+        it8AAEQ5KPeK31Hc8P8e5EQN8VD6AK7FWBsgahuN/4XMDftLOHHNAwDgU8q5EndWccMvZVkjfOCNGiL+
+        tLh23I1ap49KH8C1KL6Jvit+AwC2ZowfnZJEDD0UiNgAAAAASUVORK5CYII=
 </value>
   </data>
   <data name="toolStripDropDownButtonNoteOptions.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
@@ -438,6 +438,13 @@ Information Panel</value>
   </data>
   <data name="roundButtonNewNote.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
+  </data>
+  <data name="roundButtonNewNote.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAAF9JREFUaEPt
+        1jkOgDAQBEH/HH4OODMWEYeGlaqkib2duQEA19Zjy7BytmnlCEgTkCYgTUCagLRfBfSP2XzQ1+tvvkbA
+        jQl4aj6oHAFpAtIEpAlIE5BWPqB/xsYBAGet7frr1y4UmWUJAAAAAElFTkSuQmCC
+</value>
   </data>
   <data name="roundButtonNewNote.Location" type="System.Drawing.Point, System.Drawing">
     <value>461, 455</value>
