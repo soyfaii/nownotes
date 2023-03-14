@@ -71,7 +71,7 @@
   <data name="toolStripButtonMenu.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABTSURBVFhH7darEcBADANRd3YpLZ1dOsuHCwg4Ftk3s1DU
+        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAABTSURBVFhH7darEcBADANRd3YpLZ1dOsuHCwg4Ftk3s1DU
         4wIA4Bd3KJsaT2S7QgHocrytQDZ1oyayqfFEtjMUgC7f67MD2dSNmsimxhMBANCq6gEbofaTObrnJwAA
         AABJRU5ErkJggg==
 </value>
@@ -91,65 +91,10 @@
   <data name="toolStripDropDownButtonNoteOptions.AutoSize" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="renameNoteToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
-  </data>
-  <data name="renameNoteToolStripMenuItem.Text" xml:space="preserve">
-    <value>Rename Note</value>
-  </data>
-  <data name="deleteNoteToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
-  </data>
-  <data name="deleteNoteToolStripMenuItem.Text" xml:space="preserve">
-    <value>Delete Note</value>
-  </data>
-  <data name="toolStripSeparator2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>177, 6</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="focusToolStripMenuItem.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
-    <value>F11</value>
-  </data>
-  <data name="focusToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
-  </data>
-  <data name="focusToolStripMenuItem.Text" xml:space="preserve">
-    <value>Focus</value>
-  </data>
-  <data name="settingsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
-  </data>
-  <data name="settingsToolStripMenuItem.Text" xml:space="preserve">
-    <value>Settings</value>
-  </data>
-  <data name="showNotesFolderToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>173, 22</value>
-  </data>
-  <data name="showNotesFolderToolStripMenuItem.Text" xml:space="preserve">
-    <value>Show Notes Folder</value>
-  </data>
-  <data name="debugToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
-  </data>
-  <data name="debugToolStripMenuItem.Text" xml:space="preserve">
-    <value>Debug</value>
-  </data>
-  <data name="debugToolStripMenuItem.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="closeToolStripMenuItem.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
-    <value>Alt+F4</value>
-  </data>
-  <data name="closeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
-  </data>
-  <data name="closeToolStripMenuItem.Text" xml:space="preserve">
-    <value>Close</value>
-  </data>
   <data name="toolStripDropDownButtonNoteOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACcSURBVGhD7djBCYNAFEXRKcUSUkI6MCWkU9NB7CTpQP/F
+        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAACcSURBVGhD7djBCYNAFEXRKcUSUkI6MCWkU9NB7CTpQP/F
         GQiSrYsH98CDz6xUhPm8JknSRZ6VTw9zlFtlO4WzGI/K+QU4izFVvpXx8MycRblXXj3MkiTFYX2YjzHP
         WhmrxJuDJP+Wuah1Iv4F8PsLMUfiq7uJSpIicYEtPXGXGSUWnehYJZijiq34ajG+3AWVOp0oiavXJUkJ
         WtsBeJU02W25HBwAAAAASUVORK5CYII=
@@ -171,16 +116,16 @@
     <value>Segoe UI, 12pt</value>
   </data>
   <data name="toolStripLabelTitle.Size" type="System.Drawing.Size, System.Drawing">
-    <value>39, 45</value>
+    <value>49, 61</value>
   </data>
   <data name="toolStripLabelTitle.Text" xml:space="preserve">
     <value>Title</value>
   </data>
   <data name="toolStrip.Location" type="System.Drawing.Point, System.Drawing">
-    <value>304, 0</value>
+    <value>347, 0</value>
   </data>
   <data name="toolStrip.Size" type="System.Drawing.Size, System.Drawing">
-    <value>162, 48</value>
+    <value>186, 64</value>
   </data>
   <data name="toolStrip.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -196,6 +141,61 @@
   </data>
   <data name="&gt;&gt;toolStrip.ZOrder" xml:space="preserve">
     <value>4</value>
+  </data>
+  <data name="renameNoteToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>183, 26</value>
+  </data>
+  <data name="renameNoteToolStripMenuItem.Text" xml:space="preserve">
+    <value>Rename Note</value>
+  </data>
+  <data name="deleteNoteToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>183, 26</value>
+  </data>
+  <data name="deleteNoteToolStripMenuItem.Text" xml:space="preserve">
+    <value>Delete Note</value>
+  </data>
+  <data name="toolStripSeparator2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 6</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="focusToolStripMenuItem.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
+    <value>F11</value>
+  </data>
+  <data name="focusToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>183, 26</value>
+  </data>
+  <data name="focusToolStripMenuItem.Text" xml:space="preserve">
+    <value>Focus</value>
+  </data>
+  <data name="settingsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>183, 26</value>
+  </data>
+  <data name="settingsToolStripMenuItem.Text" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="debugToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>183, 26</value>
+  </data>
+  <data name="debugToolStripMenuItem.Text" xml:space="preserve">
+    <value>Debug</value>
+  </data>
+  <data name="debugToolStripMenuItem.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="showNotesFolderToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>217, 26</value>
+  </data>
+  <data name="showNotesFolderToolStripMenuItem.Text" xml:space="preserve">
+    <value>Show Notes Folder</value>
+  </data>
+  <data name="closeToolStripMenuItem.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
+    <value>Alt+F4</value>
+  </data>
+  <data name="closeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>183, 26</value>
+  </data>
+  <data name="closeToolStripMenuItem.Text" xml:space="preserve">
+    <value>Close</value>
   </data>
   <metadata name="notifyIcon.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>132, 17</value>
@@ -234,14 +234,10 @@
     <value>Fill</value>
   </data>
   <data name="richTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>304, 48</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="richTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
+    <value>347, 64</value>
   </data>
   <data name="richTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>162, 234</value>
+    <value>186, 313</value>
   </data>
   <data name="richTextBox.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -261,24 +257,6 @@
   <data name="&gt;&gt;richTextBox.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="listBoxMenu.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="listBoxMenu.ItemHeight" type="System.Int32, mscorlib">
-    <value>15</value>
-  </data>
-  <data name="listBoxMenu.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 31</value>
-  </data>
-  <data name="listBoxMenu.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>10, 2, 10, 2</value>
-  </data>
-  <data name="listBoxMenu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>284, 361</value>
-  </data>
-  <data name="listBoxMenu.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
   <data name="&gt;&gt;listBoxMenu.Name" xml:space="preserve">
     <value>listBoxMenu</value>
   </data>
@@ -290,51 +268,6 @@
   </data>
   <data name="&gt;&gt;listBoxMenu.ZOrder" xml:space="preserve">
     <value>0</value>
-  </data>
-  <data name="labelSideMenuTitle.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="labelSideMenuTitle.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 12pt, style=Bold</value>
-  </data>
-  <data name="labelSideMenuTitle.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 7</value>
-  </data>
-  <data name="labelSideMenuTitle.Size" type="System.Drawing.Size, System.Drawing">
-    <value>94, 21</value>
-  </data>
-  <data name="labelSideMenuTitle.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="labelSideMenuTitle.Text" xml:space="preserve">
-    <value>Your Notes</value>
-  </data>
-  <data name="&gt;&gt;labelSideMenuTitle.Name" xml:space="preserve">
-    <value>labelSideMenuTitle</value>
-  </data>
-  <data name="&gt;&gt;labelSideMenuTitle.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelSideMenuTitle.Parent" xml:space="preserve">
-    <value>panelSideMenuTitle</value>
-  </data>
-  <data name="&gt;&gt;labelSideMenuTitle.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="panelSideMenuTitle.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="panelSideMenuTitle.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 0</value>
-  </data>
-  <data name="panelSideMenuTitle.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
-  </data>
-  <data name="panelSideMenuTitle.Size" type="System.Drawing.Size, System.Drawing">
-    <value>284, 31</value>
-  </data>
-  <data name="panelSideMenuTitle.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
   </data>
   <data name="&gt;&gt;panelSideMenuTitle.Name" xml:space="preserve">
     <value>panelSideMenuTitle</value>
@@ -354,14 +287,12 @@
   <data name="panelSideMenu.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
-  <data name="panelSideMenu.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
-  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="panelSideMenu.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>10, 0, 10, 0</value>
+    <value>11, 0, 11, 0</value>
   </data>
   <data name="panelSideMenu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>304, 392</value>
+    <value>347, 523</value>
   </data>
   <data name="panelSideMenu.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -381,14 +312,155 @@
   <data name="&gt;&gt;panelSideMenu.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
+  <data name="listBoxMenu.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="listBoxMenu.ItemHeight" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="listBoxMenu.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 41</value>
+  </data>
+  <data name="listBoxMenu.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>11, 3, 11, 3</value>
+  </data>
+  <data name="listBoxMenu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>325, 482</value>
+  </data>
+  <data name="listBoxMenu.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;listBoxMenu.Name" xml:space="preserve">
+    <value>listBoxMenu</value>
+  </data>
+  <data name="&gt;&gt;listBoxMenu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;listBoxMenu.Parent" xml:space="preserve">
+    <value>panelSideMenu</value>
+  </data>
+  <data name="&gt;&gt;listBoxMenu.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;labelSideMenuTitle.Name" xml:space="preserve">
+    <value>labelSideMenuTitle</value>
+  </data>
+  <data name="&gt;&gt;labelSideMenuTitle.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelSideMenuTitle.Parent" xml:space="preserve">
+    <value>panelSideMenuTitle</value>
+  </data>
+  <data name="&gt;&gt;labelSideMenuTitle.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="panelSideMenuTitle.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="panelSideMenuTitle.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 0</value>
+  </data>
+  <data name="panelSideMenuTitle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>325, 41</value>
+  </data>
+  <data name="panelSideMenuTitle.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;panelSideMenuTitle.Name" xml:space="preserve">
+    <value>panelSideMenuTitle</value>
+  </data>
+  <data name="&gt;&gt;panelSideMenuTitle.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panelSideMenuTitle.Parent" xml:space="preserve">
+    <value>panelSideMenu</value>
+  </data>
+  <data name="&gt;&gt;panelSideMenuTitle.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="labelSideMenuTitle.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelSideMenuTitle.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12pt, style=Bold</value>
+  </data>
+  <data name="labelSideMenuTitle.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 9</value>
+  </data>
+  <data name="labelSideMenuTitle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>116, 28</value>
+  </data>
+  <data name="labelSideMenuTitle.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="labelSideMenuTitle.Text" xml:space="preserve">
+    <value>Your Notes</value>
+  </data>
+  <data name="&gt;&gt;labelSideMenuTitle.Name" xml:space="preserve">
+    <value>labelSideMenuTitle</value>
+  </data>
+  <data name="&gt;&gt;labelSideMenuTitle.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelSideMenuTitle.Parent" xml:space="preserve">
+    <value>panelSideMenuTitle</value>
+  </data>
+  <data name="&gt;&gt;labelSideMenuTitle.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="panelInfo.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
     <value>GrowAndShrink</value>
   </data>
+  <data name="&gt;&gt;labelInfo.Name" xml:space="preserve">
+    <value>labelInfo</value>
+  </data>
+  <data name="&gt;&gt;labelInfo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelInfo.Parent" xml:space="preserve">
+    <value>panelInfo</value>
+  </data>
+  <data name="&gt;&gt;labelInfo.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="panelInfo.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="panelInfo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>347, 377</value>
+  </data>
+  <data name="panelInfo.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>50, 51, 50, 51</value>
+  </data>
+  <data name="panelInfo.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
+  </data>
+  <data name="panelInfo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>186, 66</value>
+  </data>
+  <data name="panelInfo.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="panelInfo.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;panelInfo.Name" xml:space="preserve">
+    <value>panelInfo</value>
+  </data>
+  <data name="&gt;&gt;panelInfo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panelInfo.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panelInfo.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
   <data name="labelInfo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 4</value>
+    <value>8, 5</value>
   </data>
   <data name="labelInfo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>386, 40</value>
+    <value>441, 53</value>
   </data>
   <data name="labelInfo.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -412,50 +484,14 @@ Information Panel</value>
   <data name="&gt;&gt;labelInfo.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="panelInfo.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Bottom</value>
-  </data>
-  <data name="panelInfo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>304, 282</value>
-  </data>
-  <data name="panelInfo.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>44, 38, 44, 38</value>
-  </data>
-  <data name="panelInfo.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="panelInfo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>162, 50</value>
-  </data>
-  <data name="panelInfo.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="panelInfo.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;panelInfo.Name" xml:space="preserve">
-    <value>panelInfo</value>
-  </data>
-  <data name="&gt;&gt;panelInfo.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panelInfo.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;panelInfo.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
   <data name="roundButtonNewNote.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
   <data name="roundButtonNewNote.Location" type="System.Drawing.Point, System.Drawing">
-    <value>403, 341</value>
-  </data>
-  <data name="roundButtonNewNote.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
+    <value>461, 455</value>
   </data>
   <data name="roundButtonNewNote.Size" type="System.Drawing.Size, System.Drawing">
-    <value>49, 42</value>
+    <value>56, 56</value>
   </data>
   <data name="roundButtonNewNote.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -481,6 +517,27 @@ Information Panel</value>
   <data name="toolBar.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Bottom</value>
   </data>
+  <data name="toolBar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>347, 443</value>
+  </data>
+  <data name="toolBar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>186, 80</value>
+  </data>
+  <data name="toolBar.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;toolBar.Name" xml:space="preserve">
+    <value>toolBar</value>
+  </data>
+  <data name="&gt;&gt;toolBar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStrip, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolBar.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;toolBar.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
   <data name="toolStripButtonNormal.AutoSize" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
@@ -490,7 +547,7 @@ Information Panel</value>
   <data name="toolStripButtonNormal.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEKSURBVEhL3ZG9DsFQHMXvczDZvIOtXsHObuhqkViI3Quw
+        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAEKSURBVEhL3ZG9DsFQHMXvczDZvIOtXsHObuhqkViI3Quw
         6CYmNoMYJJ0NBiFFIoIytOuf0+TeXP3yde+iyS+3OcP53Z4y3/dJJ4HAsiwyTVMp6BQCBIZhKAWdEcHV
         vSlBmeB82NFy1KLluEWOPRC5MoHdMWhazwi4RJlALgf4EuT6BI+5kCsTrGddUY658E+QvyXYHq9UnRyC
         U87f4aUApcXhnrI9Jzg/laQKFntXlHM+lSQK5psL5fvbp/JvJLGCQqmSWM5JkiCT84igXGtSrruKLQ0T
@@ -519,7 +576,7 @@ Information Panel</value>
   <data name="toolStripButtonBold.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEKSURBVEhL3ZG9DsFQHMXvczDZvIOtXsHObuhqkViI3Quw
+        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAEKSURBVEhL3ZG9DsFQHMXvczDZvIOtXsHObuhqkViI3Quw
         6CYmNoMYJJ0NBiFFIoIytOuf0+TeXP3yde+iyS+3OcP53Z4y3/dJJ4HAsiwyTVMp6BQCBIZhKAWdEcHV
         vSlBmeB82NFy1KLluEWOPRC5MoHdMWhazwi4RJlALgf4EuT6BI+5kCsTrGddUY658E+QvyXYHq9UnRyC
         U87f4aUApcXhnrI9Jzg/laQKFntXlHM+lSQK5psL5fvbp/JvJLGCQqmSWM5JkiCT84igXGtSrruKLQ0T
@@ -548,7 +605,7 @@ Information Panel</value>
   <data name="toolStripButtonItalic.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEKSURBVEhL3ZG9DsFQHMXvczDZvIOtXsHObuhqkViI3Quw
+        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAEKSURBVEhL3ZG9DsFQHMXvczDZvIOtXsHObuhqkViI3Quw
         6CYmNoMYJJ0NBiFFIoIytOuf0+TeXP3yde+iyS+3OcP53Z4y3/dJJ4HAsiwyTVMp6BQCBIZhKAWdEcHV
         vSlBmeB82NFy1KLluEWOPRC5MoHdMWhazwi4RJlALgf4EuT6BI+5kCsTrGddUY658E+QvyXYHq9UnRyC
         U87f4aUApcXhnrI9Jzg/laQKFntXlHM+lSQK5psL5fvbp/JvJLGCQqmSWM5JkiCT84igXGtSrruKLQ0T
@@ -577,7 +634,7 @@ Information Panel</value>
   <data name="toolStripButtonUnderline.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEKSURBVEhL3ZG9DsFQHMXvczDZvIOtXsHObuhqkViI3Quw
+        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAEKSURBVEhL3ZG9DsFQHMXvczDZvIOtXsHObuhqkViI3Quw
         6CYmNoMYJJ0NBiFFIoIytOuf0+TeXP3yde+iyS+3OcP53Z4y3/dJJ4HAsiwyTVMp6BQCBIZhKAWdEcHV
         vSlBmeB82NFy1KLluEWOPRC5MoHdMWhazwi4RJlALgf4EuT6BI+5kCsTrGddUY658E+QvyXYHq9UnRyC
         U87f4aUApcXhnrI9Jzg/laQKFntXlHM+lSQK5psL5fvbp/JvJLGCQqmSWM5JkiCT84igXGtSrruKLQ0T
@@ -606,7 +663,7 @@ Information Panel</value>
   <data name="toolStripButton2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEKSURBVEhL3ZG9DsFQHMXvczDZvIOtXsHObuhqkViI3Quw
+        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAEKSURBVEhL3ZG9DsFQHMXvczDZvIOtXsHObuhqkViI3Quw
         6CYmNoMYJJ0NBiFFIoIytOuf0+TeXP3yde+iyS+3OcP53Z4y3/dJJ4HAsiwyTVMp6BQCBIZhKAWdEcHV
         vSlBmeB82NFy1KLluEWOPRC5MoHdMWhazwi4RJlALgf4EuT6BI+5kCsTrGddUY658E+QvyXYHq9UnRyC
         U87f4aUApcXhnrI9Jzg/laQKFntXlHM+lSQK5psL5fvbp/JvJLGCQqmSWM5JkiCT84igXGtSrruKLQ0T
@@ -626,27 +683,6 @@ Information Panel</value>
   <data name="toolStripButton2.ToolTipText" xml:space="preserve">
     <value>Title</value>
   </data>
-  <data name="toolBar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>304, 332</value>
-  </data>
-  <data name="toolBar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>162, 60</value>
-  </data>
-  <data name="toolBar.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;toolBar.Name" xml:space="preserve">
-    <value>toolBar</value>
-  </data>
-  <data name="&gt;&gt;toolBar.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStrip, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;toolBar.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;toolBar.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
   <metadata name="timerScrolling.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>363, 17</value>
   </metadata>
@@ -654,13 +690,10 @@ Information Panel</value>
     <value>True</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>7, 15</value>
+    <value>8, 20</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>466, 392</value>
-  </data>
-  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
+    <value>533, 523</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>NowNotes</value>

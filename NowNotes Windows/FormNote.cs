@@ -127,8 +127,22 @@ namespace NowNotes_Windows
 
         public void ApplyDarkTheme ()
         {
-
-        }
+			toolStrip.BackColor = Color.FromArgb(74, 71, 57);
+			toolStrip.ForeColor = Color.FromArgb(205, 198, 180);
+			richTextBox.BackColor = Color.FromArgb(29, 27, 22);
+			richTextBox.ForeColor = Color.FromArgb(231, 226, 217);
+			labelInfo.ForeColor = Color.FromArgb(231, 226, 217);
+			panelInfo.BackColor = Color.FromArgb(29, 27, 22);
+			toolBar.BackColor = Color.FromArgb(74, 71, 57);
+			toolBar.ForeColor = Color.FromArgb(205, 198, 180);
+			roundButtonNewNote.BackColor = Color.FromArgb(82, 70, 0);
+			panelSideMenu.BackColor = Color.FromArgb(74, 71, 57);
+			panelSideMenu.ForeColor = Color.FromArgb(205, 198, 180);
+			listBoxMenu.BackColor = Color.FromArgb(74, 71, 57);
+			listBoxMenu.ForeColor = Color.FromArgb(205, 198, 180);
+			panelSideMenuTitle.BackColor = Color.FromArgb(74, 71, 57);
+			panelSideMenuTitle.ForeColor = Color.FromArgb(205, 198, 180);
+		}
 
         private void notifyIcon_Click(object sender, EventArgs e)
         {

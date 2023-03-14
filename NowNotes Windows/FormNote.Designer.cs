@@ -177,7 +177,6 @@
 			// 
 			// listBoxMenu
 			// 
-			this.listBoxMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(226)))), ((int)(((byte)(208)))));
 			this.listBoxMenu.BorderStyle = System.Windows.Forms.BorderStyle.None;
 			resources.ApplyResources(this.listBoxMenu, "listBoxMenu");
 			this.listBoxMenu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(71)))), ((int)(((byte)(57)))));
@@ -194,7 +193,6 @@
 			// labelSideMenuTitle
 			// 
 			resources.ApplyResources(this.labelSideMenuTitle, "labelSideMenuTitle");
-			this.labelSideMenuTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(71)))), ((int)(((byte)(57)))));
 			this.labelSideMenuTitle.Name = "labelSideMenuTitle";
 			// 
 			// panelInfo
@@ -241,7 +239,6 @@
 			// 
 			resources.ApplyResources(this.toolStripButtonNormal, "toolStripButtonNormal");
 			this.toolStripButtonNormal.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-			this.toolStripButtonNormal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(71)))), ((int)(((byte)(57)))));
 			this.toolStripButtonNormal.Margin = new System.Windows.Forms.Padding(4, 1, 0, 2);
 			this.toolStripButtonNormal.Name = "toolStripButtonNormal";
 			this.toolStripButtonNormal.Click += new System.EventHandler(this.toolStripButtonNormal_Click);
@@ -250,7 +247,6 @@
 			// 
 			resources.ApplyResources(this.toolStripButtonBold, "toolStripButtonBold");
 			this.toolStripButtonBold.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-			this.toolStripButtonBold.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(71)))), ((int)(((byte)(57)))));
 			this.toolStripButtonBold.Name = "toolStripButtonBold";
 			this.toolStripButtonBold.Click += new System.EventHandler(this.toolStripButtonBold_Click);
 			// 
@@ -258,7 +254,6 @@
 			// 
 			resources.ApplyResources(this.toolStripButtonItalic, "toolStripButtonItalic");
 			this.toolStripButtonItalic.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-			this.toolStripButtonItalic.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(71)))), ((int)(((byte)(57)))));
 			this.toolStripButtonItalic.Name = "toolStripButtonItalic";
 			this.toolStripButtonItalic.Click += new System.EventHandler(this.toolStripButtonItalic_Click);
 			// 
@@ -266,7 +261,6 @@
 			// 
 			resources.ApplyResources(this.toolStripButtonUnderline, "toolStripButtonUnderline");
 			this.toolStripButtonUnderline.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-			this.toolStripButtonUnderline.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(71)))), ((int)(((byte)(57)))));
 			this.toolStripButtonUnderline.Name = "toolStripButtonUnderline";
 			this.toolStripButtonUnderline.Click += new System.EventHandler(this.toolStripButtonUnderline_Click);
 			// 
@@ -274,7 +268,6 @@
 			// 
 			resources.ApplyResources(this.toolStripButton2, "toolStripButton2");
 			this.toolStripButton2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-			this.toolStripButton2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(71)))), ((int)(((byte)(57)))));
 			this.toolStripButton2.Name = "toolStripButton2";
 			this.toolStripButton2.Click += new System.EventHandler(this.toolStripButton2_Click);
 			// 
