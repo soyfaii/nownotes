@@ -158,7 +158,11 @@ namespace NowNotes_Windows
 
 		private void buttonUpdate_Click(object sender, EventArgs e)
 		{
-
+			FormMain form = new FormMain(false);
+			form.CheckForUpdates();
+			form.Close();
+			form.Dispose();
+			MessageBox.Show("There are not more updates available.");
 		}
 	}
 }

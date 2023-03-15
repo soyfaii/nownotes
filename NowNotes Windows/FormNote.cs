@@ -23,9 +23,13 @@ namespace NowNotes_Windows
 		public string noteFolderPath;
 		public bool themesDark = false;
 
-		public FormMain()
+		public FormMain(bool showSysTrayIcon = true)
 		{
 			InitializeComponent();
+			if (showSysTrayIcon == false)
+			{
+				notifyIcon.Visible = false;
+			}
 			//
 			formRenameNote.FormBorderStyle = FormBorderStyle.FixedToolWindow;
 			formRenameNote.Size = new Size(400, 130);
@@ -43,7 +47,6 @@ namespace NowNotes_Windows
 			buttonRename.Size = new Size(94, 29);
 			buttonRename.Location = new Point(276, 45);
 			buttonRename.Click += ButtonRename_Click;
-
 		}
 
 		private void FormMain_Load(object sender, EventArgs e)
