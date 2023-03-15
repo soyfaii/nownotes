@@ -41,13 +41,24 @@ namespace NowNotes_Windows
 				comboBoxOneDriveAccount.Text = Settings.Default.OneDriveFolder;
 				previousNotesFolder = Settings.Default.OneDriveFolder;
 			}
-
+			// Appearance
+			{
+				// Theme
+				{
+					if (Settings.Default.Theme == "auto") { comboBoxTheme.Text = "Auto (System defined)"; }
+					else if (Settings.Default.Theme == "light") { comboBoxTheme.Text = "Light"; }
+					else if (Settings.Default.Theme == "dark") { comboBoxTheme.Text = "Dark"; }
+				}
+			}
 		}
 
 		private void buttonOK_Click(object sender, EventArgs e)
 		{
 			// Saves and closes the window, also closes NowNotes if necessary
 			if (onedriveFolderChanged) { OneDriveSyncChangedOperations(); }
+			if (comboBoxTheme.Text == "Auto (System defined)") { Settings.Default.Theme = "auto"; }
+			else if (comboBoxTheme.Text == "Light") { Settings.Default.Theme = "light"; }
+			else if (comboBoxTheme.Text == "Dark") { Settings.Default.Theme = "dark"; }
 			SettingsApplying();
 			Settings.Default.Save();
 			Close();
@@ -76,6 +87,9 @@ namespace NowNotes_Windows
 		{
 			// Applies everything without closing the window
 			if (onedriveFolderChanged) { OneDriveSyncChangedOperations(); }
+			if (comboBoxTheme.Text == "Auto (System defined)") { Settings.Default.Theme = "auto"; }
+			else if (comboBoxTheme.Text == "Light") { Settings.Default.Theme = "light"; }
+			else if (comboBoxTheme.Text == "Dark") { Settings.Default.Theme = "dark"; }
 			SettingsApplying();
 			Settings.Default.Save();
 		}
@@ -108,13 +122,13 @@ namespace NowNotes_Windows
 			}
 			else
 			{
-			    toOneDrive = false;
+				toOneDrive = false;
 			}
 			// Creates NowNotes folders on OneDrive if they don't exist
 			if (toOneDrive)
 			{
 				Directory.CreateDirectory(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile) + "\\" + comboBoxOneDriveAccount.Text + "\\NowNotes");
-				Directory.CreateDirectory(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile) + "\\" + comboBoxOneDriveAccount.Text + "\\NowNotes\\Notes"); 
+				Directory.CreateDirectory(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile) + "\\" + comboBoxOneDriveAccount.Text + "\\NowNotes\\Notes");
 			}
 			// Transfers files form previous folder to new folder
 			string sourceFolder = previousNotesFolder;
