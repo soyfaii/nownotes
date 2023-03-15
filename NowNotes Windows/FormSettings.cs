@@ -155,5 +155,14 @@ namespace NowNotes_Windows
 			if (checkBoxEnableSync.Checked) { Settings.Default.CloudSyncEnabled = true; } else { Settings.Default.CloudSyncEnabled = false; }
 			Settings.Default.OneDriveFolder = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile) + "\\" + comboBoxOneDriveAccount.Text + "\\NowNotes\\Notes";
 		}
+
+		private void buttonUpdate_Click(object sender, EventArgs e)
+		{
+			FormMain form = new FormMain(false);
+			form.CheckForUpdates();
+			form.Close();
+			form.Dispose();
+			MessageBox.Show("There are not more updates available.");
+		}
 	}
 }

@@ -23,9 +23,13 @@ namespace NowNotes_Windows
 		public string noteFolderPath;
 		public bool themesDark = false;
 
-		public FormMain()
+		public FormMain(bool showSysTrayIcon = true)
 		{
 			InitializeComponent();
+			if (showSysTrayIcon == false)
+			{
+				notifyIcon.Visible = false;
+			}
 			//
 			formRenameNote.FormBorderStyle = FormBorderStyle.FixedToolWindow;
 			formRenameNote.Size = new Size(400, 130);
@@ -43,7 +47,6 @@ namespace NowNotes_Windows
 			buttonRename.Size = new Size(94, 29);
 			buttonRename.Location = new Point(276, 45);
 			buttonRename.Click += ButtonRename_Click;
-
 		}
 
 		private void FormMain_Load(object sender, EventArgs e)
@@ -77,31 +80,8 @@ namespace NowNotes_Windows
 			}
 			roundButtonNewNote.Image = resizeImage(roundButtonNewNote.Image, new Size(24, 24));
 			timerScrolling.Start();
-			// Check for updates and install if there's one
-			Debug.WriteLine("Checking for updates...");
-			WebClient client = new WebClient();
-			Debug.WriteLine("WebClient created");
-			Stream stream = client.OpenRead("https://raw.githubusercontent.com/SoyFaii/NowNotes/master/NowNotes%20Windows/latest_stable_version.txt");
-			Debug.WriteLine("Page opened");
-			StreamReader reader = new StreamReader(stream);
-			Debug.WriteLine("Reader created");
-			String content = reader.ReadToEnd();
-			content = content.Replace(" ", "");
-			content = content.Replace("\r", "").Replace("\n", "");
-			Debug.WriteLine("Readed " + content);
-			Debug.WriteLine("Product version is " + Application.ProductVersion);
-			if (!Application.ProductVersion.Contains(content))
-			{
-				DialogResult result = MessageBox.Show(Resources.There_s_an_update_available_fo, Resources.Update_Available, MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1);
-				if (result == DialogResult.Yes)
-				{
-					string downloadPage = "https://github.com/SoyFaii/NowNotes/releases/download/v" + content + "/NowNotes_Setup.exe";
-					Debug.WriteLine("Latest release download page: " + downloadPage);
-					client.DownloadFile(downloadPage, Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData) + "\\NowNotes\\UpdateDownload\\NowNotes_Setup.exe");
-					Process.Start(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData) + "\\NowNotes\\UpdateDownload\\NowNotes_Setup.exe");
-					Application.Exit();
-				}
-			}
+			// Check for updates
+			CheckForUpdates();
 			// Theme applying
 			toolStrip.ForeColor = Color.FromArgb(74, 71, 57);
 			if (Settings.Default.Theme == "dark") { ApplyDarkTheme(); themesDark = true; }
@@ -449,5 +429,35 @@ namespace NowNotes_Windows
 			FormSettings form = new FormSettings();
 			form.Show();
 		}
+
+		public void CheckForUpdates()
+		{
+			// Check for updates and install if there's one
+			Debug.WriteLine("Checking for updates...");
+			WebClient client = new WebClient();
+			Debug.WriteLine("WebClient created");
+			Stream stream = client.OpenRead("https://raw.githubusercontent.com/SoyFaii/NowNotes/master/NowNotes%20Windows/latest_stable_version.txt");
+			Debug.WriteLine("Page opened");
+			StreamReader reader = new StreamReader(stream);
+			Debug.WriteLine("Reader created");
+			String content = reader.ReadToEnd();
+			content = content.Replace(" ", "");
+			content = content.Replace("\r", "").Replace("\n", "");
+			Debug.WriteLine("Readed " + content);
+			Debug.WriteLine("Product version is " + Application.ProductVersion);
+			if (!Application.ProductVersion.Contains(content))
+			{
+				DialogResult result = MessageBox.Show(Resources.There_s_an_update_available_fo, Resources.Update_Available, MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1);
+				if (result == DialogResult.Yes)
+				{
+					string downloadPage = "https://github.com/SoyFaii/NowNotes/releases/download/v" + content + "/NowNotes_Setup.exe";
+					Debug.WriteLine("Latest release download page: " + downloadPage);
+					client.DownloadFile(downloadPage, Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData) + "\\NowNotes\\UpdateDownload\\NowNotes_Setup.exe");
+					Process.Start(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData) + "\\NowNotes\\UpdateDownload\\NowNotes_Setup.exe");
+					Application.Exit();
+				}
+			}
+		}
+
 	}
 }
