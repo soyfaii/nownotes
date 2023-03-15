@@ -44,6 +44,7 @@
 			buttonCancel = new Button();
 			buttonApply = new Button();
 			buttonAboutNowNotes = new Button();
+			buttonUpdate = new Button();
 			tabControlSettingsTabs.SuspendLayout();
 			tabPageAppearance.SuspendLayout();
 			tabPageSync.SuspendLayout();
@@ -158,10 +159,18 @@
 			buttonAboutNowNotes.UseVisualStyleBackColor = true;
 			buttonAboutNowNotes.Click += buttonAboutNowNotes_Click;
 			// 
+			// buttonUpdate
+			// 
+			resources.ApplyResources(buttonUpdate, "buttonUpdate");
+			buttonUpdate.Name = "buttonUpdate";
+			buttonUpdate.UseVisualStyleBackColor = true;
+			buttonUpdate.Click += buttonUpdate_Click;
+			// 
 			// FormSettings
 			// 
 			resources.ApplyResources(this, "$this");
 			AutoScaleMode = AutoScaleMode.Font;
+			Controls.Add(buttonUpdate);
 			Controls.Add(buttonAboutNowNotes);
 			Controls.Add(buttonApply);
 			Controls.Add(buttonCancel);
@@ -198,5 +207,6 @@
 		private TabPage tabPageAppearance;
 		private Label labelTheme;
 		private ComboBox comboBoxTheme;
+		private Button buttonUpdate;
 	}
 }
