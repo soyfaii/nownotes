@@ -1,4 +1,6 @@
-﻿namespace NowNotes_Windows
+﻿using NowNotes_Windows.Properties;
+
+namespace NowNotes_Windows
 {
 	partial class FormSettings
 	{
@@ -78,7 +80,7 @@
 			// 
 			comboBoxTheme.DropDownStyle = ComboBoxStyle.DropDownList;
 			comboBoxTheme.FormattingEnabled = true;
-			comboBoxTheme.Items.AddRange(new object[] { resources.GetString("comboBoxTheme.Items"), resources.GetString("comboBoxTheme.Items1"), resources.GetString("comboBoxTheme.Items2") });
+			comboBoxTheme.Items.AddRange(new object[] { Resources.Auto_System_defined, Resources.Light, Resources.Dark });
 			resources.ApplyResources(comboBoxTheme, "comboBoxTheme");
 			comboBoxTheme.Name = "comboBoxTheme";
 			// 

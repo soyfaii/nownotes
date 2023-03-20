@@ -56,16 +56,16 @@ namespace NowNotes_Windows
 		{
 			// Saves and closes the window, also closes NowNotes if necessary
 			if (onedriveFolderChanged) { OneDriveSyncChangedOperations(); }
-			if (comboBoxTheme.Text == "Auto (System defined)") { Settings.Default.Theme = "auto"; }
-			else if (comboBoxTheme.Text == "Light") { Settings.Default.Theme = "light"; }
-			else if (comboBoxTheme.Text == "Dark") { Settings.Default.Theme = "dark"; }
+			if (comboBoxTheme.Text == Resources.Auto_System_defined) { Settings.Default.Theme = "auto"; }
+			else if (comboBoxTheme.Text == Resources.Light) { Settings.Default.Theme = "light"; }
+			else if (comboBoxTheme.Text == Resources.Dark) { Settings.Default.Theme = "dark"; }
 			SettingsApplying();
 			Settings.Default.Save();
 			Close();
 			Dispose();
 			if (necessarytoReopenApp)
 			{
-				MessageBox.Show("NowNotes will restart.", "Restart necessary", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+				MessageBox.Show(Resources.NowNotes_will_restart, Resources.Restart_necessary, MessageBoxButtons.OK, MessageBoxIcon.Warning);
 				Application.Restart();
 			}
 		}
@@ -78,7 +78,7 @@ namespace NowNotes_Windows
 			Dispose();
 			if (necessarytoReopenApp)
 			{
-				MessageBox.Show("NowNotes will restart.", "Restart necessary", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+				MessageBox.Show(Resources.NowNotes_will_restart, Resources.Restart_necessary, MessageBoxButtons.OK, MessageBoxIcon.Warning);
 				Application.Restart();
 			}
 		}
@@ -87,9 +87,9 @@ namespace NowNotes_Windows
 		{
 			// Applies everything without closing the window
 			if (onedriveFolderChanged) { OneDriveSyncChangedOperations(); }
-			if (comboBoxTheme.Text == "Auto (System defined)") { Settings.Default.Theme = "auto"; }
-			else if (comboBoxTheme.Text == "Light") { Settings.Default.Theme = "light"; }
-			else if (comboBoxTheme.Text == "Dark") { Settings.Default.Theme = "dark"; }
+			if (comboBoxTheme.Text == Resources.Auto_System_defined) { Settings.Default.Theme = "auto"; }
+			else if (comboBoxTheme.Text == Resources.Light) { Settings.Default.Theme = "light"; }
+			else if (comboBoxTheme.Text == Resources.Dark) { Settings.Default.Theme = "dark"; }
 			SettingsApplying();
 			Settings.Default.Save();
 		}
@@ -162,7 +162,7 @@ namespace NowNotes_Windows
 			form.CheckForUpdates();
 			form.Close();
 			form.Dispose();
-			MessageBox.Show("There are not more updates available.");
+			MessageBox.Show(Resources.There_are_not_more_updates_ava);
 		}
 	}
 }

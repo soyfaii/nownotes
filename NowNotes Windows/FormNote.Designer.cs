@@ -73,7 +73,6 @@
 			toolStrip.ImageScalingSize = new Size(20, 20);
 			toolStrip.Items.AddRange(new ToolStripItem[] { toolStripButtonMenu, toolStripDropDownButtonNoteOptions, toolStripLabelTitle });
 			toolStrip.Name = "toolStrip";
-			toolStrip.Renderer = new ToolStripSystemRendererNoBorder();
 			// 
 			// toolStripButtonMenu
 			// 
@@ -221,7 +220,6 @@
 			toolBar.ImageScalingSize = new Size(20, 20);
 			toolBar.Items.AddRange(new ToolStripItem[] { toolStripButtonNormal, toolStripButtonBold, toolStripButtonItalic, toolStripButtonUnderline, toolStripButton2 });
 			toolBar.Name = "toolBar";
-			toolBar.Renderer = new ToolStripSystemRendererNoBorder();
 			// 
 			// toolStripButtonNormal
 			// 

@@ -117,20 +117,38 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="About_0" xml:space="preserve">
+    <value>About {0}</value>
+  </data>
+  <data name="Auto_System_defined" xml:space="preserve">
+    <value>Auto (System defined)</value>
+  </data>
+  <data name="Dark" xml:space="preserve">
+    <value>Dark</value>
+  </data>
   <data name="Do_you_want_to_set_NowNotes_to" xml:space="preserve">
     <value>Do you want to set NowNotes to launch on startup?</value>
   </data>
   <data name="Launch_on_Startup" xml:space="preserve">
     <value>Launch on Startup</value>
   </data>
+  <data name="Light" xml:space="preserve">
+    <value>Light</value>
+  </data>
   <data name="Note_saved_and_cleared" xml:space="preserve">
     <value>Note saved and cleared.</value>
+  </data>
+  <data name="NowNotes_will_restart" xml:space="preserve">
+    <value>NowNotes will restart.</value>
   </data>
   <data name="Rename" xml:space="preserve">
     <value>Rename</value>
   </data>
   <data name="Rename_Note" xml:space="preserve">
     <value>Rename Note</value>
+  </data>
+  <data name="Restart_necessary" xml:space="preserve">
+    <value>Restart necessary</value>
   </data>
   <data name="The_note_wasn_t_able_to_be_ope" xml:space="preserve">
     <value>The note wasn't able to be opened because another app has the internal note file opened.</value>
@@ -144,6 +162,9 @@
   <data name="The_opened_note_has_been_delet" xml:space="preserve">
     <value>The opened note has been deleted.</value>
   </data>
+  <data name="There_are_not_more_updates_ava" xml:space="preserve">
+    <value>There are not more updates available.</value>
+  </data>
   <data name="There_s_an_update_available_fo" xml:space="preserve">
     <value>There's an update available for NowNotes. Do you want to install it?</value>
   </data>
@@ -152,5 +173,8 @@
   </data>
   <data name="Update_Available" xml:space="preserve">
     <value>Update Available</value>
+  </data>
+  <data name="Version_0" xml:space="preserve">
+    <value>Version {0}</value>
   </data>
 </root>

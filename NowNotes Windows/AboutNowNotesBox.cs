@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NowNotes_Windows.Properties;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing;
@@ -14,9 +15,9 @@ namespace NowNotes_Windows
 		public AboutNowNotesBox()
 		{
 			InitializeComponent();
-			this.Text = String.Format("About {0}", Application.ProductName);
+			this.Text = String.Format(Resources.About_0, Application.ProductName);
 			this.labelProductName.Text = Application.ProductName;
-			this.labelVersion.Text = String.Format("Version {0}", Application.ProductVersion);
+			this.labelVersion.Text = String.Format(Resources.Version_0, Application.ProductVersion);
 			this.labelCopyright.Text = AssemblyCopyright;
 			this.labelCompanyName.Text = Application.CompanyName;
 			this.textBoxDescription.Text = AssemblyDescription;

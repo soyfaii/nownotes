@@ -61,12 +61,39 @@ namespace NowNotes_Windows.Properties {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a About {0}.
+        /// </summary>
+        public static string About_0 {
+            get {
+                return ResourceManager.GetString("About_0", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
         public static System.Drawing.Bitmap add {
             get {
                 object obj = ResourceManager.GetObject("add", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Auto (System defined).
+        /// </summary>
+        public static string Auto_System_defined {
+            get {
+                return ResourceManager.GetString("Auto_System_defined", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Dark.
+        /// </summary>
+        public static string Dark {
+            get {
+                return ResourceManager.GetString("Dark", resourceCulture);
             }
         }
         
@@ -89,11 +116,29 @@ namespace NowNotes_Windows.Properties {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Light.
+        /// </summary>
+        public static string Light {
+            get {
+                return ResourceManager.GetString("Light", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Note saved and cleared..
         /// </summary>
         public static string Note_saved_and_cleared {
             get {
                 return ResourceManager.GetString("Note_saved_and_cleared", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a NowNotes will restart..
+        /// </summary>
+        public static string NowNotes_will_restart {
+            get {
+                return ResourceManager.GetString("NowNotes_will_restart", resourceCulture);
             }
         }
         
@@ -112,6 +157,15 @@ namespace NowNotes_Windows.Properties {
         public static string Rename_Note {
             get {
                 return ResourceManager.GetString("Rename_Note", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Restart necessary.
+        /// </summary>
+        public static string Restart_necessary {
+            get {
+                return ResourceManager.GetString("Restart_necessary", resourceCulture);
             }
         }
         
@@ -152,6 +206,15 @@ namespace NowNotes_Windows.Properties {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a There are not more updates available..
+        /// </summary>
+        public static string There_are_not_more_updates_ava {
+            get {
+                return ResourceManager.GetString("There_are_not_more_updates_ava", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a There&apos;s an update available for NowNotes. Do you want to install it?.
         /// </summary>
         public static string There_s_an_update_available_fo {
@@ -175,6 +238,15 @@ namespace NowNotes_Windows.Properties {
         public static string Update_Available {
             get {
                 return ResourceManager.GetString("Update_Available", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Version {0}.
+        /// </summary>
+        public static string Version_0 {
+            get {
+                return ResourceManager.GetString("Version_0", resourceCulture);
             }
         }
     }

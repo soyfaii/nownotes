@@ -129,9 +129,6 @@
   <data name="focusToolStripMenuItem.Text" xml:space="preserve">
     <value>Concentré</value>
   </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>NowNotes</value>
-  </data>
   <data name="labelInfo.Text" xml:space="preserve">
     <value>Panneau d'information
 Panneau d'information</value>
@@ -156,7 +153,6 @@ Panneau d'information</value>
   </data>
   <data name="toolStripButton2.ToolTipText" xml:space="preserve">
     <value>Titre</value>
-    <comment>Previous text: T</comment>
   </data>
   <data name="toolStripButtonBold.Text" xml:space="preserve">
     <value>G</value>
