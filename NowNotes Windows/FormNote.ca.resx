@@ -150,7 +150,6 @@ Panel d'informació</value>
   </data>
   <data name="toolStripButton2.ToolTipText" xml:space="preserve">
     <value>Títol</value>
-    <comment>Previous text: T</comment>
   </data>
   <data name="toolStripButtonBold.Text" xml:space="preserve">
     <value>N</value>

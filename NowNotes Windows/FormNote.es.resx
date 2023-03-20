@@ -150,7 +150,6 @@ Panel informativo</value>
   </data>
   <data name="toolStripButton2.ToolTipText" xml:space="preserve">
     <value>Título</value>
-    <comment>Previous text: T</comment>
   </data>
   <data name="toolStripButtonBold.Text" xml:space="preserve">
     <value>N</value>
@@ -169,6 +168,9 @@ Panel informativo</value>
   </data>
   <data name="toolStripButtonMenu.ToolTipText" xml:space="preserve">
     <value>Menú</value>
+  </data>
+  <data name="toolStripButtonNormal.Text" xml:space="preserve">
+    <value>N</value>
   </data>
   <data name="toolStripButtonUnderline.Text" xml:space="preserve">
     <value>S</value>

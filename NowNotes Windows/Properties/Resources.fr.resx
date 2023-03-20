@@ -117,20 +117,38 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="About_0" xml:space="preserve">
+    <value>À propos de {0}</value>
+  </data>
+  <data name="Auto_System_defined" xml:space="preserve">
+    <value>Auto (défini par le système)</value>
+  </data>
+  <data name="Dark" xml:space="preserve">
+    <value>Sombre</value>
+  </data>
   <data name="Do_you_want_to_set_NowNotes_to" xml:space="preserve">
     <value>Voulez-vous configurer NowNotes pour qu'il se lance au démarrage ?</value>
   </data>
   <data name="Launch_on_Startup" xml:space="preserve">
     <value>Lancement au démarrage</value>
   </data>
+  <data name="Light" xml:space="preserve">
+    <value>Lumière</value>
+  </data>
   <data name="Note_saved_and_cleared" xml:space="preserve">
     <value>Note enregistrée et effacée.</value>
+  </data>
+  <data name="NowNotes_will_restart" xml:space="preserve">
+    <value>NowNotes redémarre.</value>
   </data>
   <data name="Rename" xml:space="preserve">
     <value>Renommer</value>
   </data>
   <data name="Rename_Note" xml:space="preserve">
     <value>Renommer la note</value>
+  </data>
+  <data name="Restart_necessary" xml:space="preserve">
+    <value>Redémarrage nécessaire</value>
   </data>
   <data name="The_note_wasn_t_able_to_be_ope" xml:space="preserve">
     <value>La note n'a pas pu être ouverte car une autre application a ouvert le fichier de note interne.</value>
@@ -143,6 +161,9 @@
   </data>
   <data name="The_opened_note_has_been_delet" xml:space="preserve">
     <value>La note ouverte a été supprimée.</value>
+  </data>
+  <data name="There_are_not_more_updates_ava" xml:space="preserve">
+    <value>Il n'y a plus de mises à jour disponibles.</value>
   </data>
   <data name="There_s_an_update_available_fo" xml:space="preserve">
     <value>Une mise à jour est disponible pour NowNotes. Voulez-vous l'installer ?</value>

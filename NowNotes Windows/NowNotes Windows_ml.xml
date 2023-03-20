@@ -141,6 +141,60 @@
   <GeneralIds>
     <StringID>48</StringID>
   </GeneralIds>
+  <GeneralIds>
+    <StringID>49</StringID>
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>50</StringID>
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>51</StringID>
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>52</StringID>
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>53</StringID>
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>54</StringID>
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>55</StringID>
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>56</StringID>
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>57</StringID>
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>58</StringID>
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>59</StringID>
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>60</StringID>
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>61</StringID>
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>62</StringID>
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>63</StringID>
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>64</StringID>
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>65</StringID>
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>66</StringID>
+  </GeneralIds>
   <Languages>
     <LanguageID>9</LanguageID>
     <LanguageName>Inglés</LanguageName>
@@ -1069,11 +1123,568 @@ Panneau d'information</LanguageText>
     <LanguageText>Inicio junto al sistema</LanguageText>
     <Status>3</Status>
   </GeneralTexts>
+  <GeneralTexts>
+    <StringID>49</StringID>
+    <LanguageID>9</LanguageID>
+    <LanguageText>Appearance</LanguageText>
+    <Status>1</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>50</StringID>
+    <LanguageID>9</LanguageID>
+    <LanguageText>Theme</LanguageText>
+    <Status>1</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>51</StringID>
+    <LanguageID>9</LanguageID>
+    <LanguageText>Auto (System defined)</LanguageText>
+    <Status>1</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>52</StringID>
+    <LanguageID>9</LanguageID>
+    <LanguageText>Light</LanguageText>
+    <Status>1</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>53</StringID>
+    <LanguageID>9</LanguageID>
+    <LanguageText>Dark</LanguageText>
+    <Status>1</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>54</StringID>
+    <LanguageID>9</LanguageID>
+    <LanguageText>Check For Updates</LanguageText>
+    <Status>1</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>55</StringID>
+    <LanguageID>9</LanguageID>
+    <LanguageText>About NowNotes</LanguageText>
+    <Status>1</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>56</StringID>
+    <LanguageID>9</LanguageID>
+    <LanguageText>Product Name</LanguageText>
+    <Status>1</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>57</StringID>
+    <LanguageID>9</LanguageID>
+    <LanguageText>Version</LanguageText>
+    <Status>1</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>58</StringID>
+    <LanguageID>9</LanguageID>
+    <LanguageText>Copyright</LanguageText>
+    <Status>1</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>59</StringID>
+    <LanguageID>9</LanguageID>
+    <LanguageText>Company Name</LanguageText>
+    <Status>1</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>60</StringID>
+    <LanguageID>9</LanguageID>
+    <LanguageText>Description</LanguageText>
+    <Status>1</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>61</StringID>
+    <LanguageID>9</LanguageID>
+    <LanguageText>&amp;OK</LanguageText>
+    <Status>1</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>61</StringID>
+    <LanguageID>10</LanguageID>
+    <LanguageText>Aceptar</LanguageText>
+    <Status>3</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>61</StringID>
+    <LanguageID>12</LanguageID>
+    <LanguageText>OK</LanguageText>
+    <Status>3</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>55</StringID>
+    <LanguageID>10</LanguageID>
+    <LanguageText>Acerca de NowNotes</LanguageText>
+    <Status>2</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>60</StringID>
+    <LanguageID>10</LanguageID>
+    <LanguageText>Descripción</LanguageText>
+    <Status>2</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>48</StringID>
+    <LanguageID>10</LanguageID>
+    <LanguageText>Ajustes de NowNotes</LanguageText>
+    <Status>2</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>47</StringID>
+    <LanguageID>10</LanguageID>
+    <LanguageText>Acerca de NowNotes</LanguageText>
+    <Status>2</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>42</StringID>
+    <LanguageID>10</LanguageID>
+    <LanguageText>Eliminar todas las notas</LanguageText>
+    <Status>2</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>54</StringID>
+    <LanguageID>10</LanguageID>
+    <LanguageText>Buscar actualizaciones</LanguageText>
+    <Status>2</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>39</StringID>
+    <LanguageID>10</LanguageID>
+    <LanguageText>Habilitar sincronización en la nube</LanguageText>
+    <Status>2</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>38</StringID>
+    <LanguageID>10</LanguageID>
+    <LanguageText>Cuenta de OneDrive</LanguageText>
+    <Status>2</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>59</StringID>
+    <LanguageID>10</LanguageID>
+    <LanguageText>Nombre de la empresa</LanguageText>
+    <Status>5</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>56</StringID>
+    <LanguageID>10</LanguageID>
+    <LanguageText>Nombre del producto</LanguageText>
+    <Status>5</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>57</StringID>
+    <LanguageID>10</LanguageID>
+    <LanguageText>Versión</LanguageText>
+    <Status>5</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>43</StringID>
+    <LanguageID>10</LanguageID>
+    <LanguageText>Avanzado</LanguageText>
+    <Status>5</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>49</StringID>
+    <LanguageID>10</LanguageID>
+    <LanguageText>Apariencia</LanguageText>
+    <Status>5</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>40</StringID>
+    <LanguageID>10</LanguageID>
+    <LanguageText>Sincronización en la nube</LanguageText>
+    <Status>5</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>55</StringID>
+    <LanguageID>3</LanguageID>
+    <LanguageText>Sobre NowNotes</LanguageText>
+    <Status>5</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>59</StringID>
+    <LanguageID>3</LanguageID>
+    <LanguageText>Nom de la companyia</LanguageText>
+    <Status>5</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>56</StringID>
+    <LanguageID>3</LanguageID>
+    <LanguageText>nom del producte</LanguageText>
+    <Status>5</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>57</StringID>
+    <LanguageID>3</LanguageID>
+    <LanguageText>Versió</LanguageText>
+    <Status>5</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>61</StringID>
+    <LanguageID>3</LanguageID>
+    <LanguageText>D'acord</LanguageText>
+    <Status>5</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>60</StringID>
+    <LanguageID>3</LanguageID>
+    <LanguageText>Descripció</LanguageText>
+    <Status>5</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>48</StringID>
+    <LanguageID>3</LanguageID>
+    <LanguageText>Configuració de NowNotes</LanguageText>
+    <Status>5</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>47</StringID>
+    <LanguageID>3</LanguageID>
+    <LanguageText>Sobre NowNotes</LanguageText>
+    <Status>5</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>46</StringID>
+    <LanguageID>3</LanguageID>
+    <LanguageText>Aplicar</LanguageText>
+    <Status>5</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>45</StringID>
+    <LanguageID>3</LanguageID>
+    <LanguageText>Cancel · lar</LanguageText>
+    <Status>5</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>42</StringID>
+    <LanguageID>3</LanguageID>
+    <LanguageText>Suprimeix totes les notes</LanguageText>
+    <Status>5</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>44</StringID>
+    <LanguageID>3</LanguageID>
+    <LanguageText>D'acord</LanguageText>
+    <Status>5</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>54</StringID>
+    <LanguageID>3</LanguageID>
+    <LanguageText>Buscar actualitzacions</LanguageText>
+    <Status>5</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>39</StringID>
+    <LanguageID>3</LanguageID>
+    <LanguageText>Activa la sincronització al núvol</LanguageText>
+    <Status>5</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>38</StringID>
+    <LanguageID>3</LanguageID>
+    <LanguageText>Compte de OneDrive:</LanguageText>
+    <Status>5</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>50</StringID>
+    <LanguageID>3</LanguageID>
+    <LanguageText>Tema</LanguageText>
+    <Status>5</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>43</StringID>
+    <LanguageID>3</LanguageID>
+    <LanguageText>Avançat</LanguageText>
+    <Status>5</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>49</StringID>
+    <LanguageID>3</LanguageID>
+    <LanguageText>Aparença</LanguageText>
+    <Status>5</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>40</StringID>
+    <LanguageID>3</LanguageID>
+    <LanguageText>Sincronització al núvol</LanguageText>
+    <Status>5</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>55</StringID>
+    <LanguageID>12</LanguageID>
+    <LanguageText>À propos de NowNotes</LanguageText>
+    <Status>5</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>59</StringID>
+    <LanguageID>12</LanguageID>
+    <LanguageText>Nom de l'entreprise</LanguageText>
+    <Status>5</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>58</StringID>
+    <LanguageID>12</LanguageID>
+    <LanguageText>Droit d'auteur</LanguageText>
+    <Status>5</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>56</StringID>
+    <LanguageID>12</LanguageID>
+    <LanguageText>Nom du produit</LanguageText>
+    <Status>5</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>48</StringID>
+    <LanguageID>12</LanguageID>
+    <LanguageText>Paramètres de NowNotes</LanguageText>
+    <Status>5</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>47</StringID>
+    <LanguageID>12</LanguageID>
+    <LanguageText>À propos de NowNotes</LanguageText>
+    <Status>5</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>42</StringID>
+    <LanguageID>12</LanguageID>
+    <LanguageText>Supprimer toutes les notes</LanguageText>
+    <Status>5</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>54</StringID>
+    <LanguageID>12</LanguageID>
+    <LanguageText>Vérifier les mises à jour</LanguageText>
+    <Status>5</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>39</StringID>
+    <LanguageID>12</LanguageID>
+    <LanguageText>Activer la synchronisation dans le nuage</LanguageText>
+    <Status>5</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>41</StringID>
+    <LanguageID>12</LanguageID>
+    <LanguageText>Lancement au démarrage</LanguageText>
+    <Status>5</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>38</StringID>
+    <LanguageID>12</LanguageID>
+    <LanguageText>Compte OneDrive :</LanguageText>
+    <Status>5</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>43</StringID>
+    <LanguageID>12</LanguageID>
+    <LanguageText>Avancé</LanguageText>
+    <Status>5</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>49</StringID>
+    <LanguageID>12</LanguageID>
+    <LanguageText>Apparence</LanguageText>
+    <Status>5</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>40</StringID>
+    <LanguageID>12</LanguageID>
+    <LanguageText>Synchronisation dans le nuage</LanguageText>
+    <Status>5</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>50</StringID>
+    <LanguageID>10</LanguageID>
+    <LanguageText>Tema</LanguageText>
+    <Status>5</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>50</StringID>
+    <LanguageID>12</LanguageID>
+    <LanguageText>Thème</LanguageText>
+    <Status>5</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>62</StringID>
+    <LanguageID>9</LanguageID>
+    <LanguageText>About {0}</LanguageText>
+    <Status>1</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>63</StringID>
+    <LanguageID>9</LanguageID>
+    <LanguageText>Version {0}</LanguageText>
+    <Status>1</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>64</StringID>
+    <LanguageID>9</LanguageID>
+    <LanguageText>NowNotes will restart.</LanguageText>
+    <Status>1</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>65</StringID>
+    <LanguageID>9</LanguageID>
+    <LanguageText>Restart necessary</LanguageText>
+    <Status>1</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>66</StringID>
+    <LanguageID>9</LanguageID>
+    <LanguageText>There are not more updates available.</LanguageText>
+    <Status>1</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>63</StringID>
+    <LanguageID>10</LanguageID>
+    <LanguageText>Versión {0}</LanguageText>
+    <Status>5</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>64</StringID>
+    <LanguageID>10</LanguageID>
+    <LanguageText>NowNotes se reiniciará.</LanguageText>
+    <Status>5</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>65</StringID>
+    <LanguageID>10</LanguageID>
+    <LanguageText>Reinicio necesario</LanguageText>
+    <Status>5</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>66</StringID>
+    <LanguageID>10</LanguageID>
+    <LanguageText>No hay más actualizaciones disponibles.</LanguageText>
+    <Status>5</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>63</StringID>
+    <LanguageID>3</LanguageID>
+    <LanguageText>Versió {0}</LanguageText>
+    <Status>5</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>64</StringID>
+    <LanguageID>3</LanguageID>
+    <LanguageText>NowNotes es reiniciarà.</LanguageText>
+    <Status>5</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>65</StringID>
+    <LanguageID>3</LanguageID>
+    <LanguageText>Cal reiniciar</LanguageText>
+    <Status>5</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>66</StringID>
+    <LanguageID>3</LanguageID>
+    <LanguageText>No hi ha més actualitzacions disponibles.</LanguageText>
+    <Status>5</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>64</StringID>
+    <LanguageID>12</LanguageID>
+    <LanguageText>NowNotes redémarre.</LanguageText>
+    <Status>5</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>65</StringID>
+    <LanguageID>12</LanguageID>
+    <LanguageText>Redémarrage nécessaire</LanguageText>
+    <Status>5</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>66</StringID>
+    <LanguageID>12</LanguageID>
+    <LanguageText>Il n'y a plus de mises à jour disponibles.</LanguageText>
+    <Status>5</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>62</StringID>
+    <LanguageID>10</LanguageID>
+    <LanguageText>Acerca de {0}</LanguageText>
+    <Status>5</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>51</StringID>
+    <LanguageID>10</LanguageID>
+    <LanguageText>Auto (definido por el sistema)</LanguageText>
+    <Status>5</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>52</StringID>
+    <LanguageID>10</LanguageID>
+    <LanguageText>Claro</LanguageText>
+    <Status>3</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>53</StringID>
+    <LanguageID>10</LanguageID>
+    <LanguageText>Oscuro</LanguageText>
+    <Status>5</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>62</StringID>
+    <LanguageID>3</LanguageID>
+    <LanguageText>Sobre {0}</LanguageText>
+    <Status>5</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>51</StringID>
+    <LanguageID>3</LanguageID>
+    <LanguageText>Automàtic (definit pel sistema)</LanguageText>
+    <Status>5</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>52</StringID>
+    <LanguageID>3</LanguageID>
+    <LanguageText>Clar</LanguageText>
+    <Status>3</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>53</StringID>
+    <LanguageID>3</LanguageID>
+    <LanguageText>Fosc</LanguageText>
+    <Status>5</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>62</StringID>
+    <LanguageID>12</LanguageID>
+    <LanguageText>À propos de {0}</LanguageText>
+    <Status>5</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>51</StringID>
+    <LanguageID>12</LanguageID>
+    <LanguageText>Auto (défini par le système)</LanguageText>
+    <Status>5</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>52</StringID>
+    <LanguageID>12</LanguageID>
+    <LanguageText>Lumière</LanguageText>
+    <Status>3</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>53</StringID>
+    <LanguageID>12</LanguageID>
+    <LanguageText>Sombre</LanguageText>
+    <Status>5</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>15</StringID>
+    <LanguageID>10</LanguageID>
+    <LanguageText>norte</LanguageText>
+    <Status>5</Status>
+  </GeneralTexts>
   <Properties>
     <Component>FormNote.cs</Component>
     <Name>FormMain.Text</Name>
-    <StringID>1</StringID>
-    <Selected>true</Selected>
+    <Selected>false</Selected>
     <ResourceName>$this.Text</ResourceName>
     <Hidden>false</Hidden>
   </Properties>
@@ -1564,14 +2175,6 @@ Panneau d'information</LanguageText>
     <Hidden>false</Hidden>
   </Properties>
   <Properties>
-    <Component>FormNote.resx</Component>
-    <Name>$this.Text</Name>
-    <StringID>1</StringID>
-    <Selected>true</Selected>
-    <ResourceName>$this.Text</ResourceName>
-    <Hidden>false</Hidden>
-  </Properties>
-  <Properties>
     <Component>Resources.resx</Component>
     <Name>There_s_an_update_available_fo</Name>
     <StringID>35</StringID>
@@ -1683,6 +2286,294 @@ Panneau d'information</LanguageText>
     <ResourceName>$this.Text</ResourceName>
     <Hidden>false</Hidden>
   </Properties>
+  <Properties>
+    <Component>FormSettings.resx</Component>
+    <Name>tabPageAppearance.Text</Name>
+    <StringID>49</StringID>
+    <Selected>true</Selected>
+    <ResourceName>tabPageAppearance.Text</ResourceName>
+    <Hidden>false</Hidden>
+  </Properties>
+  <Properties>
+    <Component>FormSettings.resx</Component>
+    <Name>labelTheme.Text</Name>
+    <StringID>50</StringID>
+    <Selected>true</Selected>
+    <ResourceName>labelTheme.Text</ResourceName>
+    <Hidden>false</Hidden>
+  </Properties>
+  <Properties>
+    <Component>FormSettings.resx</Component>
+    <Name>comboBoxTheme.Items</Name>
+    <StringID>51</StringID>
+    <Selected>true</Selected>
+    <ResourceName>comboBoxTheme.Items</ResourceName>
+    <Hidden>false</Hidden>
+  </Properties>
+  <Properties>
+    <Component>FormSettings.resx</Component>
+    <Name>comboBoxTheme.Items1</Name>
+    <StringID>52</StringID>
+    <Selected>true</Selected>
+    <ResourceName>comboBoxTheme.Items1</ResourceName>
+    <Hidden>false</Hidden>
+  </Properties>
+  <Properties>
+    <Component>FormSettings.resx</Component>
+    <Name>comboBoxTheme.Items2</Name>
+    <StringID>53</StringID>
+    <Selected>true</Selected>
+    <ResourceName>comboBoxTheme.Items2</ResourceName>
+    <Hidden>false</Hidden>
+  </Properties>
+  <Properties>
+    <Component>FormSettings.resx</Component>
+    <Name>buttonUpdate.Text</Name>
+    <StringID>54</StringID>
+    <Selected>true</Selected>
+    <ResourceName>buttonUpdate.Text</ResourceName>
+    <Hidden>false</Hidden>
+  </Properties>
+  <Properties>
+    <Component>FormSettings.cs</Component>
+    <Name>FormSettings.Text</Name>
+    <StringID>48</StringID>
+    <Selected>true</Selected>
+    <ResourceName>$this.Text</ResourceName>
+    <Hidden>false</Hidden>
+  </Properties>
+  <Properties>
+    <Component>FormSettings.cs</Component>
+    <Name>tabPageAppearance.Text</Name>
+    <StringID>49</StringID>
+    <Selected>true</Selected>
+    <ResourceName>tabPageAppearance.Text</ResourceName>
+    <Hidden>false</Hidden>
+  </Properties>
+  <Properties>
+    <Component>FormSettings.cs</Component>
+    <Name>labelTheme.Text</Name>
+    <StringID>50</StringID>
+    <Selected>true</Selected>
+    <ResourceName>labelTheme.Text</ResourceName>
+    <Hidden>false</Hidden>
+  </Properties>
+  <Properties>
+    <Component>FormSettings.cs</Component>
+    <Name>tabPageSync.Text</Name>
+    <StringID>40</StringID>
+    <Selected>true</Selected>
+    <ResourceName>tabPageSync.Text</ResourceName>
+    <Hidden>false</Hidden>
+  </Properties>
+  <Properties>
+    <Component>FormSettings.cs</Component>
+    <Name>labelOneDriveAccount.Text</Name>
+    <StringID>38</StringID>
+    <Selected>true</Selected>
+    <ResourceName>labelOneDriveAccount.Text</ResourceName>
+    <Hidden>false</Hidden>
+  </Properties>
+  <Properties>
+    <Component>FormSettings.cs</Component>
+    <Name>checkBoxEnableSync.Text</Name>
+    <StringID>39</StringID>
+    <Selected>true</Selected>
+    <ResourceName>checkBoxEnableSync.Text</ResourceName>
+    <Hidden>false</Hidden>
+  </Properties>
+  <Properties>
+    <Component>FormSettings.cs</Component>
+    <Name>tabPageAdvanced.Text</Name>
+    <StringID>43</StringID>
+    <Selected>true</Selected>
+    <ResourceName>tabPageAdvanced.Text</ResourceName>
+    <Hidden>false</Hidden>
+  </Properties>
+  <Properties>
+    <Component>FormSettings.cs</Component>
+    <Name>checkBoxStartup.Text</Name>
+    <StringID>41</StringID>
+    <Selected>true</Selected>
+    <ResourceName>checkBoxStartup.Text</ResourceName>
+    <Hidden>false</Hidden>
+  </Properties>
+  <Properties>
+    <Component>FormSettings.cs</Component>
+    <Name>buttonDeleteAllNotes.Text</Name>
+    <StringID>42</StringID>
+    <Selected>true</Selected>
+    <ResourceName>buttonDeleteAllNotes.Text</ResourceName>
+    <Hidden>false</Hidden>
+  </Properties>
+  <Properties>
+    <Component>FormSettings.cs</Component>
+    <Name>buttonOK.Text</Name>
+    <StringID>44</StringID>
+    <Selected>true</Selected>
+    <ResourceName>buttonOK.Text</ResourceName>
+    <Hidden>false</Hidden>
+  </Properties>
+  <Properties>
+    <Component>FormSettings.cs</Component>
+    <Name>buttonCancel.Text</Name>
+    <StringID>45</StringID>
+    <Selected>true</Selected>
+    <ResourceName>buttonCancel.Text</ResourceName>
+    <Hidden>false</Hidden>
+  </Properties>
+  <Properties>
+    <Component>FormSettings.cs</Component>
+    <Name>buttonApply.Text</Name>
+    <StringID>46</StringID>
+    <Selected>true</Selected>
+    <ResourceName>buttonApply.Text</ResourceName>
+    <Hidden>false</Hidden>
+  </Properties>
+  <Properties>
+    <Component>FormSettings.cs</Component>
+    <Name>buttonAboutNowNotes.Text</Name>
+    <StringID>47</StringID>
+    <Selected>true</Selected>
+    <ResourceName>buttonAboutNowNotes.Text</ResourceName>
+    <Hidden>false</Hidden>
+  </Properties>
+  <Properties>
+    <Component>FormSettings.cs</Component>
+    <Name>buttonUpdate.Text</Name>
+    <StringID>54</StringID>
+    <Selected>true</Selected>
+    <ResourceName>buttonUpdate.Text</ResourceName>
+    <Hidden>false</Hidden>
+  </Properties>
+  <Properties>
+    <Component>AboutNowNotesBox.cs</Component>
+    <Name>AboutNowNotesBox.Text</Name>
+    <StringID>55</StringID>
+    <Selected>true</Selected>
+    <ResourceName>$this.Text</ResourceName>
+    <Hidden>false</Hidden>
+  </Properties>
+  <Properties>
+    <Component>AboutNowNotesBox.cs</Component>
+    <Name>labelProductName.Text</Name>
+    <StringID>56</StringID>
+    <Selected>true</Selected>
+    <ResourceName>labelProductName.Text</ResourceName>
+    <Hidden>false</Hidden>
+  </Properties>
+  <Properties>
+    <Component>AboutNowNotesBox.cs</Component>
+    <Name>labelVersion.Text</Name>
+    <StringID>57</StringID>
+    <Selected>true</Selected>
+    <ResourceName>labelVersion.Text</ResourceName>
+    <Hidden>false</Hidden>
+  </Properties>
+  <Properties>
+    <Component>AboutNowNotesBox.cs</Component>
+    <Name>labelCopyright.Text</Name>
+    <StringID>58</StringID>
+    <Selected>true</Selected>
+    <ResourceName>labelCopyright.Text</ResourceName>
+    <Hidden>false</Hidden>
+  </Properties>
+  <Properties>
+    <Component>AboutNowNotesBox.cs</Component>
+    <Name>labelCompanyName.Text</Name>
+    <StringID>59</StringID>
+    <Selected>true</Selected>
+    <ResourceName>labelCompanyName.Text</ResourceName>
+    <Hidden>false</Hidden>
+  </Properties>
+  <Properties>
+    <Component>AboutNowNotesBox.cs</Component>
+    <Name>textBoxDescription.Text</Name>
+    <StringID>60</StringID>
+    <Selected>true</Selected>
+    <ResourceName>textBoxDescription.Text</ResourceName>
+    <Hidden>false</Hidden>
+  </Properties>
+  <Properties>
+    <Component>AboutNowNotesBox.cs</Component>
+    <Name>textBoxDescription.Lines[0]</Name>
+    <StringID>60</StringID>
+    <Selected>true</Selected>
+    <ResourceName>textBoxDescription.Lines[0]</ResourceName>
+    <Hidden>false</Hidden>
+  </Properties>
+  <Properties>
+    <Component>AboutNowNotesBox.cs</Component>
+    <Name>okButton.Text</Name>
+    <StringID>61</StringID>
+    <Selected>true</Selected>
+    <ResourceName>okButton.Text</ResourceName>
+    <Hidden>false</Hidden>
+  </Properties>
+  <Properties>
+    <Component>Resources.resx</Component>
+    <Name>About_0</Name>
+    <StringID>62</StringID>
+    <Selected>true</Selected>
+    <ResourceName>About_0</ResourceName>
+    <Hidden>false</Hidden>
+  </Properties>
+  <Properties>
+    <Component>Resources.resx</Component>
+    <Name>Version_0</Name>
+    <StringID>63</StringID>
+    <Selected>true</Selected>
+    <ResourceName>Version_0</ResourceName>
+    <Hidden>false</Hidden>
+  </Properties>
+  <Properties>
+    <Component>Resources.resx</Component>
+    <Name>NowNotes_will_restart</Name>
+    <StringID>64</StringID>
+    <Selected>true</Selected>
+    <ResourceName>NowNotes_will_restart</ResourceName>
+    <Hidden>false</Hidden>
+  </Properties>
+  <Properties>
+    <Component>Resources.resx</Component>
+    <Name>Restart_necessary</Name>
+    <StringID>65</StringID>
+    <Selected>true</Selected>
+    <ResourceName>Restart_necessary</ResourceName>
+    <Hidden>false</Hidden>
+  </Properties>
+  <Properties>
+    <Component>Resources.resx</Component>
+    <Name>There_are_not_more_updates_ava</Name>
+    <StringID>66</StringID>
+    <Selected>true</Selected>
+    <ResourceName>There_are_not_more_updates_ava</ResourceName>
+    <Hidden>false</Hidden>
+  </Properties>
+  <Properties>
+    <Component>Resources.resx</Component>
+    <Name>Auto_System_defined</Name>
+    <StringID>51</StringID>
+    <Selected>true</Selected>
+    <ResourceName>Auto_System_defined</ResourceName>
+    <Hidden>false</Hidden>
+  </Properties>
+  <Properties>
+    <Component>Resources.resx</Component>
+    <Name>Light</Name>
+    <StringID>52</StringID>
+    <Selected>true</Selected>
+    <ResourceName>Light</ResourceName>
+    <Hidden>false</Hidden>
+  </Properties>
+  <Properties>
+    <Component>Resources.resx</Component>
+    <Name>Dark</Name>
+    <StringID>53</StringID>
+    <Selected>true</Selected>
+    <ResourceName>Dark</ResourceName>
+    <Hidden>false</Hidden>
+  </Properties>
   <GeneralAttributes>
     <Name>XmlDatabaseVersion</Name>
     <TextValue>1</TextValue>
@@ -1690,7 +2581,7 @@ Panneau d'information</LanguageText>
   </GeneralAttributes>
   <GeneralAttributes>
     <Name>StatusHash</Name>
-    <TextValue>htKra7TjY5zykcCe7vdOeSsZPH8=</TextValue>
+    <TextValue>glkll4+JGizm9ljJtGupK2S37NM=</TextValue>
     <NumValue>0</NumValue>
   </GeneralAttributes>
   <GeneralAttributes>
@@ -1710,7 +2601,7 @@ Panneau d'information</LanguageText>
   </GeneralAttributes>
   <GeneralAttributes>
     <Name>SelectedComponents</Name>
-    <TextValue>FormNote.cs|Resources.resx</TextValue>
+    <TextValue>AboutNowNotesBox.cs|FormNote.cs|FormSettings.cs|Resources.resx</TextValue>
     <NumValue>0</NumValue>
   </GeneralAttributes>
 </MdbTranslationStore>

@@ -117,64 +117,55 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="About_0" xml:space="preserve">
-    <value>Acerca de {0}</value>
+  <data name="buttonAboutNowNotes.Text" xml:space="preserve">
+    <value>About NowNotes</value>
   </data>
-  <data name="Auto_System_defined" xml:space="preserve">
-    <value>Auto (definido por el sistema)</value>
+  <data name="buttonApply.Text" xml:space="preserve">
+    <value>Apply</value>
   </data>
-  <data name="Dark" xml:space="preserve">
-    <value>Oscuro</value>
+  <data name="buttonCancel.Text" xml:space="preserve">
+    <value>Cancel</value>
   </data>
-  <data name="Do_you_want_to_set_NowNotes_to" xml:space="preserve">
-    <value>¿Quieres establecer NowNotes para iniciarse junto al sistema?</value>
+  <data name="buttonDeleteAllNotes.Text" xml:space="preserve">
+    <value>Delete All Notes</value>
   </data>
-  <data name="Launch_on_Startup" xml:space="preserve">
-    <value>Inicio junto al sistema</value>
+  <data name="buttonOK.Text" xml:space="preserve">
+    <value>OK</value>
   </data>
-  <data name="Light" xml:space="preserve">
-    <value>Claro</value>
+  <data name="buttonUpdate.Text" xml:space="preserve">
+    <value>Check For Updates</value>
   </data>
-  <data name="Note_saved_and_cleared" xml:space="preserve">
-    <value>Nota guardada y limpiada.</value>
+  <data name="checkBoxEnableSync.Text" xml:space="preserve">
+    <value>Enable Cloud Sync</value>
   </data>
-  <data name="NowNotes_will_restart" xml:space="preserve">
-    <value>NowNotes se reiniciará.</value>
+  <data name="checkBoxStartup.Text" xml:space="preserve">
+    <value>Launch On Startup</value>
   </data>
-  <data name="Rename" xml:space="preserve">
-    <value>Renombrar</value>
+  <data name="$this.Text" xml:space="preserve">
+    <value>NowNotes Settings</value>
   </data>
-  <data name="Rename_Note" xml:space="preserve">
-    <value>Renombrar nota</value>
+  <data name="labelOneDriveAccount.Text" xml:space="preserve">
+    <value>OneDrive Account:</value>
   </data>
-  <data name="Restart_necessary" xml:space="preserve">
-    <value>Reinicio necesario</value>
+  <data name="labelTheme.Text" xml:space="preserve">
+    <value>Theme</value>
   </data>
-  <data name="The_note_wasn_t_able_to_be_ope" xml:space="preserve">
-    <value>La nota no se ha podido abrir debido a que otra aplicación tiene abierto el archivo interno de la nota.</value>
+  <data name="tabPageAdvanced.Text" xml:space="preserve">
+    <value>Advanced</value>
   </data>
-  <data name="The_note_wasn_t_able_to_be_ren" xml:space="preserve">
-    <value>La nota no se ha podido renombrar y guardar debido a que otra aplicación tiene abierto el archivo interno de la nota.</value>
+  <data name="tabPageAppearance.Text" xml:space="preserve">
+    <value>Appearance</value>
   </data>
-  <data name="The_note_wasn_t_able_to_be_sav" xml:space="preserve">
-    <value>La nota no se ha podido guardar debido a que otra aplicación tiene abierto el archivo interno de la nota.</value>
+  <data name="tabPageSync.Text" xml:space="preserve">
+    <value>Cloud Sync</value>
   </data>
-  <data name="The_opened_note_has_been_delet" xml:space="preserve">
-    <value>La nota abierta ha sido eliminada.</value>
+  <data name="comboBoxTheme.Items" xml:space="preserve">
+    <value>Auto (System defined)</value>
   </data>
-  <data name="There_are_not_more_updates_ava" xml:space="preserve">
-    <value>No hay más actualizaciones disponibles.</value>
+  <data name="comboBoxTheme.Items1" xml:space="preserve">
+    <value>Light</value>
   </data>
-  <data name="There_s_an_update_available_fo" xml:space="preserve">
-    <value>Hay una actualización disponible para NowNotes. ¿Deseas instalarla?</value>
-  </data>
-  <data name="Untitled" xml:space="preserve">
-    <value>Sin título - </value>
-  </data>
-  <data name="Update_Available" xml:space="preserve">
-    <value>Actualización disponible</value>
-  </data>
-  <data name="Version_0" xml:space="preserve">
-    <value>Versión {0}</value>
+  <data name="comboBoxTheme.Items2" xml:space="preserve">
+    <value>Dark</value>
   </data>
 </root>
