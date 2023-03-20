@@ -1,4 +1,64 @@
-﻿<root>
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
   <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
     <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
     <xsd:element name="root" msdata:IsDataSet="true">
@@ -57,8 +117,96 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="closeToolStripMenuItem.Text" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="debugToolStripMenuItem.Text" xml:space="preserve">
+    <value>Debug</value>
+  </data>
+  <data name="deleteNoteToolStripMenuItem.Text" xml:space="preserve">
+    <value>Delete Note</value>
+  </data>
+  <data name="focusToolStripMenuItem.Text" xml:space="preserve">
+    <value>Focus</value>
+  </data>
+  <data name="labelInfo.Text" xml:space="preserve">
+    <value>Information Panel
+Information Panel</value>
+  </data>
+  <data name="labelSideMenuTitle.Text" xml:space="preserve">
+    <value>Your Notes</value>
+  </data>
+  <data name="notifyIcon.Text" xml:space="preserve">
+    <value>Open your NowNotes note</value>
+  </data>
+  <data name="renameNoteToolStripMenuItem.Text" xml:space="preserve">
+    <value>Rename Note</value>
+  </data>
+  <data name="settingsToolStripMenuItem.Text" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="showNotesFolderToolStripMenuItem.Text" xml:space="preserve">
+    <value>Show Notes Folder</value>
+  </data>
+  <data name="toolStripButton2.Text" xml:space="preserve">
+    <value>T</value>
+  </data>
+  <data name="toolStripButton2.ToolTipText" xml:space="preserve">
+    <value>Title</value>
+  </data>
+  <data name="toolStripButtonBold.Text" xml:space="preserve">
+    <value>B</value>
+  </data>
+  <data name="toolStripButtonBold.ToolTipText" xml:space="preserve">
+    <value>Bold</value>
+  </data>
+  <data name="toolStripButtonItalic.Text" xml:space="preserve">
+    <value>I</value>
+  </data>
+  <data name="toolStripButtonItalic.ToolTipText" xml:space="preserve">
+    <value>Italic</value>
+  </data>
+  <data name="toolStripButtonMenu.Text" xml:space="preserve">
+    <value>Menu</value>
+  </data>
+  <data name="toolStripButtonMenu.ToolTipText" xml:space="preserve">
+    <value>Menu</value>
+  </data>
+  <data name="toolStripButtonNormal.Text" xml:space="preserve">
+    <value>N</value>
+  </data>
+  <data name="toolStripButtonNormal.ToolTipText" xml:space="preserve">
+    <value>Normal</value>
+  </data>
+  <data name="toolStripButtonUnderline.Text" xml:space="preserve">
+    <value>U</value>
+  </data>
+  <data name="toolStripButtonUnderline.ToolTipText" xml:space="preserve">
+    <value>Underline</value>
+  </data>
+  <data name="toolStripDropDownButtonNoteOptions.Text" xml:space="preserve">
+    <value>Note Options</value>
+  </data>
+  <data name="toolStripDropDownButtonNoteOptions.ToolTipText" xml:space="preserve">
+    <value>Note Options</value>
+  </data>
+  <data name="toolStripLabelTitle.Text" xml:space="preserve">
+    <value>Title</value>
+  </data>
   <metadata name="toolStrip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
+  </metadata>
+  <metadata name="notifyIcon.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>132, 17</value>
+  </metadata>
+  <metadata name="toolBar.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>257, 17</value>
+  </metadata>
+  <metadata name="timerScrolling.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>363, 17</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
   </metadata>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="toolStrip.AutoSize" type="System.Boolean, mscorlib">
@@ -82,26 +230,14 @@
   <data name="toolStripButtonMenu.Size" type="System.Drawing.Size, System.Drawing">
     <value>48, 48</value>
   </data>
-  <data name="toolStripButtonMenu.Text" xml:space="preserve">
-    <value>Menu</value>
-  </data>
-  <data name="toolStripButtonMenu.ToolTipText" xml:space="preserve">
-    <value>Menu</value>
-  </data>
   <data name="toolStripDropDownButtonNoteOptions.AutoSize" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
   <data name="renameNoteToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>183, 26</value>
   </data>
-  <data name="renameNoteToolStripMenuItem.Text" xml:space="preserve">
-    <value>Rename Note</value>
-  </data>
   <data name="deleteNoteToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>183, 26</value>
-  </data>
-  <data name="deleteNoteToolStripMenuItem.Text" xml:space="preserve">
-    <value>Delete Note</value>
   </data>
   <data name="toolStripSeparator2.Size" type="System.Drawing.Size, System.Drawing">
     <value>180, 6</value>
@@ -113,26 +249,14 @@
   <data name="focusToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>183, 26</value>
   </data>
-  <data name="focusToolStripMenuItem.Text" xml:space="preserve">
-    <value>Focus</value>
-  </data>
   <data name="settingsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>183, 26</value>
-  </data>
-  <data name="settingsToolStripMenuItem.Text" xml:space="preserve">
-    <value>Settings</value>
   </data>
   <data name="showNotesFolderToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>217, 26</value>
   </data>
-  <data name="showNotesFolderToolStripMenuItem.Text" xml:space="preserve">
-    <value>Show Notes Folder</value>
-  </data>
   <data name="debugToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>183, 26</value>
-  </data>
-  <data name="debugToolStripMenuItem.Text" xml:space="preserve">
-    <value>Debug</value>
   </data>
   <data name="debugToolStripMenuItem.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -142,9 +266,6 @@
   </data>
   <data name="closeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>183, 26</value>
-  </data>
-  <data name="closeToolStripMenuItem.Text" xml:space="preserve">
-    <value>Close</value>
   </data>
   <data name="toolStripDropDownButtonNoteOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -161,20 +282,11 @@
   <data name="toolStripDropDownButtonNoteOptions.Size" type="System.Drawing.Size, System.Drawing">
     <value>48, 48</value>
   </data>
-  <data name="toolStripDropDownButtonNoteOptions.Text" xml:space="preserve">
-    <value>Note Options</value>
-  </data>
-  <data name="toolStripDropDownButtonNoteOptions.ToolTipText" xml:space="preserve">
-    <value>Note Options</value>
-  </data>
   <data name="toolStripLabelTitle.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 12pt</value>
   </data>
   <data name="toolStripLabelTitle.Size" type="System.Drawing.Size, System.Drawing">
     <value>49, 61</value>
-  </data>
-  <data name="toolStripLabelTitle.Text" xml:space="preserve">
-    <value>Title</value>
   </data>
   <data name="toolStrip.Location" type="System.Drawing.Point, System.Drawing">
     <value>347, 0</value>
@@ -197,9 +309,6 @@
   <data name="&gt;&gt;toolStrip.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <metadata name="notifyIcon.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>132, 17</value>
-  </metadata>
   <data name="notifyIcon.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAABMLAAATCwAAAAAAAAAA
@@ -224,9 +333,6 @@
         AAD//wAA//8AAA==
 </value>
   </data>
-  <data name="notifyIcon.Text" xml:space="preserve">
-    <value>Open your NowNotes note</value>
-  </data>
   <data name="notifyIcon.Visible" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -241,9 +347,6 @@
   </data>
   <data name="richTextBox.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
-  </data>
-  <data name="richTextBox.Text" xml:space="preserve">
-    <value />
   </data>
   <data name="&gt;&gt;richTextBox.Name" xml:space="preserve">
     <value>richTextBox</value>
@@ -302,9 +405,6 @@
   </data>
   <data name="labelSideMenuTitle.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
-  </data>
-  <data name="labelSideMenuTitle.Text" xml:space="preserve">
-    <value>Your Notes</value>
   </data>
   <data name="&gt;&gt;labelSideMenuTitle.Name" xml:space="preserve">
     <value>labelSideMenuTitle</value>
@@ -383,10 +483,6 @@
   </data>
   <data name="labelInfo.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
-  </data>
-  <data name="labelInfo.Text" xml:space="preserve">
-    <value>Information Panel
-Information Panel</value>
   </data>
   <data name="labelInfo.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
@@ -467,9 +563,6 @@ Information Panel</value>
   <data name="&gt;&gt;roundButtonNewNote.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <metadata name="toolBar.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>257, 17</value>
-  </metadata>
   <data name="toolBar.AutoSize" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
@@ -499,12 +592,6 @@ Information Panel</value>
   <data name="toolStripButtonNormal.Size" type="System.Drawing.Size, System.Drawing">
     <value>48, 48</value>
   </data>
-  <data name="toolStripButtonNormal.Text" xml:space="preserve">
-    <value>N</value>
-  </data>
-  <data name="toolStripButtonNormal.ToolTipText" xml:space="preserve">
-    <value>Normal</value>
-  </data>
   <data name="toolStripButtonBold.AutoSize" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
@@ -527,12 +614,6 @@ Information Panel</value>
   </data>
   <data name="toolStripButtonBold.Size" type="System.Drawing.Size, System.Drawing">
     <value>48, 48</value>
-  </data>
-  <data name="toolStripButtonBold.Text" xml:space="preserve">
-    <value>B</value>
-  </data>
-  <data name="toolStripButtonBold.ToolTipText" xml:space="preserve">
-    <value>Bold</value>
   </data>
   <data name="toolStripButtonItalic.AutoSize" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -557,12 +638,6 @@ Information Panel</value>
   <data name="toolStripButtonItalic.Size" type="System.Drawing.Size, System.Drawing">
     <value>48, 48</value>
   </data>
-  <data name="toolStripButtonItalic.Text" xml:space="preserve">
-    <value>I</value>
-  </data>
-  <data name="toolStripButtonItalic.ToolTipText" xml:space="preserve">
-    <value>Italic</value>
-  </data>
   <data name="toolStripButtonUnderline.AutoSize" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
@@ -585,12 +660,6 @@ Information Panel</value>
   </data>
   <data name="toolStripButtonUnderline.Size" type="System.Drawing.Size, System.Drawing">
     <value>48, 48</value>
-  </data>
-  <data name="toolStripButtonUnderline.Text" xml:space="preserve">
-    <value>U</value>
-  </data>
-  <data name="toolStripButtonUnderline.ToolTipText" xml:space="preserve">
-    <value>Underline</value>
   </data>
   <data name="toolStripButton2.AutoSize" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -615,12 +684,6 @@ Information Panel</value>
   <data name="toolStripButton2.Size" type="System.Drawing.Size, System.Drawing">
     <value>50, 48</value>
   </data>
-  <data name="toolStripButton2.Text" xml:space="preserve">
-    <value>T</value>
-  </data>
-  <data name="toolStripButton2.ToolTipText" xml:space="preserve">
-    <value>Title</value>
-  </data>
   <data name="toolBar.Location" type="System.Drawing.Point, System.Drawing">
     <value>347, 443</value>
   </data>
@@ -642,20 +705,11 @@ Information Panel</value>
   <data name="&gt;&gt;toolBar.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <metadata name="timerScrolling.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>363, 17</value>
-  </metadata>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>8, 20</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>533, 523</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>NowNotes</value>
   </data>
   <data name="&gt;&gt;toolStripButtonMenu.Name" xml:space="preserve">
     <value>toolStripButtonMenu</value>
