@@ -19,7 +19,7 @@ Your desktop will never be a disaster again. The notes are saved *automatically*
 ## To-do list
 
 - [x] Cloud sync
-- [ ] Dark mode
+- [x] Dark mode
 - [ ] Folders
 
 ## Installing
