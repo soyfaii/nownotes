@@ -56,10 +56,9 @@ namespace NowNotes_Windows
 				// Launch On Startup
 				{
 					if (Registry.CurrentUser.OpenSubKey("Software\\Microsoft\\Windows\\CurrentVersion\\Run").GetValueNames().Contains("NowNotes"))
-					{   if (Registry.CurrentUser.OpenSubKey("Software\\Microsoft\\Windows\\CurrentVersion\\Run").GetValue("NowNotes") == Application.ExecutablePath)
-						{
-							checkBoxStartup.Checked = true;
-						}	}
+					{
+						checkBoxStartup.Checked = true;
+					}
 				}
 			}
 		}
@@ -166,6 +165,16 @@ namespace NowNotes_Windows
 		{
 			if (checkBoxEnableSync.Checked) { Settings.Default.CloudSyncEnabled = true; } else { Settings.Default.CloudSyncEnabled = false; }
 			Settings.Default.OneDriveFolder = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile) + "\\" + comboBoxOneDriveAccount.Text + "\\NowNotes\\Notes";
+			if (checkBoxStartup.Checked)
+			{
+				RegistryKey rkey = Registry.CurrentUser.CreateSubKey("Software\\Microsoft\\Windows\\CurrentVersion\\Run");
+				rkey.SetValue("NowNotes", Application.ExecutablePath);
+			}
+			else
+			{
+				RegistryKey rkey = Registry.CurrentUser.CreateSubKey("Software\\Microsoft\\Windows\\CurrentVersion\\Run");
+				rkey.DeleteValue("NowNotes");
+			}
 		}
 
 		private void buttonUpdate_Click(object sender, EventArgs e)
