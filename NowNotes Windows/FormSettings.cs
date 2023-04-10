@@ -1,4 +1,5 @@
-﻿using NowNotes_Windows.Properties;
+﻿using Microsoft.Win32;
+using NowNotes_Windows.Properties;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -48,6 +49,16 @@ namespace NowNotes_Windows
 					if (Settings.Default.Theme == "auto") { comboBoxTheme.Text = "Auto (System defined)"; }
 					else if (Settings.Default.Theme == "light") { comboBoxTheme.Text = "Light"; }
 					else if (Settings.Default.Theme == "dark") { comboBoxTheme.Text = "Dark"; }
+				}
+			}
+			// Advanced
+			{
+				// Launch On Startup
+				{
+					if (Registry.CurrentUser.OpenSubKey("Software\\Microsoft\\Windows\\CurrentVersion\\Run").GetValueNames().Contains("NowNotes"))
+					{
+						checkBoxStartup.Checked = true;
+					}
 				}
 			}
 		}
@@ -154,6 +165,16 @@ namespace NowNotes_Windows
 		{
 			if (checkBoxEnableSync.Checked) { Settings.Default.CloudSyncEnabled = true; } else { Settings.Default.CloudSyncEnabled = false; }
 			Settings.Default.OneDriveFolder = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile) + "\\" + comboBoxOneDriveAccount.Text + "\\NowNotes\\Notes";
+			if (checkBoxStartup.Checked)
+			{
+				RegistryKey rkey = Registry.CurrentUser.CreateSubKey("Software\\Microsoft\\Windows\\CurrentVersion\\Run");
+				rkey.SetValue("NowNotes", Application.ExecutablePath);
+			}
+			else
+			{
+				RegistryKey rkey = Registry.CurrentUser.CreateSubKey("Software\\Microsoft\\Windows\\CurrentVersion\\Run");
+				rkey.DeleteValue("NowNotes");
+			}
 		}
 
 		private void buttonUpdate_Click(object sender, EventArgs e)
