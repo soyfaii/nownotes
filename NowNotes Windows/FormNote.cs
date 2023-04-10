@@ -7,6 +7,7 @@ using System.Drawing.Drawing2D;
 using System.Net;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using System.Runtime.InteropServices;
 
 namespace NowNotes_Windows
 {
@@ -175,6 +176,8 @@ namespace NowNotes_Windows
 					toolStripDropDownButtonNoteOptions.Image = pic;
 				}
 			}
+			// Window Borders
+			UseImmersiveDarkMode(Handle, true);
 		}
 
 		private void notifyIcon_Click(object sender, EventArgs e)
@@ -459,5 +462,34 @@ namespace NowNotes_Windows
 			}
 		}
 
+		// THIS CODE IS TOTALLY NOT TAKEN FROM STACK OVERFLOW
+
+		[DllImport("dwmapi.dll")]
+		private static extern int DwmSetWindowAttribute(IntPtr hwnd, int attr, ref int attrValue, int attrSize);
+
+		private const int DWMWA_USE_IMMERSIVE_DARK_MODE_BEFORE_20H1 = 19;
+		private const int DWMWA_USE_IMMERSIVE_DARK_MODE = 20;
+
+		private static bool UseImmersiveDarkMode(IntPtr handle, bool enabled)
+		{
+			if (IsWindows10OrGreater(17763))
+			{
+				var attribute = DWMWA_USE_IMMERSIVE_DARK_MODE_BEFORE_20H1;
+				if (IsWindows10OrGreater(18985))
+				{
+					attribute = DWMWA_USE_IMMERSIVE_DARK_MODE;
+				}
+
+				int useImmersiveDarkMode = enabled ? 1 : 0;
+				return DwmSetWindowAttribute(handle, (int)attribute, ref useImmersiveDarkMode, sizeof(int)) == 0;
+			}
+
+			return false;
+		}
+
+		private static bool IsWindows10OrGreater(int build = -1)
+		{
+			return Environment.OSVersion.Version.Major >= 10 && Environment.OSVersion.Version.Build >= build;
+		}
 	}
 }
