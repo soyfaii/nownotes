@@ -132,6 +132,7 @@ namespace NowNotes_Windows
 			resources.ApplyResources(buttonDeleteAllNotes, "buttonDeleteAllNotes");
 			buttonDeleteAllNotes.Name = "buttonDeleteAllNotes";
 			buttonDeleteAllNotes.UseVisualStyleBackColor = true;
+			buttonDeleteAllNotes.Click += buttonDeleteAllNotes_Click;
 			// 
 			// buttonOK
 			// 
