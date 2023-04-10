@@ -1,4 +1,5 @@
-﻿using NowNotes_Windows.Properties;
+﻿using Microsoft.Win32;
+using NowNotes_Windows.Properties;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -48,6 +49,17 @@ namespace NowNotes_Windows
 					if (Settings.Default.Theme == "auto") { comboBoxTheme.Text = "Auto (System defined)"; }
 					else if (Settings.Default.Theme == "light") { comboBoxTheme.Text = "Light"; }
 					else if (Settings.Default.Theme == "dark") { comboBoxTheme.Text = "Dark"; }
+				}
+			}
+			// Advanced
+			{
+				// Launch On Startup
+				{
+					if (Registry.CurrentUser.OpenSubKey("Software\\Microsoft\\Windows\\CurrentVersion\\Run").GetValueNames().Contains("NowNotes"))
+					{   if (Registry.CurrentUser.OpenSubKey("Software\\Microsoft\\Windows\\CurrentVersion\\Run").GetValue("NowNotes") == Application.ExecutablePath)
+						{
+							checkBoxStartup.Checked = true;
+						}	}
 				}
 			}
 		}

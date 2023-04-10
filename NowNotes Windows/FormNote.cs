@@ -68,7 +68,7 @@ namespace NowNotes_Windows
 				if (result == DialogResult.Yes)
 				{
 					RegistryKey rkey = Registry.CurrentUser.CreateSubKey("Software\\Microsoft\\Windows\\CurrentVersion\\Run");
-					rkey.SetValue("NowNotes", System.Windows.Forms.Application.ExecutablePath);
+					rkey.SetValue("NowNotes", Application.ExecutablePath);
 				}
 				Settings.Default.FirstLaunch = false;
 				Settings.Default.Save();
