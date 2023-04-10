@@ -164,5 +164,19 @@ namespace NowNotes_Windows
 			form.Dispose();
 			MessageBox.Show(Resources.There_are_not_more_updates_ava);
 		}
+
+		private void buttonDeleteAllNotes_Click(object sender, EventArgs e)
+		{
+			if (Settings.Default.CloudSyncEnabled)
+			{
+				foreach (var file in Directory.GetFiles(Settings.Default.OneDriveFolder)) { try { File.Delete(file); } catch(Exception) { } }
+				MessageBox.Show("All notes were deleted.", "Notes Deleted", MessageBoxButtons.OK, MessageBoxIcon.Information);
+			}
+			else
+			{
+				foreach (var file in Directory.GetFiles(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData) + "\\NowNotes\\Notes")) { try { File.Delete(file); } catch (Exception) { } }
+				MessageBox.Show("All notes were deleted.", "Notes Deleted", MessageBoxButtons.OK, MessageBoxIcon.Information);
+			}
+		}
 	}
 }
