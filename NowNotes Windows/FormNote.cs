@@ -491,5 +491,22 @@ namespace NowNotes_Windows
 		{
 			return Environment.OSVersion.Version.Major >= 10 && Environment.OSVersion.Version.Build >= build;
 		}
+
+		private void listBoxMenu_DrawItem(object sender, DrawItemEventArgs e)
+		{
+			Console.WriteLine("Item drawed");
+			if (e.Index < 0) return;
+			if ((e.State & DrawItemState.Selected) == DrawItemState.Selected)
+				e = new DrawItemEventArgs(e.Graphics,
+										  e.Font,
+										  e.Bounds,
+										  e.Index,
+										  e.State ^ DrawItemState.Selected,
+										  e.ForeColor,
+										  Color.FromArgb(237, 226, 188));
+			e.DrawBackground();
+			e.Graphics.DrawString(listBoxMenu.Items[e.Index].ToString(), e.Font, Brushes.Black, e.Bounds, StringFormat.GenericDefault);
+			e.DrawFocusRectangle();
+		}
 	}
 }

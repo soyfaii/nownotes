@@ -173,7 +173,9 @@
 			listBoxMenu.ForeColor = Color.FromArgb(74, 71, 57);
 			listBoxMenu.FormattingEnabled = true;
 			listBoxMenu.Name = "listBoxMenu";
+			listBoxMenu.DrawMode = DrawMode.OwnerDrawFixed;
 			listBoxMenu.SelectedValueChanged += listBoxMenu_SelectedValueChanged;
+			listBoxMenu.DrawItem += listBoxMenu_DrawItem;
 			// 
 			// panelSideMenuTitle
 			// 
