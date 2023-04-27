@@ -37,11 +37,46 @@ namespace NowNotes_Windows
 	}
 	public class ToolStripSystemRendererNoBorder : ToolStripSystemRenderer
 	{
-		public ToolStripSystemRendererNoBorder() { }
 
 		protected override void OnRenderToolStripBorder(ToolStripRenderEventArgs e)
 		{
 			//base.OnRenderToolStripBorder(e);
+		}
+
+		protected override void OnRenderButtonBackground(ToolStripItemRenderEventArgs e)
+		{
+			if (e.Item.Pressed)
+			{
+				Rectangle rectangle = new Rectangle(0, 0, e.Item.Size.Width - 1, e.Item.Size.Height - 1);
+				e.Graphics.FillEllipse(new SolidBrush(Color.FromArgb(32, 29, 27, 22)), rectangle);
+			}
+			else if (e.Item.Selected)
+			{
+				Rectangle rectangle = new Rectangle(0, 0, e.Item.Size.Width - 1, e.Item.Size.Height - 1);
+				e.Graphics.FillEllipse(new SolidBrush(Color.FromArgb(20, 29, 27, 22)), rectangle);
+			}
+			else
+			{
+				base.OnRenderButtonBackground(e);
+			}
+		}
+
+		protected override void OnRenderDropDownButtonBackground(ToolStripItemRenderEventArgs e)
+		{
+			if (e.Item.Pressed)
+			{
+				Rectangle rectangle = new Rectangle(0, 0, e.Item.Size.Width - 1, e.Item.Size.Height - 1);
+				e.Graphics.FillEllipse(new SolidBrush(Color.FromArgb(32, 29, 27, 22)), rectangle);
+			}
+			else if (e.Item.Selected)
+			{
+				Rectangle rectangle = new Rectangle(0, 0, e.Item.Size.Width - 1, e.Item.Size.Height - 1);
+				e.Graphics.FillEllipse(new SolidBrush(Color.FromArgb(20, 29, 27, 22)), rectangle);
+			}
+			else
+			{
+				base.OnRenderDropDownButtonBackground(e);
+			}
 		}
 	}
 }
