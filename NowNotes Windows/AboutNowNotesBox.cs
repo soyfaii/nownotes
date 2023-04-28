@@ -19,7 +19,7 @@ namespace NowNotes_Windows
 			this.labelProductName.Text = Application.ProductName;
 			this.labelVersion.Text = String.Format(Resources.Version_0, Application.ProductVersion);
 			this.labelCopyright.Text = AssemblyCopyright;
-			this.labelCompanyName.Text = Application.CompanyName;
+			// this.labelCompanyName.Text = Application.CompanyName;
 			this.textBoxDescription.Text = AssemblyDescription;
 		}
 
