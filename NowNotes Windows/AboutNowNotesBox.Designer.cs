@@ -32,9 +32,9 @@
 			labelProductName = new Label();
 			labelVersion = new Label();
 			labelCopyright = new Label();
+			labelCompanyName = new Label();
 			textBoxDescription = new TextBox();
 			okButton = new Button();
-			labelCompanyName = new Label();
 			tableLayoutPanel.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)logoPictureBox).BeginInit();
 			SuspendLayout();
@@ -114,6 +114,17 @@
 			labelCopyright.Text = "Copyright";
 			labelCopyright.TextAlign = ContentAlignment.MiddleLeft;
 			// 
+			// labelCompanyName
+			// 
+			labelCompanyName.Dock = DockStyle.Fill;
+			labelCompanyName.Location = new Point(191, 123);
+			labelCompanyName.Margin = new Padding(8, 0, 5, 0);
+			labelCompanyName.MaximumSize = new Size(0, 27);
+			labelCompanyName.Name = "labelCompanyName";
+			labelCompanyName.Size = new Size(361, 27);
+			labelCompanyName.TabIndex = 22;
+			labelCompanyName.TextAlign = ContentAlignment.MiddleLeft;
+			// 
 			// textBoxDescription
 			// 
 			textBoxDescription.Dock = DockStyle.Fill;
@@ -139,17 +150,6 @@
 			okButton.TabIndex = 24;
 			okButton.Text = "&OK";
 			okButton.Click += okButton_Click;
-			// 
-			// labelCompanyName
-			// 
-			labelCompanyName.Dock = DockStyle.Fill;
-			labelCompanyName.Location = new Point(191, 123);
-			labelCompanyName.Margin = new Padding(8, 0, 5, 0);
-			labelCompanyName.MaximumSize = new Size(0, 27);
-			labelCompanyName.Name = "labelCompanyName";
-			labelCompanyName.Size = new Size(361, 27);
-			labelCompanyName.TabIndex = 22;
-			labelCompanyName.TextAlign = ContentAlignment.MiddleLeft;
 			// 
 			// AboutNowNotesBox
 			// 
