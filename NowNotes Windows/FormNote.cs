@@ -210,6 +210,7 @@ namespace NowNotes_Windows
 					toolStripLabelTitle.Text = noteName;
 					hasBeenShowed = true;
 				}
+				richTextBox.Focus();
 			}
 		}
 
