@@ -286,6 +286,7 @@
 			FormClosing += FormMain_FormClosing;
 			Load += FormMain_Load;
 			Resize += FormMain_Resize;
+			FormClosed += FormMain_FormClosed;
 			toolStrip.ResumeLayout(false);
 			toolStrip.PerformLayout();
 			panelSideMenu.ResumeLayout(false);
