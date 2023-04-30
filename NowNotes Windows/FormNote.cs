@@ -27,6 +27,7 @@ namespace NowNotes_Windows
 		public FormMain(bool showSysTrayIcon = true)
 		{
 			InitializeComponent();
+			RegisterHotKey(Handle, 1, MOD_WIN | MOD_ALT, VK_N);
 			if (showSysTrayIcon == false)
 			{
 				notifyIcon.Visible = false;
@@ -182,6 +183,11 @@ namespace NowNotes_Windows
 
 		private void notifyIcon_Click(object sender, EventArgs e)
 		{
+			ShowHideNoteWindow();
+		}
+
+		public void ShowHideNoteWindow()
+		{
 			if (isBeingShowed)
 			{
 				isBeingShowed = false;
@@ -204,6 +210,7 @@ namespace NowNotes_Windows
 					toolStripLabelTitle.Text = noteName;
 					hasBeenShowed = true;
 				}
+				richTextBox.Focus();
 			}
 		}
 
@@ -507,6 +514,32 @@ namespace NowNotes_Windows
 			e.DrawBackground();
 			e.Graphics.DrawString(listBoxMenu.Items[e.Index].ToString(), e.Font, Brushes.Black, e.Bounds, StringFormat.GenericDefault);
 			e.DrawFocusRectangle();
+		}
+
+		private const int MOD_WIN = 0x0008; // Windows key
+		private const int MOD_ALT = 0x0001; // Alt key
+		private const int VK_N = 0x4E; // N key
+
+		[DllImport("user32.dll")]
+		private static extern bool RegisterHotKey(IntPtr hWnd, int id, int fsModifiers, int vk);
+
+		[DllImport("user32.dll")]
+		private static extern bool UnregisterHotKey(IntPtr hWnd, int id);
+
+		protected override void WndProc(ref Message m)
+		{
+			base.WndProc(ref m);
+
+			const int WM_HOTKEY = 0x0312;
+			if (m.Msg == WM_HOTKEY && m.WParam.ToInt32() == 1)
+			{
+				ShowHideNoteWindow();
+			}
+		}
+
+		private void FormMain_FormClosed(object sender, FormClosedEventArgs e)
+		{
+			UnregisterHotKey(this.Handle, 1);
 		}
 	}
 }
