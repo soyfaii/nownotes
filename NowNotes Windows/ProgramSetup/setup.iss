@@ -2,7 +2,7 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "NowNotes"
-#define MyAppVersion "1.0.0-beta8"
+#define MyAppVersion "1.0.0-beta9"
 #define MyAppPublisher "NowNotes"
 #define MyAppURL "https://soyfaii.github.io/NowNotes"
 #define MyAppExeName "NowNotes Windows.exe"
