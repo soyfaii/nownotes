@@ -63,10 +63,10 @@
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="labelTheme.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 4</value>
+    <value>7, 5</value>
   </data>
   <data name="labelTheme.Size" type="System.Drawing.Size, System.Drawing">
-    <value>43, 15</value>
+    <value>54, 20</value>
   </data>
   <data name="labelTheme.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -87,14 +87,10 @@
     <value>0</value>
   </data>
   <data name="comboBoxTheme.Location" type="System.Drawing.Point, System.Drawing">
-    <value>59, 2</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="comboBoxTheme.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
+    <value>67, 3</value>
   </data>
   <data name="comboBoxTheme.Size" type="System.Drawing.Size, System.Drawing">
-    <value>133, 23</value>
+    <value>151, 28</value>
   </data>
   <data name="comboBoxTheme.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -112,13 +108,10 @@
     <value>1</value>
   </data>
   <data name="tabPageAppearance.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 24</value>
-  </data>
-  <data name="tabPageAppearance.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
+    <value>4, 29</value>
   </data>
   <data name="tabPageAppearance.Size" type="System.Drawing.Size, System.Drawing">
-    <value>768, 369</value>
+    <value>879, 496</value>
   </data>
   <data name="tabPageAppearance.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -139,10 +132,14 @@
     <value>0</value>
   </data>
   <data name="comboBoxOneDriveAccount.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 46</value>
+    <value>7, 61</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="comboBoxOneDriveAccount.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="comboBoxOneDriveAccount.Size" type="System.Drawing.Size, System.Drawing">
-    <value>300, 23</value>
+    <value>342, 28</value>
   </data>
   <data name="comboBoxOneDriveAccount.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -163,10 +160,10 @@
     <value>True</value>
   </data>
   <data name="labelOneDriveAccount.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 28</value>
+    <value>7, 37</value>
   </data>
   <data name="labelOneDriveAccount.Size" type="System.Drawing.Size, System.Drawing">
-    <value>107, 15</value>
+    <value>132, 20</value>
   </data>
   <data name="labelOneDriveAccount.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -190,10 +187,13 @@
     <value>True</value>
   </data>
   <data name="checkBoxEnableSync.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 6</value>
+    <value>7, 8</value>
+  </data>
+  <data name="checkBoxEnableSync.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="checkBoxEnableSync.Size" type="System.Drawing.Size, System.Drawing">
-    <value>124, 19</value>
+    <value>153, 24</value>
   </data>
   <data name="checkBoxEnableSync.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -214,13 +214,16 @@
     <value>2</value>
   </data>
   <data name="tabPageSync.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 24</value>
+    <value>4, 29</value>
+  </data>
+  <data name="tabPageSync.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="tabPageSync.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="tabPageSync.Size" type="System.Drawing.Size, System.Drawing">
-    <value>768, 369</value>
+    <value>879, 496</value>
   </data>
   <data name="tabPageSync.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -244,10 +247,13 @@
     <value>True</value>
   </data>
   <data name="checkBoxStartup.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 6</value>
+    <value>7, 8</value>
+  </data>
+  <data name="checkBoxStartup.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="checkBoxStartup.Size" type="System.Drawing.Size, System.Drawing">
-    <value>125, 19</value>
+    <value>152, 24</value>
   </data>
   <data name="checkBoxStartup.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -268,10 +274,13 @@
     <value>0</value>
   </data>
   <data name="buttonDeleteAllNotes.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 31</value>
+    <value>7, 41</value>
+  </data>
+  <data name="buttonDeleteAllNotes.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="buttonDeleteAllNotes.Size" type="System.Drawing.Size, System.Drawing">
-    <value>150, 23</value>
+    <value>171, 31</value>
   </data>
   <data name="buttonDeleteAllNotes.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -292,13 +301,16 @@
     <value>1</value>
   </data>
   <data name="tabPageAdvanced.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 24</value>
+    <value>4, 29</value>
+  </data>
+  <data name="tabPageAdvanced.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="tabPageAdvanced.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="tabPageAdvanced.Size" type="System.Drawing.Size, System.Drawing">
-    <value>768, 369</value>
+    <value>879, 496</value>
   </data>
   <data name="tabPageAdvanced.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -319,10 +331,13 @@
     <value>2</value>
   </data>
   <data name="tabControlSettingsTabs.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 12</value>
+    <value>14, 16</value>
+  </data>
+  <data name="tabControlSettingsTabs.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="tabControlSettingsTabs.Size" type="System.Drawing.Size, System.Drawing">
-    <value>776, 397</value>
+    <value>887, 529</value>
   </data>
   <data name="tabControlSettingsTabs.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -340,10 +355,13 @@
     <value>5</value>
   </data>
   <data name="buttonOK.Location" type="System.Drawing.Point, System.Drawing">
-    <value>551, 415</value>
+    <value>630, 553</value>
+  </data>
+  <data name="buttonOK.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="buttonOK.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
+    <value>86, 31</value>
   </data>
   <data name="buttonOK.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -364,10 +382,13 @@
     <value>4</value>
   </data>
   <data name="buttonCancel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>632, 415</value>
+    <value>722, 553</value>
+  </data>
+  <data name="buttonCancel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="buttonCancel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
+    <value>86, 31</value>
   </data>
   <data name="buttonCancel.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -388,10 +409,13 @@
     <value>3</value>
   </data>
   <data name="buttonApply.Location" type="System.Drawing.Point, System.Drawing">
-    <value>713, 415</value>
+    <value>815, 553</value>
+  </data>
+  <data name="buttonApply.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="buttonApply.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
+    <value>86, 31</value>
   </data>
   <data name="buttonApply.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -416,10 +440,13 @@
     <value>NoControl</value>
   </data>
   <data name="buttonAboutNowNotes.Location" type="System.Drawing.Point, System.Drawing">
-    <value>16, 415</value>
+    <value>18, 553</value>
+  </data>
+  <data name="buttonAboutNowNotes.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="buttonAboutNowNotes.Size" type="System.Drawing.Size, System.Drawing">
-    <value>150, 23</value>
+    <value>171, 31</value>
   </data>
   <data name="buttonAboutNowNotes.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -443,10 +470,13 @@
     <value>NoControl</value>
   </data>
   <data name="buttonUpdate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>171, 415</value>
+    <value>195, 553</value>
+  </data>
+  <data name="buttonUpdate.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="buttonUpdate.Size" type="System.Drawing.Size, System.Drawing">
-    <value>150, 23</value>
+    <value>171, 31</value>
   </data>
   <data name="buttonUpdate.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -470,34 +500,89 @@
     <value>True</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>7, 15</value>
+    <value>8, 20</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>800, 450</value>
+    <value>914, 600</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAABMLAAATCwAAAAAAAAAA
+        AAABAAEAICAAAAEAIACoEAAAFgAAACgAAAAgAAAAQAAAAAEAIAAAAAAAABAAABMLAAATCwAAAAAAAAAA
         AAD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
-        /wD///8A////AP///wBl4/wAAQEBZwAAAGYAAABmAAAAZgAAAGYAAABmAAAAZgAAAGYAAABmAAAAZgAA
-        AGYAAABm////AP///wD///8AZeP8/2Xj/P9l4/z/ZeP8/2Xj/P9l4/z/ZeP8/2Xj/P8AXm3/AF5t/wBe
-        bf8AXm3/AAAAZv///wD///8A////AGXj/P9l4/z/ZeP8/2Xj/P9l4/z/ZeP8/2Xj/P9l4/z/vOLt/wBe
-        bf8AXm3/AF5t/wAAAGb///8A////AP///wBl4/z/ZeP8/2Xj/P9l4/z/ZeP8/2Xj/P9l4/z/ZeP8/7zi
-        7f+84u3/AF5t/wBebf8AAABm////AP///wD///8AZeP8/2Xj/P9l4/z/ZeP8/2Xj/P9l4/z/ZeP8/2Xj
-        /P+84u3/vOLt/7zi7f8AXm3/AAAAZv///wD///8A////AGXj/P9l4/z/ZeP8/2Xj/P9l4/z/ZeP8/2Xj
-        /P9l4/z/ZeP8/2Xj/P9l4/z/ZeP8/wAAAGb///8A////AP///wBl4/z/ZeP8/2Xj/P9l4/z/ZeP8/2Xj
-        /P9l4/z/ZeP8/2Xj/P9l4/z/ZeP8/2Xj/P8AAABm////AP///wD///8AZeP8/2Xj/P9l4/z/ZeP8/2Xj
-        /P9l4/z/ZeP8/2Xj/P9l4/z/ZeP8/2Xj/P9l4/z/AAAAZv///wD///8A////AGXj/P9l4/z/ZeP8/2Xj
-        /P9l4/z/ZeP8/2Xj/P9l4/z/ZeP8/2Xj/P9l4/z/ZeP8/wAAAGb///8A////AP///wBl4/z/ZeP8/2Xj
-        /P9l4/z/ZeP8/2Xj/P9l4/z/ZeP8/2Xj/P9l4/z/ZeP8/2Xj/P8AAABm////AP///wD///8AZeP8/2Xj
-        /P9l4/z/ZeP8/2Xj/P9l4/z/ZeP8/2Xj/P9l4/z/ZeP8/2Xj/P9l4/z/AAAAZv///wD///8A////AGXj
-        /P9l4/z/ZeP8/2Xj/P9l4/z/ZeP8/2Xj/P9l4/z/ZeP8/2Xj/P9l4/z/ZeP8/wAAAGb///8A////AP//
-        /wBl4/z/ZeP882Xj/P9l4/z/ZeP8/2Xj/P9l4/z/ZeP8/2Xj/P9l4/z/ZeP8/2Xj/P9l4/wA////AP//
         /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wAtdIMFP6W5PT+kuGU9nrFpPJ6waTyesWk8nrFpPJ6xaTyesWk8nrFpPJ6xaTye
+        sWk9nrFpPZ6xaTyesWk8nrFpPJ6xaTydsGlDn7JqT5qqbEqNnG1KjZttSY2bbUmMmm1JjJptSIyabjyI
+        l2okWmVEAAAADwAAAAH///8A////AEi60WpLw9zyUM/p/1DP6f9Qz+n/UM/p/1DP6f9Qz+j/UM/p/1DQ
+        6f9Pz+j/UM/o/1DP6P9Q0Oj/UM/o/1DP6P9Qz+j/UdPs/0e1yv8ec4L/H3qK/yB7jP8ge4v/H3uL/x97
+        i/8fe4v/F3eH/yh8jOceSFFnAAAAD////wD///8ATcff6E7L5P9Mx9//Tcff/03G3/9Nx9//Tcff/03G
+        3/9Nxt//Tcff/03G3/9Nx9//Tcff/03H3/9Nx9//Tcff/03H3/9Jx9//c8zf/12Qmv8AS1n/AFlo/wBa
+        af8AWmn/AFpp/wBaaf8AWWf/B2Nz/ydodMYAAAAr////AP///wBOyOD/Tcfg/03I4P9Nx+D/Tsjg/07H
+        4P9NyOD/Tcfg/03H4P9Ox9//Tcjf/03I3/9NyOD/Tcjf/07H3/9Ox+D/Tsff/0nH3/9zzeD/wN/p/1eQ
+        nP8AT13/AF1s/wBebf8AXm3/AF5t/wBebf8GZHP/MGl01wAAADn///8A////AE7I4f9OyOD/Tsjg/07I
+        4P9OyOD/Tsjg/07I4f9OyOD/Tsjg/07I4P9OyOD/Tsjh/07I4f9OyOH/Tsjh/07I4P9OyOD/Ssjg/3PO
+        4f+63Ob/ut3n/1uTnv8AT13/AF1s/wBebf8AXm3/AF5t/wZmdf8zaXPYAAAAO////wD///8AT8nh/0/J
+        4f9OyeH/T8nh/0/J4f9PyeH/T8nh/0/J4f9PyeH/T8nh/0/J4f9PyeH/T8rh/0/J4v9PyeH/T8ni/07J
+        4f9LyOH/dM/j/7rd5/+12uT/ud3n/1aPm/8AT13/AF1s/wBebf8AXm3/BmV1/zJpdNgAAAA7////AP//
+        /wBPyuL/T8ri/1DK4v9QyuL/UMri/1DK4v9QyuL/T8ri/0/K4v9QyuL/UMri/0/K4v9QyuL/UMri/1DK
+        4v9QyuL/UMri/0zJ4v910OT/vN7o/7Xb5v+02eT/udzn/1qSnf8AT13/AF1s/wBebf8GZXX/M2l02AAA
+        ADv///8A////AFHL4/9Ry+P/Ucvj/1DL4/9Qy+P/Ucvj/1HL4/9Ry+P/UMvj/1DL4/9Ry+P/Ucvj/1HL
+        4/9Ry+L/UMvj/1DL4/9Ry+P/TMrj/3fR5f+93+n/ttzn/7Ta5f+z2eP/uNvm/1WPmv8AT13/AF1r/wZm
+        df80aXXYAAAAO////wD///8AUczl/1LM5P9RzOT/Uczk/1HM5P9SzOT/Uszk/1HM5P9SzOT/Uczk/1LM
+        5P9RzOX/Uczk/1LM5f9SzOX/Uszk/1HM5f9Oy+T/ddLm/77g6/+43uj/ttzn/7Ta5f+02OP/uNvl/1qR
+        nf8AT13/BmV0/zRrdtgAAAA7////AP///wBTzeX/Us3l/1LO5f9SzeX/Us7l/1LN5f9TzeX/Us3l/1LN
+        5f9SzuX/Us7l/1LN5f9SzeX/Us3m/1LN5f9SzeX/U87m/1DN5v9hzuT/q9vo/7/g6/+83+r/u93o/7ja
+        5f+22eP/u9zm/1mPmv8FWGb/M2p12AAAADv///8A////AFTO5/9Tzub/U8/n/1PO5/9Uz+f/U87n/1PP
+        5/9Tzuf/U8/n/1PP5/9Tz+b/U8/n/1PO5/9Tz+b/U87n/1PO5v9Tz+f/VM7n/1HO5/9mzeH/kdLh/5fR
+        3/+Uztv/k83a/5LM2f+Ry9j/ls3a/0KRoP81fIrUAAAANv///wD///8AVNDo/1TQ6P9Uz+j/Vc/o/1XQ
+        6P9Uz+j/VNDo/1XP6P9U0Oj/VM/o/1TQ6P9V0Oj/VM/o/1TQ6P9U0Oj/VNDo/1XQ6P9U0Oj/VdDo/1LP
+        5/9PyuL/TsXc/03E2/9NxNv/TsTb/07E3P9OxNz/VtHp/0Omus4AAAAv////AP///wBW0en/VdHp/1XR
+        6f9W0en/VdHp/1XQ6f9V0On/VtHp/1XR6f9V0en/VdHp/1XR6f9V0en/VdHp/1bR6f9V0en/VtHp/1bR
+        6f9W0en/VdHp/1XR6v9V0er/VtLq/1bS6v9W0ur/VtLq/1bR6v9a2/T/R67DzgAAAC7///8A////AFfS
+        6v9W0ur/VtLq/1bS6v9X0uv/V9Lr/1fS6v9X0ur/V9Lq/1fS6v9W0uv/VtLq/1fS6/9X0uv/V9Lr/1fS
+        6/9X0uv/VtLr/1bS6/9W0uv/VtLq/1bS6/9X0uv/VtLr/1fS6v9X0ur/VtLr/1rb9P9Ir8POAAAALv//
+        /wD///8AWNPs/1jT7P9X0+z/WNPs/1jT7P9Y0+z/WNTs/1jT7P9Y1Ov/WNTr/1jU7P9X0+z/V9Ts/1fT
+        7P9Y1Oz/WNPs/1jT7P9Y0+z/WNPr/1jT7P9Y0+z/WNPs/1jT7P9X0+z/V9Ps/1jT7P9Y0+z/XNz2/0mw
+        xM4AAAAu////AP///wBZ1O3/WdTu/1nU7f9Z1e3/WdXt/1nV7f9Z1O3/WdXt/1nV7f9Z1O3/WdTt/1nV
+        7f9Z1e3/WdTt/1nU7f9Z1e3/WdXt/1nU7f9Z1e3/WdXt/1nV7f9Z1e3/WdTt/1nV7f9Z1O3/WdTt/1nU
+        7f9c3vf/SrHFzgAAAC7///8A////AFrW7/9a1u7/Wtbv/1rW7v9a1u7/Wtbu/1rW7v9a1u7/Wtbu/1rW
+        7v9a1u//Wtbu/1rW7v9a1u7/WdXv/1rW7v9a1u7/Wtbu/1rW7v9a1u7/WtXu/1rW7v9a1u//Wtbu/1rW
+        7v9a1u//Wtbu/17e+P9KscfOAAAALv///wD///8AW9fw/1vX8P9b1/D/W9fw/1vY8P9b1/D/W9fw/1vX
+        8P9b1/D/W9fw/1vX8P9b1/D/W9fv/1vX7/9b1/D/W9fw/1vX8P9b1/D/W9fw/1vX8P9b1/D/W9fw/1vX
+        8P9b1/D/W9fw/1vX8P9b1/D/XuD6/0yzx84AAAAu////AP///wBc2PH/XNnx/1zY8f9c2PH/XNjx/1zY
+        8f9c2PH/XNjx/1zY8f9b2PH/XNjx/1zY8f9c2PH/XNjx/1zY8P9c2PH/W9nx/1zY8f9c2fH/XNjx/1vY
+        8f9c2PH/XNjx/1zZ8f9c2PH/XNnx/1zY8f9g4fv/TLTIzgAAAC7///8A////AF3a8v9d2vL/Xdny/13a
+        8v9d2fL/Xdny/13a8v9d2vL/Xdry/13Z8v9d2vL/Xdry/17Z8v9d2fL/Xdny/13Z8v9d2fL/Xdnz/13a
+        8v9d2vL/Xdry/13a8/9d2fP/Xdrz/13a8v9d2vL/Xdry/2Hi/P9NtcnOAAAALv///wD///8AXtvz/17a
+        9P9e2vT/Xtvz/17b9P9e2/T/Xtv0/17b9P9e2/T/Xtrz/17b8/9e2/P/Xtvz/17b9P9d2/P/Xtvz/17b
+        8/9e2vT/Xtvz/17b9P9e2/P/Xtvz/17b9P9e2vT/Xtv0/17b8/9e2/P/YuT9/062y84AAAAu////AP//
+        /wBf3PX/X9z1/1/c9f9f3PX/X9z0/1/c9f9f3PX/X9z0/1/c9f9f3PX/X9z1/1/c9f9f3PX/X9z0/1/c
+        9f9f3PT/X9z1/1/c9f9f3PX/X9z1/1/c9P9f3PT/X9z1/1/c9f9f3PT/X9z1/2Dc9f9j5f7/T7fLzgAA
+        AC7///8A////AGDd9f9g3fX/YN32/2Dd9v9g3fX/YN32/2Dd9v9g3fb/YN32/2Dd9v9g3fb/YN32/2Dc
+        9v9g3fb/YN32/2Dd9v9g3fX/YN32/2Dd9v9g3fb/YN32/1/d9f9g3fb/YN32/2Dd9f9g3fb/YN32/2Tm
+        //9QuM3OAAAALv///wD///8AYd73/2He9/9h3vf/Yd73/2He9/9h3vf/Yd73/2He9/9h3vf/Yd73/2He
+        9/9h3vf/Yd73/2He9/9h3vf/Yd73/2He9/9h3vf/Yd73/2He9/9h3/f/Yd73/2He9/9h3vf/Yd73/2He
+        9/9h3vf/Zej//1C5zs4AAAAu////AP///wBi3/j/Yt/4/2Hf9/9i3/j/Yt/4/2Lf9/9h3/j/Yt/4/2Hf
+        +P9i3/j/Yd/4/2Hf+P9h3/j/Yt/4/2Lf+P9i3/j/Yt/4/2Lf+P9h3/j/Yt/4/2Hf+P9h3/j/Yd/4/2Lf
+        +P9i3/j/Yd/4/2Hf+P9l6P//UbnPzgAAAC7///8A////AGPg+v9j4Pn/YuD5/2Pg+f9i4Pn/Y+D5/2Lg
+        +f9i4Pn/Y+D5/2Pg+f9j4Pn/YuD5/2Pg+f9j4Pn/Y+D5/2Lg+f9i4Pn/YuD5/2Lg+f9j4Pn/Y+D5/2Pg
+        +f9j4Pn/Y+D5/2Pg+f9j4Pn/YuD5/2bp//9Sus/OAAAALv///wD///8AZOH7/2Ph+v9j4fr/Y+D6/2Ph
+        +v9j4fr/Y+H6/2Th+v9j4fr/ZOH6/2Ph+v9j4fr/Y+H6/2Ph+v9j4fr/Y+H6/2Ph+v9j4fr/Y+H6/2Pg
+        +v9j4fr/Y+D6/2Ph+v9k4fr/Y+H6/2Ph+f9j4fn/aOr//1O80c0AAAAt////AP///wBk4vnoZuf//2Ti
+        +/9k4vv/ZOH7/2Ti+v9k4fv/ZOH6/2Ti+v9k4vv/ZOL7/2Ti+/9k4vr/ZOH7/2Th+/9k4vv/ZOL6/2Th
+        +v9k4fr/ZOL6/2Th+/9k4fv/ZOL7/2Ti+/9k4fv/ZOH7/2Ti+/9p7f//TrHEvQAAACX///8A////AF7V
+        7Glj3/jyae3//2nt//9p7P//aez//2nt//9p7f//ae3//2nt//9p7f//ae3//2nt//9p7P//ae3//2nt
+        //9p7f//au3//2rt//9p7f//ae3//2nt//9p7f//ae3//2nt//9p7f//aOn//13Q5+QrYm1gAAAAD///
+        /wD///8AOoeUBVW+0zxTvNBlUbXJaVC0yGlQtMlpULTJaVC0yWlQtMlpULXJaVC1yGlQtchpULTJaVC0
+        yWlQtchpULTJaVC0yGlQtMhpULXJaVC0yGlQtchpULXIaVC0yWlQtMlpULXIaVC1yWpOrsJmMW15QAAA
+        AA8AAAAC////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
         /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
-        /wD///8A//8AAOABAADAAQAAwAEAAMABAADAAQAAwAEAAMABAADAAQAAwAEAAMABAADAAQAAwAEAAMAD
-        AAD//wAA//8AAA==
+        /wD///8A////AP///wD///8A/////4AAAAGAAAABgAAAAYAAAAGAAAABgAAAAYAAAAGAAAABgAAAAYAA
+        AAGAAAABgAAAAYAAAAGAAAABgAAAAYAAAAGAAAABgAAAAYAAAAGAAAABgAAAAYAAAAGAAAABgAAAAYAA
+        AAGAAAABgAAAAYAAAAGAAAABgAAAAf////8=
 </value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>NowNotes Settings</value>
