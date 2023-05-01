@@ -190,7 +190,7 @@ namespace NowNotes_Windows
 		{
 			if (Settings.Default.CloudSyncEnabled)
 			{
-				foreach (var file in Directory.GetFiles(Settings.Default.OneDriveFolder)) { try { File.Delete(file); } catch(Exception) { } }
+				foreach (var file in Directory.GetFiles(Settings.Default.OneDriveFolder)) { try { File.Delete(file); } catch (Exception) { } }
 				MessageBox.Show("All notes were deleted.", "Notes Deleted", MessageBoxButtons.OK, MessageBoxIcon.Information);
 			}
 			else
