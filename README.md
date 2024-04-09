@@ -1,5 +1,8 @@
 # <img src="BrandResources/64px-logo-transparent.png" width=24> NowNotes
 
+> [!IMPORTANT]
+> NowNotes is no longer in development as it was meant as a little project I made when I started to learn programming. The code is garbage, I nearly forgot C# and I'm not planning to retake this. (And even if I did, it would be from scratch.)
+
 NowNotes is a simple app made as a *usable* replacement for the Windows Notepad.
 
 Windows Notepad is ok to take notes quickly, just type 'Notepad' on the Windows Search and start typing on it. It's simple and only uses a few resources.
